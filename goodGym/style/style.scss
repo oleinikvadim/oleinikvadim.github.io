@@ -1,0 +1,20 @@
+// global style
+@import "./components/fonts";
+@import "./libs";
+@import "./reset";
+@import "../libs/aos-master/src/sass/aos.scss";
+// components
+@import "./components/global";
+@import "./components/menu";
+@import "./components/section-welcome";
+@import "./components/section-goodday";
+@import "./components/section-work_out";
+@import "./components/section-features";
+@import "./components/section-map";
+@import "./components/section-location";
+@import "./components/section-sing-up";
+@import "./components/section-last";
+// components parts
+@import "./components/button-to-top";
+
+// libs

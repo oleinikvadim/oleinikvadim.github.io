@@ -1,0 +1,82 @@
+.section-welcome {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  & video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .logo-img {
+    margin-bottom: 50px;
+    @media (max-width: 1550px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  .slogan {
+    color: #ffffff;
+    font-family: "Montserrat Alternates";
+    font-size: 48px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 38px;
+      text-align: center;
+    }
+    @media (max-width: 510px) {
+      font-size: 24px;
+    }
+  }
+}
+.phone-number-with-outline {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 75px;
+  right: 11%;
+  @media (max-width: 1550px) {
+    right: 11%;
+    margin-right: 50px;
+  }
+  @media (max-width: 960px) {
+    top: 18px;
+    right: 15%;
+  }
+  @media (max-width: 600px) {
+    left: 40px;
+  }
+  @media (max-width: 442px) {
+    top: 24px;
+  }
+  .outline-phone {
+    margin-right: 25px;
+    width: 38px;
+    height: 38px;
+  }
+  .number {
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+    @media (max-width: 442px) {
+      font-size: 20px;
+    }
+    @media (max-width: 345px) {
+      font-size: 15px;
+    }
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.section-features {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    padding: 50px 0;
+    height: initial !important;
+  }
+  .features-list {
+    // overflow: hidden;
+  }
+  & .features-item {
+    align-items: center;
+    &_img {
+      .item-img {
+        z-index: 6;
+
+        @media (max-width: 1550px) {
+          width: 70%;
+        }
+        @media (max-width: 767px) {
+          width: 20%;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 375px) {
+          width: 40%;
+        }
+      }
+    }
+    &_content {
+      .section-slogan {
+        font-family: "Montserrat";
+        margin-bottom: 100px;
+        @media (max-width: 1550px) {
+          margin-bottom: 30px;
+        }
+      }
+      .section-descr {
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+        span {
+          display: inline-block;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .nav {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    // left: 50%;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 767px) {
+      bottom: -10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .nav-link,
+    .nav-item,
+    .nav-link.active {
+      border: none;
+    }
+    .nav-item {
+      @media (max-width: 1220px) {
+        width: 80px;
+        height: 80px;
+      }
+      @media (max-width: 767px) {
+        width: 60px;
+        height: 80px;
+      }
+      padding: 0 15px;
+    }
+    & a {
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-height: 650px) {
+        width: 90px;
+        height: 90px;
+      }
+      @media (max-width: 385px) {
+        width: 100px;
+        height: 100px;
+      }
+      & svg {
+        fill: #fff;
+      }
+      &:hover,
+      &.active {
+        & svg {
+          fill: $primary;
+          stroke: $primary;
+        }
+      }
+    }
+  }
+}

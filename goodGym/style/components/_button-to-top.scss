@@ -1,0 +1,40 @@
+.b-top {
+  z-index: 100;
+  position: absolute;
+  bottom: 200px;
+  right: 80px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  // margin-left: 50%;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2), 0 8px 14px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3;
+  @media (max-width: 1550px) {
+    width: 35px;
+    height: 35px;
+    bottom: 150px;
+    right: 70px;
+  }
+  @media (max-width: 900px) {
+    right: 37px;
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &:hover {
+    // filter: alpha(opacity=100);
+    cursor: pointer;
+    background-color: $primary;
+  }
+}

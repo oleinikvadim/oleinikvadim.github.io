@@ -1,0 +1,95 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.inst-logo {
+  position: fixed;
+  z-index: 200;
+  width: 96px;
+  height: 96px;
+  bottom: 80px;
+  right: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2), 0 8px 14px rgba(0, 0, 0, 0.12);
+  @media (max-width: 1550px) {
+    width: 48px;
+    height: 48px;
+  }
+  @media (max-width: 900px) {
+    right: 30px;
+  }
+  img {
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(0.9);
+    }
+    @media (max-width: 1550px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+.section-slogan {
+  color: #212121;
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+}
+.section-descr {
+  color: #212121;
+  font-family: "Muli";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3;
+  @media (max-width: 840px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+  @media (max-width: 328px) {
+    font-size: 16px;
+  }
+}
+
+//=================================== rectange-style ==============================
+.rectange-up-down {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  left: 50%;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+@keyframes MoveUpDown {
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+// ========================================================================
+
+h2 {
+  @media (max-width: 1370px) {
+    font-size: 45px;
+  }
+  @media (max-width: 550px) {
+    font-size: 30px;
+  }
+  // @media (max-width: 328px) {
+  //   font-size: 20px;
+  // }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

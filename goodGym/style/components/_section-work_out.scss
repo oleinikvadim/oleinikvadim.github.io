@@ -1,0 +1,68 @@
+.section-work_out {
+  position: relative;
+  overflow: hidden;
+  background-color: $primary;
+  z-index: 4;
+  display: flex;
+  align-items: flex-end;
+  @media (max-width: 768px) {
+    height: initial !important;
+    padding: 350px 0 50px;
+  }
+  .section-descr {
+    color: #ffffff;
+  }
+}
+.work_out {
+  &-img {
+    position: absolute;
+    background: url("./img/work_out.png") no-repeat;
+    background-position: right 0%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+    @media (max-width: 550px) {
+      background-position: 80% 0%;
+    }
+  }
+  &-big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: "Montserrat Alternates";
+    font-size: 428px;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    @media (max-width: 1366px) {
+      font-size: 290px;
+    }
+    @media (max-width: 500px) {
+      font-size: 200px;
+    }
+  }
+}
+
+.animation-workout {
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  transform: translateX(100%);
+  &.animation-workout--animate {
+    animation-name: slidein-right;
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

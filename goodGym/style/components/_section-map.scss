@@ -1,0 +1,14 @@
+.section-map {
+  position: relative;
+
+  .section-slogan {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: white;
+    z-index: 10;
+  }
+  @media (max-width: 840px) {
+    height: 500px !important;
+  }
+}

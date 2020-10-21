@@ -1,0 +1,91 @@
+.section-goodday {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    height: inherit !important;
+    padding: 50px 0;
+  }
+  .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./img/goodday-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+      @media (max-width: 992px) {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-image: linear-gradient(
+          to top,
+          rgba(rgb(255, 255, 255), 0.9) 0%,
+          rgba(rgb(255, 255, 255), 0.6) 100%
+        );
+      }
+    }
+  }
+  .section-slogan {
+    margin-bottom: 80px;
+
+    @media (max-width: 1433px) {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+  .section-descr {
+    margin-bottom: 105px;
+    @media (max-width: 1433px) {
+      margin-bottom: 30px;
+    }
+    span {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+}
+.link-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:hover {
+    .rectange-right {
+      transform: translateX(10px);
+    }
+  }
+
+  &_text {
+    font-family: "Muli";
+    font-size: 31px;
+    font-weight: 700;
+    margin-right: 20px;
+    color: $primary;
+    @media (max-width: 840px) {
+      font-size: 25px;
+    }
+  }
+  .rectange-right {
+    width: 34px;
+    height: 36px;
+    transition: all 0.3s;
+    &:hover {
+      .rectange-right {
+        transform: translateX(40px);
+      }
+    }
+  }
+}

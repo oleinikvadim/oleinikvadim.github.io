@@ -1,0 +1,204 @@
+/* -------------menu off */
+.menu {
+  .nav-tgl-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    padding: 80px 0;
+    transition: background-color 0.3s;
+    text-align: right;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    @media (max-width: 960px) {
+      padding: 20px 0;
+    }
+  }
+  .nav-tgl {
+    cursor: pointer;
+    display: inline;
+    z-index: 1200;
+    // width: 60px;
+    height: 42px;
+    border: none;
+    padding: 0;
+    background: none;
+    text-align: center;
+    pointer-events: all;
+    margin-right: 38px;
+    @media (max-width: 960px) {
+      top: 40px;
+      right: 20px;
+      margin-right: 0;
+    }
+    > span {
+      display: inline-block;
+      position: relative;
+      height: 2px;
+      width: 60px;
+      background: #fff;
+      vertical-align: middle;
+      @media (max-width: 960px) {
+        width: 40px;
+      }
+      &:before,
+      &:after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        background: #fff;
+        transition: all 200ms;
+      }
+      &:before {
+        top: -21px;
+        left: 0;
+        width: 60px;
+        @media (max-width: 960px) {
+          width: 40px;
+          top: -17px;
+        }
+      }
+      &:after {
+        top: 19px;
+        left: 0;
+        width: 60px;
+        @media (max-width: 960px) {
+          width: 40px;
+          top: 15px;
+        }
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    // &:hover > span:after,
+    // &:hover > span:before {
+    //   width: 60px;
+    //   left: 0;
+    // }
+  }
+  .nav {
+    ul {
+      position: absolute;
+      opacity: 0;
+      top: 150px;
+      @media (max-width: 1550px) {
+        top: 50px;
+      }
+      @media (max-height: 650px) {
+        top: 0px;
+      }
+    }
+    &:before {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100vw;
+      height: 100vh;
+      background: $primary;
+      transition: all 500ms ease-in-out;
+      clip-path: circle(30px at calc(100% - 110px) 100px);
+      visibility: hidden;
+      z-index: 10;
+      @media (max-width: 960px) {
+        clip-path: circle(30px at calc(100% - 50px) 50px);
+      }
+    }
+  }
+}
+
+/* ------------------------ menu on ----------------- */
+.menu.active {
+  .nav-tgl > span {
+    height: 0;
+    &:after,
+    &:before {
+      top: 0px;
+      left: 0;
+      width: 60px;
+      @media (max-width: 960px) {
+        background: #fff;
+      }
+    }
+    &:after {
+      transform: rotate(-45deg);
+      // filter: invert(1);
+      @media (max-width: 960px) {
+        width: 40px;
+      }
+    }
+    &:before {
+      transform: rotate(45deg);
+      @media (max-width: 960px) {
+        width: 40px;
+      }
+      // filter: invert(1);
+    }
+  }
+  .nav {
+    &:before {
+      visibility: visible;
+      clip-path: circle(100%);
+    }
+    ul {
+      display: block;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      margin-left: 255px;
+      opacity: 1;
+      transition: all 0.3s;
+      transition-delay: 0.4s;
+      z-index: 11;
+      @media (max-width: 992px) {
+        margin-left: 32px;
+      }
+      li {
+        a {
+          &:hover {
+            color: white;
+            text-decoration: none;
+          }
+        }
+        & h2 {
+          color: $secondary;
+          font-family: "Montserrat Alternates";
+          font-weight: 700;
+          line-height: 160px;
+          position: relative;
+          display: inline;
+          z-index: 11;
+          transition: all 0.4s;
+          cursor: pointer;
+          @media (max-width: 960px) {
+            font-size: 65px;
+          }
+          @media (max-width: 500px) {
+            font-size: 55px;
+          }
+          @media (max-width: 375px) {
+            line-height: 100px;
+          }
+
+          &:hover {
+            &:before {
+              position: absolute;
+              content: "";
+              top: 50%;
+              left: 115%;
+              transform: translateY(50%);
+              width: 100vmax;
+              height: 2px;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
