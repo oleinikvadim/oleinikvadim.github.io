@@ -105,14 +105,14 @@ $(document).ready(function () {
     focusOnSelect: true,
   });
 
-  $(document).ready(function () {
-    $("#my-nav").on("click", "a", function (event) {
-      event.preventDefault();
-      var id = $(this).attr("href"),
-        top = $(id).offset().top;
-      $("body,html").animate({ scrollTop: top }, 700);
-    });
-  });
+  // $(document).ready(function () {
+  //   $("#my-nav").on("click", "a", function (event) {
+  //     event.preventDefault();
+  //     var id = $(this).attr("href"),
+  //       top = $(id).offset().top;
+  //     $("body,html").animate({ scrollTop: top }, 700);
+  //   });
+  // });
   $(".js-count").each(function () {
     $(this)
       .prop("Counter", 0)

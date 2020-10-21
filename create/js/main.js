@@ -11,6 +11,8 @@
     headerUP();
     headerZeroY();
     hamburgerCollapse();
+    navActiveOnClick();
+    scrollSpy();
   }); 
  
   function rectDown() {
@@ -267,6 +269,7 @@
           prevScrollpos = currentScrollPos;
       }
    }
+
   function navMenuCollapse(){
     $(".nav-link").on("click",function() {
       $(".JS-hamburger").removeClass("is-active");
@@ -299,6 +302,7 @@
     });
 
   } 
+
   function hamburgerCollapse() {
     $('#my-nav').on("show.bs.collapse", function(){
       $(".JS-hamburger").addClass("is-active");
@@ -310,4 +314,14 @@
     })
   } 
    
+  function navActiveOnClick(){
+    $('.navbar-nav .nav-link').click(function(){
+      $('.navbar-nav .nav-link').removeClass('active');
+      $(this).addClass('active');
+    })
+  }
+
+  function scrollSpy(){
+      $('body').scrollspy({target: ".navbar", offset: 50});   
+  }
 })(jQuery);
