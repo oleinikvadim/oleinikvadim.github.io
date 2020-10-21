@@ -1,1 +1,0 @@
-# oleinikvadim.github.io
