@@ -1,0 +1,67 @@
+body {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+  }
+  h2,
+  .h2 {
+    font-size: 30px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+.h3-title {
+  color: white;
+  position: relative;
+  letter-spacing: 1.2;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 4px;
+    background-color: white;
+  }
+}
+
+// button to top
+.b-top {
+  z-index: 2600;
+  position: fixed;
+  left: 0;
+  bottom: 90px;
+  width: 34%;
+  margin-left: 50%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  &:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    cursor: pointer;
+  }
+  &-but {
+    z-index: 2600;
+    position: absolute;
+    display: block;
+    left: 56px;
+    bottom: 0;
+    margin: 0 0 0 100%;
+    padding: 22px 22px;
+    color: white;
+    background: $primary;
+    border-radius: 50%;
+    @media (max-width: 576px) {
+      left: 0;
+    }
+  }
+}

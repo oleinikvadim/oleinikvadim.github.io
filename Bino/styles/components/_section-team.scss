@@ -1,0 +1,132 @@
+.section-team {
+  position: relative;
+  height: 650px;
+  & .team--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/our-team.png);
+    background-size: cover;
+    // url(/img/our-team.png)
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to top,
+        rgba(#000, 0.4) 0%,
+        rgba(#000, 0.4) 100%
+      );
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(./img/curve-opcity.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      opacity: 0;
+      @media (min-width: 1220px) {
+        opacity: 1;
+      }
+    }
+  }
+  & .team-container {
+    position: relative;
+    .section-title,
+    .section_descr {
+      color: white;
+    }
+    & .teams {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 550px) {
+        flex-wrap: wrap;
+        // flex-direction: row;
+      }
+      .team-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+          .item-img {
+            transform: scale(1.2);
+            transition: all 0.3s;
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 40px;
+            background-color: slategray;
+            top: 40%;
+            left: 50%;
+            @media (max-width: 550px) {
+              display: none;
+            }
+          }
+        }
+        &:hover .item-name,
+        &:hover .item-name-desc {
+          opacity: 1;
+          text-align: center;
+        }
+        & .item-img {
+          border: 2px solid $primary;
+          border-radius: 50%;
+          margin-bottom: 50px;
+          @media (max-width: 550px) {
+            margin-bottom: 10px;
+          }
+        }
+        .item-name,
+        .item-name-desc {
+          opacity: 0;
+        }
+        .item-name {
+          color: $primary;
+        }
+        .item-name-desc {
+          color: #fff;
+          @media (max-width: 550px) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      @media (min-width: 1220px) {
+        .team--img:before {
+          display: none;
+        }
+
+        & .team-item:first-child {
+          top: 10px;
+        }
+        & .team-item:nth-child(2) {
+          top: -30px;
+        }
+        & .team-item:nth-child(3) {
+          top: -25px;
+        }
+        & .team-item:nth-child(4) {
+          top: 10px;
+        }
+        & .team-item:nth-child(5) {
+          top: -25px;
+        }
+      }
+    }
+  }
+}

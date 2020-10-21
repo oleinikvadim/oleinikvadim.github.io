@@ -1,0 +1,124 @@
+.section {
+  position: relative;
+  &-welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+  }
+  &-history {
+    padding: 140px 0 145px 0;
+  }
+  &-features {
+    padding-top: 125px;
+    padding-bottom: 110px;
+    position: relative;
+  }
+  &-services {
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+  }
+  &-works {
+    padding-top: 140px;
+  }
+  &-study {
+    padding: 140px 0;
+    background-color: #f4f5f9;
+    position: relative;
+  }
+  &-rating {
+    padding: 157px 0 143px 0;
+  }
+  &-price {
+    padding: 157px 0 143px 0;
+  }
+  &-team {
+    padding: 130px 0;
+  }
+  &-cooperation {
+    padding: 150px 0px;
+  }
+  &-blog {
+    padding-top: 150px;
+  }
+  &-connect {
+    padding: 150px 0px;
+  }
+  &-try {
+    padding: 130px 0px;
+  }
+  &-features,
+  &-services,
+  &-works,
+  &-study,
+  &-history,
+  &-rating,
+  &-price,
+  &-team,
+  &-cooperation,
+  &-blog,
+  &-connect,
+  &-try,
+  &-services {
+    @media (max-width: 550px) {
+      padding: 50px 0px;
+    }
+  }
+
+  // section-title section-descr
+  &-title {
+    position: relative;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #6a6a6a;
+    @media (max-width: 992px) {
+      margin-bottom: 10px;
+    }
+
+    &.section-title--center {
+      margin-bottom: 30px;
+    }
+    &.section-title--light {
+      color: #fff;
+    }
+    &.section-title--border {
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 3.5px;
+        width: 6px;
+        height: 36px;
+        background-color: $primary;
+      }
+      &.section-title--border--left {
+        padding-left: 30px;
+        &:before {
+          left: 0px;
+          @media (max-width: 992px) {
+            top: 0;
+          }
+        }
+      }
+
+      &.section-title--border--right {
+        padding-right: 30px;
+        &:before {
+          right: 0px;
+          @media (max-width: 992px) {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  &_descr {
+    position: relative;
+    color: #999999;
+    &--center {
+      margin-bottom: 30px;
+    }
+  }
+}

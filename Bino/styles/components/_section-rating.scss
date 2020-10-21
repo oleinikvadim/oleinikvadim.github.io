@@ -1,0 +1,68 @@
+.section-rating {
+  position: relative;
+  & .section-rating--img {
+    background-image: url(./img/rating-bg-img.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to top,
+        rgba(#000, 0.5) 0%,
+        rgba(#000, 0.5) 100%
+      );
+    }
+  }
+  & .rating-item {
+    color: white;
+    text-align: center;
+    z-index: inherit;
+
+    & .rating-img {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      margin: 10px auto;
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+        margin: 20px auto;
+      }
+    }
+    & .rating-count {
+      font-family: "Source Sans Pro";
+      font-weight: 700;
+      letter-spacing: 1.5;
+      font-size: 30px;
+      margin-bottom: 10px;
+      &_descr {
+        font-weight: 400;
+        letter-spacing: 0.9;
+        font-size: 18px;
+      }
+    }
+  }
+}

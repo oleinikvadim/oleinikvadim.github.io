@@ -1,0 +1,30 @@
+.section-history {
+  border-top: solid 1px #e6e7eb;
+  @media (max-width: 991px) {
+    .section-history {
+      padding: 50px 0 50px 0;
+    }
+    .col:first-child {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .col:last-child {
+      .history-title,
+      .history-text {
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 550px) {
+      .col:first-child {
+        display: none;
+      }
+    }
+  }
+  & .section-title {
+  }
+  .history-text {
+    line-height: 2.07;
+    color: #999999;
+    min-width: 218px;
+  }
+}

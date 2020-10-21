@@ -1,0 +1,18 @@
+.border-title {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  width: 20px;
+  background-color: white;
+  padding-bottom: 10px;
+  bottom: 0px;
+  &.border-title--top {
+    padding-top: 10px;
+    bottom: initial;
+    top: 0px;
+  }
+  &.border-title--dark {
+    background-color: #000;
+  }
+}

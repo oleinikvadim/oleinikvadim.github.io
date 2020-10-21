@@ -1,0 +1,74 @@
+.section-price {
+  transition: all 0.3s;
+  & .price-card {
+    position: relative;
+    background-color: #f4f5f9;
+    background: linear-gradient(to bottom, #999999 200px, #f4f5f9 0%);
+    padding: 45px 0;
+    margin-top: 10px;
+
+    &:hover {
+      background: linear-gradient(to bottom, $primary 200px, #f4f5f9 0%);
+      & .price-card_price {
+        color: $primary;
+      }
+      & button {
+        background-color: $primary;
+      }
+    }
+    &_title {
+      letter-spacing: 1.8px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 45px;
+    }
+    &_price,
+    &_time {
+      color: #999999;
+    }
+    & .icon-circle {
+      margin: 0 auto;
+      width: 154px;
+      height: 154px;
+      box-shadow: 0px 0px 0px 5px rgba(244, 245, 249, 0.5);
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 50px;
+      @media (max-width: 576px) {
+        margin-bottom: 10px;
+      }
+      & .price-card_price {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      & .price-card_month {
+        font-size: 13px;
+        line-height: 22px;
+        color: #999999;
+      }
+    }
+
+    &_time {
+    }
+    &_descr {
+      line-height: 2.86;
+      color: #999999;
+      font-weight: 600;
+
+      max-width: 200px;
+      margin: 0 auto 35px;
+      @media (max-width: 576px) {
+        margin-bottom: 10px;
+      }
+    }
+    button {
+      background-color: #999999;
+      border: none;
+    }
+  }
+}
