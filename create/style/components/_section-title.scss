@@ -1,0 +1,64 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 115px;
+  @media (max-width: 992px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    // margin-bottom: 60px;
+  }
+  &--light {
+    & .section-title_letter {
+      color: rgba(255, 255, 255, 0.18);
+    }
+    & .section-title_descr {
+      color: #fff;
+    }
+  }
+  &--dark {
+    & .section-title_letter {
+      color: rgba(34, 34, 34, 0.18);
+    }
+    & .section-title_descr {
+      color: #222;
+    }
+  }
+  &_letter {
+    font-size: 247px;
+    position: absolute;
+    font-family: "Roboto";
+    font-weight: 700;
+    pointer-events: none;
+    @media (max-width: 992px) {
+      font-size: 200px;
+    }
+    @media (max-width: 768px) {
+      font-size: 150px;
+    }
+    @media (max-width: 576px) {
+      // font-size: 100px;
+    }
+  }
+  &_descr {
+    font-family: "Gotham";
+    font-size: 37.5px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 992px) {
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      font-size: 27px;
+    }
+    @media (max-width: 576px) {
+      font-size: 22px;
+    }
+  }
+}

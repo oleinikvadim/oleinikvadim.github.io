@@ -1,0 +1,14 @@
+.section-note {
+  background-color: $primary;
+  color: white;
+  padding-top: 110px;
+  padding-bottom: 130px;
+  @media (max-width: 992px) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

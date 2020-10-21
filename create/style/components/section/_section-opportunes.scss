@@ -1,0 +1,92 @@
+.section-opportunes {
+  background: url(./img/oppotunes-bg.jpg);
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #fff;
+  z-index: 3;
+  overflow: hidden;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
+  @media (max-width: 786px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.opportunes-wrapper {
+  display: flex;
+  align-items: center;
+}
+.opportunes {
+  &-list_title {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-family: "Gotham";
+  }
+  &-list_descr {
+    font-size: 15px;
+    margin-bottom: 68px;
+  }
+  &-list_progress {
+    & .progress {
+      height: 38px;
+      margin-bottom: 24px;
+      background: none;
+      &:first-child {
+        width: 370px;
+        @media (max-width: 480px) {
+          width: 270px;
+        }
+        @media (max-width: 350px) {
+          width: 230px;
+        }
+      }
+      &:nth-of-type(2) {
+        width: 400px;
+        @media (max-width: 480px) {
+          width: 300px;
+        }
+        @media (max-width: 350px) {
+          width: 260px;
+        }
+      }
+      &:last-child {
+        width: 430px;
+        @media (max-width: 480px) {
+          width: 330px;
+        }
+        @media (max-width: 350px) {
+          width: 290px;
+        }
+        margin-bottom: 40px;
+      }
+      &-bar {
+        width: 0%;
+        position: relative;
+        p {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+      &.active .progress-bar {
+        -webkit-transition: none !important;
+        transition: none !important;
+      }
+    }
+  }
+  &-img {
+    background: url(./img/oppotunes-1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    // width: 350px;
+    // height: 645px;
+    min-width: 100%;
+    min-height: 650px;
+  }
+}

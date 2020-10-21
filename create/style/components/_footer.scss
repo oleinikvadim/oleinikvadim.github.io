@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 55px;
+  padding-bottom: 45px;
+  background-color: #222222;
+  color: #fff;
+  font-size: 13px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  @media (max-width: 576px) {
+  }
+  .footer-descr:last-child {
+    text-align: end;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}

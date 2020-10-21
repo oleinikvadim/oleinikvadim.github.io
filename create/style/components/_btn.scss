@@ -1,0 +1,12 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 24px;
+  border-radius: 0;
+  height: 64px;
+  padding: 0px 63px;
+  display: block;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

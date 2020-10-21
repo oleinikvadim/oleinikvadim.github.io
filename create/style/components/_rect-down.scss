@@ -1,0 +1,32 @@
+.rect-down {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & .item_icon {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  & .item_icon_svg {
+    width: 30px;
+    height: 35px;
+    fill: #fff;
+    &:hover {
+      fill: $primary;
+      transition: 0.3s all;
+    }
+  }
+}
+.slide {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 10px;
+}

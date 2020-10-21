@@ -1,0 +1,57 @@
+.features-item {
+  text-align: center;
+  margin-bottom: 50px;
+  &--white {
+    color: #fff;
+  }
+  &--back {
+    color: #000;
+  }
+
+  &_title {
+    font-family: "Gotham";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_text {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .features-item_icon {
+    border: none;
+    width: 133px;
+    height: 133px;
+    background-color: #2e85aa;
+    border-radius: 50%;
+    margin: 0px auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 992px) {
+      width: 100px;
+      height: 100px;
+    }
+    @media (max-width: 772px) {
+      width: 75px;
+      height: 75px;
+    }
+    @media (max-width: 576px) {
+      // width: 50px;
+      // height: 50px;
+    }
+  }
+  &_icon_svg {
+    width: 34px;
+    height: 34px;
+    fill: #fff;
+  }
+  @media (max-width: 772px) {
+    margin-bottom: 30px;
+  }
+}

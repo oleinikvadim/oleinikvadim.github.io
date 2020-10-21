@@ -1,0 +1,15 @@
+.form-group {
+  margin-bottom: 36px;
+  .form-control {
+    background: none;
+    border-radius: 0px;
+    border-color: #808080;
+    color: #fff;
+    padding: 22px;
+    &::placeholder {
+      font-family: "Gotham";
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.header {
+  position: fixed;
+  left: 0px;
+  z-index: 1001;
+  width: 100%;
+  min-height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  transition: 0.3s all;
+  background: none;
+  @media (max-width: 992px) {
+    min-height: 80px;
+    border-bottom: none;
+    //  ============= header--fill navbar-collapse ====================
+    &--fill {
+      background-color: $primary;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-bottom: none;
+      & .navbar-nav {
+        & .navbar {
+          & .nav-item .nav-link {
+            &:hover,
+            &.active {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--up {
+    transform: translateY(-110%);
+  }
+  &--down {
+    transform: translateY(0%);
+  }
+  // ================= header--fill fullscreen ==========================
+  &--fill {
+    background-color: $primary;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-bottom: none;
+    & .navbar {
+      & .nav-item .nav-link {
+        &:hover,
+        &.active {
+          box-shadow: inset 0px -7px 0px 0 #fff;
+          @media (max-width: 992px) {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .navbar-wrapper {
+    min-height: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .nav-social {
+    display: flex;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    @media (max-width: 992px) {
+      justify-content: center;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+  }
+  .navbar {
+    transition: all 0.3s;
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        align-items: center;
+      }
+    }
+    & .nav-item {
+      margin-right: 28px;
+      @media (max-width: 1200px) {
+        margin-right: 20px;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      @media (max-width: 992px) {
+        margin-right: 0px;
+      }
+    }
+    & .nav-link {
+      color: #fff;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      transition: 0.2s all;
+      padding-top: 14px;
+      padding-bottom: 40px;
+      margin-bottom: -30px;
+      @media (max-width: 992px) {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+      &:hover,
+      &.active {
+        box-shadow: inset 0px -7px 0px 0 $primary;
+        @media (max-width: 992px) {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .hamburger {
+      display: none;
+    }
+  }
+}

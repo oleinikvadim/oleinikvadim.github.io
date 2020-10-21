@@ -1,0 +1,9 @@
+.section-features {
+  background: $primary;
+  .section_title {
+    margin-bottom: 140px;
+    @media (max-width: 992px) {
+      margin-bottom: 60px;
+    }
+  }
+}
