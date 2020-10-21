@@ -65,12 +65,17 @@
       &-bar {
         width: 0%;
         position: relative;
-        p {
+        .p-opportunes {
           position: absolute;
           left: 10px;
           top: 50%;
           font-size: 15px;
           text-transform: uppercase;
+          opacity: 0;
+          transition: 0.5s all;
+          &--fade {
+            opacity: 1;
+          }
         }
       }
       &.active .progress-bar {

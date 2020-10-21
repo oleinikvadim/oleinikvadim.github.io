@@ -191,6 +191,7 @@
   //  $(".progress-bar").animate({
   //   width: "100%"
   // }, 2500); 
+
   } 
   
   function blogSlider(){
@@ -223,7 +224,9 @@
       handler: function progressAnimate() {
         $(".progress-bar").animate({
           width: "100%"
-        }, 2500);
+        }, 2500, function progressAnimateP(){
+          $(".p-opportunes").addClass("p-opportunes--fade");
+        });
       },
     })
   }

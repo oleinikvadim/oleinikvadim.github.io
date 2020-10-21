@@ -11481,12 +11481,17 @@ a.text-dark:hover, a.text-dark:focus {
   width: 0%;
   position: relative;
 }
-.opportunes-list_progress .progress-bar p {
+.opportunes-list_progress .progress-bar .p-opportunes {
   position: absolute;
   left: 10px;
   top: 50%;
   font-size: 15px;
   text-transform: uppercase;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.opportunes-list_progress .progress-bar .p-opportunes--fade {
+  opacity: 1;
 }
 .opportunes-list_progress .progress.active .progress-bar {
   transition: none !important;
