@@ -265,7 +265,7 @@
       var scroll2 = $(window).scrollTop();
         if (prevScrollpos > currentScrollPos) {
           $(".JS-header").removeClass("header--up");
-        } else if (scroll2 > 100) {
+        } else if (scroll2 > 220) {
           $(".JS-header").addClass("header--up");
         }
           prevScrollpos = currentScrollPos;
