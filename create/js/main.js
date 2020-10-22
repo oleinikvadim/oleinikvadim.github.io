@@ -260,14 +260,14 @@
   function headerUP() {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
+      var currentScrollPos = window.pageYOffset + 150;
+      console.log(window.pageYOffset + 150);
         if (prevScrollpos > currentScrollPos) {
           $(".JS-header").addClass("header--down");
           $(".JS-header").removeClass("header--up");
         } else {
           $(".JS-header").removeClass("header--down");
           $(".JS-header").addClass("header--up");
-
           }
           prevScrollpos = currentScrollPos;
       }
@@ -284,7 +284,7 @@
   function headerZeroY() {
     $(window).on("scroll",function() {    
       var scroll = $(window).scrollTop();
-        if (scroll > 100) {
+        if (scroll >= 100) {
           $(".JS-header").addClass("header--fill");
           $('#my-nav').on("hidden.bs.collapse", function(){
             $(".JS-header").addClass("header--fill");
@@ -303,7 +303,6 @@
           }
         };
     });
-
   } 
 
   function hamburgerCollapse() {
@@ -325,6 +324,6 @@
   }
 
   function scrollSpy(){
-      $('body').scrollspy({target: ".navbar", offset: 50});   
+      $('body').scrollspy({target: ".navbar", offset: 50});
   }
 })(jQuery);
