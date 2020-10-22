@@ -11185,7 +11185,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 .header--up {
-  transform: translateY(-100%);
+  transform: translateY(-110%);
 }
 .header--fill {
   background-color: #11749e;
