@@ -284,7 +284,7 @@
   function headerZeroY() {
     $(window).on("scroll",function() {    
       var scroll = $(window).scrollTop();
-        if (scroll > 50) {
+        if (scroll > 100) {
           $(".JS-header").addClass("header--fill");
           $('#my-nav').on("hidden.bs.collapse", function(){
             $(".JS-header").addClass("header--fill");

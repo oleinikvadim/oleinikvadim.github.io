@@ -11304,6 +11304,11 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center;
   position: relative;
 }
+@media (max-width: 992px) {
+  .section-welcome {
+    height: 700px;
+  }
+}
 .section-welcome .welcome-title {
   font-family: "Gotham";
   text-transform: uppercase;
