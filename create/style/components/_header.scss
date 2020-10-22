@@ -33,10 +33,10 @@
     }
   }
   &--up {
-    opacity: 0;
+    transform: translateY(-100%);
   }
   &--down {
-    opacity: 1;
+    transform: translateY(0%);
   }
   // ================= header--fill fullscreen ==========================
   &--fill {

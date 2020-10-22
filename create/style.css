@@ -11185,10 +11185,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 .header--up {
-  opacity: 0;
+  transform: translateY(-100%);
 }
 .header--down {
-  opacity: 1;
+  transform: translateY(0%);
 }
 .header--fill {
   background-color: #11749e;

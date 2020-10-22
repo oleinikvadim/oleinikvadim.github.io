@@ -13,6 +13,7 @@
     hamburgerCollapse();
     navActiveOnClick();
     scrollSpy();
+    // downPlay();
   }); 
  
   function rectDown() {
@@ -260,7 +261,7 @@
   function headerUP() {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset + 150;
+      var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
           $(".JS-header").addClass("header--down");
           $(".JS-header").removeClass("header--up");
@@ -325,4 +326,13 @@
   function scrollSpy(){
       $('body').scrollspy({target: ".navbar", offset: 50});
   }
+
+  // function downPlay(){
+  //   $(window).on("scroll",function() {    
+  //     var scroll2 = $(window).scrollTop();
+  //       if (scroll2 < 180) {
+  //         headerUP();
+  //       }
+  //     });
+  // }
 })(jQuery);
