@@ -261,7 +261,6 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset + 150;
-      console.log(window.pageYOffset + 150);
         if (prevScrollpos > currentScrollPos) {
           $(".JS-header").addClass("header--down");
           $(".JS-header").removeClass("header--up");
