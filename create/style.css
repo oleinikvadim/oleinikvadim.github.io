@@ -11187,9 +11187,6 @@ a.text-dark:hover, a.text-dark:focus {
 .header--up {
   transform: translateY(-100%);
 }
-.header--down {
-  transform: translateY(0%);
-}
 .header--fill {
   background-color: #11749e;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

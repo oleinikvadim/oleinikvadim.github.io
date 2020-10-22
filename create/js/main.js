@@ -262,13 +262,12 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
+      var scroll2 = $(window).scrollTop();
         if (prevScrollpos > currentScrollPos) {
-          $(".JS-header").addClass("header--down");
           $(".JS-header").removeClass("header--up");
-        } else {
-          $(".JS-header").removeClass("header--down");
+        } else if (scroll2 > 100) {
           $(".JS-header").addClass("header--up");
-          }
+        }
           prevScrollpos = currentScrollPos;
       }
    }
@@ -327,12 +326,4 @@
       $('body').scrollspy({target: ".navbar", offset: 50});
   }
 
-  // function downPlay(){
-  //   $(window).on("scroll",function() {    
-  //     var scroll2 = $(window).scrollTop();
-  //       if (scroll2 < 180) {
-  //         headerUP();
-  //       }
-  //     });
-  // }
 })(jQuery);

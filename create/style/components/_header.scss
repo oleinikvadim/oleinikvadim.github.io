@@ -32,11 +32,9 @@
       }
     }
   }
+  // ==================== up navbar move ====================
   &--up {
     transform: translateY(-100%);
-  }
-  &--down {
-    transform: translateY(0%);
   }
   // ================= header--fill fullscreen ==========================
   &--fill {
