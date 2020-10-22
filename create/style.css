@@ -11306,7 +11306,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 @media (max-width: 992px) {
   .section-welcome {
-    height: 700px;
+    height: 600px;
   }
 }
 .section-welcome .welcome-title {
