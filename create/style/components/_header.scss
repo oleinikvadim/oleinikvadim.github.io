@@ -3,17 +3,21 @@
   left: 0px;
   z-index: 1001;
   width: 100%;
-  min-height: 115px;
+  // height: 115px;
+  // max-width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.38);
   display: flex;
   align-items: center;
   color: #fff;
   padding-top: 14px;
   padding-bottom: 10px;
-  transition: 0.3s all;
+  transition: 0.5s all;
   background: none;
+  transform: translateY(0%);
+  // opacity: 1;
   @media (max-width: 992px) {
-    min-height: 80px;
+    min-height: 70px;
+    // height: 100%;
     border-bottom: none;
     //  ============= header--fill navbar-collapse ====================
     &--fill {
@@ -31,8 +35,7 @@
         }
       }
     }
-  }
-  // ==================== up navbar move ====================
+  } // ==================== up navbar move ====================
   &--up {
     transform: translateY(-110%);
   }
@@ -58,6 +61,9 @@
   }
   .navbar {
     width: 100%;
+    @media (max-width: 992px) {
+      padding: 0px;
+    }
   }
   .nav-social {
     display: flex;

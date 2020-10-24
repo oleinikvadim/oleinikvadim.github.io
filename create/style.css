@@ -11160,19 +11160,19 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0px;
   z-index: 1001;
   width: 100%;
-  min-height: 115px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.38);
   display: flex;
   align-items: center;
   color: #fff;
   padding-top: 14px;
   padding-bottom: 10px;
-  transition: 0.3s all;
+  transition: 0.5s all;
   background: none;
+  transform: translateY(0%);
 }
 @media (max-width: 992px) {
   .header {
-    min-height: 80px;
+    min-height: 70px;
     border-bottom: none;
   }
   .header--fill {
@@ -11205,6 +11205,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .header .navbar {
   width: 100%;
+}
+@media (max-width: 992px) {
+  .header .navbar {
+    padding: 0px;
+  }
 }
 .header .nav-social {
   display: flex;
