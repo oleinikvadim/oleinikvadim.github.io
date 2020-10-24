@@ -1,0 +1,57 @@
+.section-welcome {
+  padding-top: 50px;
+  // width: 100%;
+  // height: ;
+  position: relative;
+  background: url(./img/welcome-footer.jpg) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.welcome-content {
+  display: flex;
+  align-items: center;
+  padding: 20px 74px;
+}
+.welcome-item {
+  & .welcome-item_header {
+    display: flex;
+    max-width: 360px;
+    align-items: center;
+    // justify-content: center;
+    background-color: #e2eaed;
+    border-radius: 17.5px;
+    margin-bottom: 15px;
+    & .item_icon_svg {
+      width: 39px;
+      height: 35px;
+      fill: #fff;
+      background-color: $orange;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    p {
+      margin: 0;
+      color: #242f51;
+      font-size: 18px;
+    }
+  }
+  .slogan {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  .welcome-descr {
+    font-size: 18px;
+    color: #616368;
+    margin-bottom: 40px;
+    max-width: 480px;
+  }
+  .welcome-btn {
+    display: flex;
+    align-items: center;
+    & .btn:first-child {
+      margin-right: 27px;
+    }
+  }
+}

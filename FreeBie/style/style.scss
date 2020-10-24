@@ -4,3 +4,12 @@
 @import "./font";
 @import "./font";
 @import "./global";
+
+// components
+@import "./components/color";
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/navbar";
+
+// section
+@import "./section/section-welcome";

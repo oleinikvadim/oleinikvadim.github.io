@@ -14,6 +14,7 @@
 .nav-link {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
+  text-decoration: if($link-decoration == none, null, none);
 
   @include hover-focus() {
     text-decoration: none;
@@ -56,7 +57,7 @@
   .nav-link.active,
   .nav-item.show .nav-link {
     color: $nav-tabs-link-active-color;
-    // background-color: $nav-tabs-link-active-bg;
+    background-color: $nav-tabs-link-active-bg;
     border-color: $nav-tabs-link-active-border-color;
   }
 
@@ -67,6 +68,7 @@
     @include border-top-radius(0);
   }
 }
+
 
 //
 // Pills
@@ -84,11 +86,13 @@
   }
 }
 
+
 //
 // Justified variants
 //
 
 .nav-fill {
+  > .nav-link,
   .nav-item {
     flex: 1 1 auto;
     text-align: center;
@@ -96,12 +100,14 @@
 }
 
 .nav-justified {
+  > .nav-link,
   .nav-item {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
   }
 }
+
 
 // Tabbable tabs
 //
