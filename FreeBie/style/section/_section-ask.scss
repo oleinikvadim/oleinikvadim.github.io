@@ -1,0 +1,46 @@
+.section-ask {
+  padding: 40px 0px 110px;
+  border-bottom: 2px solid #e5e6e5;
+  .title-container {
+    text-align: center;
+    width: 100%;
+  }
+  .descr-container {
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto 66px;
+    text-align: center;
+  }
+}
+.ask-container {
+  padding: 0px 38px 0px 49px;
+  background-color: #f5f7fa;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  .ask-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 20px;
+    .p-header {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 2.9;
+      color: #242f51;
+    }
+  }
+  .ask-svg {
+    width: 19px;
+    height: 19px;
+    &_on {
+      opacity: 0;
+    }
+  }
+  .ask-descr {
+    max-width: 808px;
+  }
+  .ask-body {
+    padding-bottom: 78px;
+  }
+}

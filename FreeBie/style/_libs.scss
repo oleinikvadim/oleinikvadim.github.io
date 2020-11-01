@@ -24,7 +24,7 @@
 @import "../libs/bootstrap/scss/custom-forms";
 @import "../libs/bootstrap/scss/nav";
 @import "../libs/bootstrap/scss/navbar";
-@import "../libs/bootstrap/scss/card";
+// @import "../libs/bootstrap/scss/card";
 // @import "../libs/bootstrap/scss/breadcrumb";
 // @import "../libs/bootstrap/scss/pagination";
 // @import "../libs/bootstrap/scss/badge";
@@ -42,3 +42,7 @@
 // @import "../libs/bootstrap/scss/spinners";
 @import "../libs/bootstrap/scss/utilities";
 // @import "../libs/bootstrap/scss/print";
+
+// slick
+@import "../libs/slick-1.8.1/slick/slick-theme.css";
+@import "../libs/slick-1.8.1/slick/slick.css";

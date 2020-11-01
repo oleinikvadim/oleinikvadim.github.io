@@ -1,0 +1,15 @@
+.title {
+  font-weight: 600;
+  color: #242f51;
+  line-height: 1.28;
+  &_s {
+    font-size: 36px;
+  }
+  &_m {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  &_l {
+    font-size: 48px;
+  }
+}

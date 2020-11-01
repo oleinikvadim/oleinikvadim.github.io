@@ -1,0 +1,80 @@
+.buy-item {
+  width: 317px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 0px 2px #ebebeb;
+  max-height: 100%;
+  height: 100%;
+  &:last-child {
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  &:first-child {
+    margin-right: 20px;
+  }
+  &:last-child {
+    margin-left: 20px;
+  }
+  &.active {
+    box-shadow: 3.8px 54.9px 62px 0 rgba(144, 163, 177, 0.18);
+    border-radius: 9px;
+    border: none;
+  }
+  .price-container {
+    box-shadow: inset 2px -50px 50px 13px rgba(144, 163, 177, 0.18);
+    border-radius: 7px 7px 0 0;
+    padding: 65px 50px 35px;
+  }
+  .price {
+    .price-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 22px;
+
+      .price-weight {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 0.97;
+        color: #242f51;
+      }
+
+      .price-time {
+        font-size: 18px;
+        line-height: 1.56;
+        color: #999ca5;
+        margin-bottom: 0px;
+      }
+      .price-why {
+        margin-bottom: 0px;
+        line-height: 1.75;
+        color: #999ca5;
+      }
+    }
+    .price-class {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #242f51;
+    }
+  }
+  .buy-about-container {
+    text-align: center;
+    padding: 25px 50px;
+    .buy-about {
+      margin: 0 auto;
+      line-height: 3;
+      letter-spacing: normal;
+      text-align: center;
+      color: #999ca5;
+      margin-bottom: 22px;
+      max-width: 160px;
+    }
+  }
+  .trial {
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #2500f9;
+  }
+}

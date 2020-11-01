@@ -7,17 +7,19 @@
     <title>FreeBie</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<section class="section-welcome">
+
+
+<body>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand logo" href="">
+                <a class="navbar-brand logo" href="#">
                     <div class="logo_container">
                         <div class="logo_text">
                             <span>App</span><span>Lab</span> </div>
                     </div>
                 </a>
-                <div class="hamburger hamburger--3dx-r JS-hamburger" data-target="#my-nav" data-toggle="collapse"
+                <div class="hamburger hamburger--spin JS-hamburger" data-target="#my-nav" data-toggle="collapse"
                     aria-controls="my-nav">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
@@ -29,10 +31,11 @@
                             <a class="nav-link active" href="#home" aria-controls="home" data-toggle="tab">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#key" aria-controls="key" data-toggle="tab">Key Features</a>
+                            <a class="nav-link" href="#key" aria-controls="key" data-toggle="tab">Key
+                                Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing" aria-controls="Pricing" data-toggle="tab">Pricing</a>
+                            <a class="nav-link" href="#pricing" aria-controls="pricing" data-toggle="tab">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#testiminial" aria-controls="testiminial"
@@ -47,34 +50,851 @@
             </nav>
         </div>
     </header>
-    <div class="welcome-content container">
-        <div class="welcome-item">
-            <div class="welcome-item_header">
-                <svg class="item_icon_svg">
-                    <use xlink:href="symbol-defs.svg#icon-pen" class="svg"></use>
-                </svg>
-                <p>#1 Editiors Choice App of 2020</p>
+    <main>
+        <section class="section-welcome opacity" id="scene">
+            <div class="welcome-list container">
+                <div class="welcome-item">
+                    <div class="welcome-item_header">
+                        <svg class="item_icon_svg">
+                            <use xlink:href="symbol-defs.svg#icon-pen" class="svg"></use>
+                        </svg>
+                        <p>#1 Editiors Choice App of 2020</p>
+                    </div>
+                    <div class="welcome-item_body">
+                        <h1 class="slogan">Best app for your
+                            modern lifestyle</h1>
+                        <div class="welcome-descr">Increase productivity with a simple to-do app. app for
+                            managing your personal budgets.</div>
+                    </div>
+                    <div class="welcome-item_footer">
+                        <div class="btn btn-prime btn-prime_s">Try for free</div>
+                        <div class="btn btn-out-bg">Watch demo video</div>
+                    </div>
+                </div>
+                <div class="welcome-item bg-mobile bg-mobile_right">
+                    <img src="./img/phone-welcome.png" alt="">
+                </div>
             </div>
-            <h1 class="slogan">Best app for your
-                modern lifestyle</h1>
-            <div class="welcome-descr">Increase productivity with a simple to-do app. app for
-                managing your personal budgets.</div>
-            <div class="welcome-btn">
-                <div class="btn btn-prime btn-prime_s">Try for free</div>
-                <div class="btn btn-out-bg">Watch demo video</div>
+        </section>
+        <div class="company">
+            <div class="container">
+                <div class="row">
+                    <div class="company_descr col">Trusted by companies like</div>
+                </div>
+                <div class="company-list row">
+                    <div class="company-item col">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133"
+                            height="42" viewBox="0 0 133 42">
+                            <image id="_9" data-name="9" width="133" height="42"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </div>
+                    <div class="company-item col">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118"
+                            height="84" viewBox="0 0 118 84">
+                            <image id="Group_44" data-name="Group 44" width="118" height="84"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAABUCAYAAABXw8MsAAANvUlEQVR4nO1dD5BVVRn/wZIoBfb4m1mibw0VFa215L8hu4WiYcJuY041UbNYWU2jucuUjY6WuzLYHw3YNSeZZqJhQ/uDmfJIMoMCXmlpQLhPRPyDKJthWkvtNgd+Bz7OPefe++679+17b95v5s68d++53z33fOf7c77vO+8NwjnzUQEYD+BcAO8BcCqANIDRAEYCGAVgMIDhAIYA+AeAfgAH+PlFAM8B2AWgG8BfAewA8N9yHpYhnjOlj+MATAEwE8A0ABeSaYop28igDIB9AF7l0UcmKryVNIaT6eMAvAvA2QA+CmAigBoAWQC/AbAewCYA/y6nQSoXiR0B4AoAHwFQD6AXwAYAG3koKXvTc9dhvIUSfDIn8kEAzwPIOaSyhpKvJsxUTiClEX4P4GEAqwE867mrxFDKjFXq88MAPgvgUgA7AfwUwIOUpj7PHUcxFsDVAOYBmMyzLwD4D4ChZHIfJ8X9AH4MYL+HylEo9T4HwJUAZgHYDOBeAKsAvO5pXQIoRcYq6bwGwOcAHM8B/BGAv3laeqHs6jc4GbYA+AmARzgp/idaK8mdAGA2gKsATAKwAsCtQmW7MAbAx/iMNPt2B01ByWBwCfVF2btvAdhNybgewCkAFodk6hW0sbVUoRcBWA5gu8FUUAUrmney7cUAzuf9czyUj4Wy3XexfT0dtKc4ic72tB4glAJjlTPzdQBPA/gAgMupPtfQHobBzZTsawHMBfB4nn3YTCa1AugC0OJpYcdmSvxZAHoAbAWwkhNyQDHQXvECAEu55JhPLzRf3AbgkwCmA3jSuPcEAJcAmEFJPoGq9u981gZDmleSxgOc9LeF7MszNB1LqM6V5Lfzu8upSxQDZWPfDeAHVGeLKW1+zpALn+HgT6Md1RhGqfsSgLc77gXVvmLEPcbz1Zr4d2TWKs9dwVAaZxn9BdXH30agURBqMHZisZ+5EMAv6NxczjViv6dVMM4AcB+AJqpADbVU2UANcHwAlROF6l8r1qovU+ruocf8mudOf+wBcDeXTmoCv4PMDWtaCkYxJXYEX3YmZ/GvPC3yw0O0y18Qd00iU1MR6G2jw7VPnFtJH2CBp3V4nE7P+W2chNsKfO9QKJbzNIlSpQb8vTEwdRq92RvFuVG0jVGYCjpAayhlGou5hp7kaR0eT9PGP0Bn6+MF0AqNYqhiFab7Je3oQsZoC4Wyq48B+Jmgs4zaoBCMp8RuJhHV19MA1FFVR0Ufw5xPUr2P4Po6igkKhaRV8RfJhIUMxcWBoYwSKS/4z6RXy8B9jYP+fjLmJdrguYwX2/AiI029vDaTtnxsRAfPxFn0MR5ndKzX0yIGJKmK1dryJgANMTIVTAAcMNaqn/Bh6loy/lP0lK9koN8V9DiJSySNjYw3n+9pGQ3baEbG0yQNj4nuMUiKsXfQQZpBrzdOnMtYsVRjsx30dzL8Z4YJu8m8f3nuOIxZ4rOKUj1RoJ01sY/Rrn46gSd6WhSIJBi7hN7fLB+pKASnMSAgcaaDnrK7b3jOHsZuJgBsONU4l7OcKxSvM1t1gI5VrJIbN2OVmryOx07P1XgwzOKAjXZQDlpabPecOYyTjO8HuFyJGyoq9WkA7wPw5Thpx81YpXa/AqADwPs9V+NBn8WeuqTSxXCNMZ4zh2Em1WsSCi6kuGJQ6vh2z9UCkIQq/i4dp3X0XOPGPnqoEjnHM672nDmKoVyK2WAm0scF5GujYByXQC/QD4jVO07Kefo2gBuYFJ/nuVoYdlps6kYHxUsYLzZRw9SbKwvzmPH9DC6n4sLpfMZ2hj5jX/IkvY6dz7CcSst9x3M1GmqZ/xwtqhcuZm2SCz9nWO95Jtg/z9IXG3qZpHiZ10bys6q62Gtpny+mM8K1imYrkSBF0mm7NQyI38d14DUW+5UvuqkqL2NyG0zBbfGx6/Py0Bz3CqaC694nYmJqM5eCX2URQGIoRqz4j5QOpc7+YFGjUbCSgyRxbQwOzl5qF4lmMrsQjKDGuIVLnESZiiImAfYwNJehZDUfMgPRsYLSeZGgsLnAJUMvqyFkdudSrpt/6GkdHlOYAFGq/LyIxQR5o5ilMQdZx7SAUvEwBy0K9rM+6k56txrLWWSWrzPyCkOfj4hzw+gX3BSxEnEYq0MyzMk2MFZdFAxEzdNDDAs+y2zHjSxZyRdLGe5batynsifTqfaD0M+S1gsAPGq0XU5GrAigYcMCBkcmU7PcbimoSxQDVcz2GiVrDteS21m3lE9/lFQ2MnxpFp9tYaB9Dm3bLpGZOchQ510c9EbLuvUWetpX5cmQqUz0L+NafnpCYdVAlEJd8WBmZ25mUP5WVgraqvRtUNL2a9rBxT73DWI89p+eK0ehsjjfowfdwGVVGEzlsz/I+5dYEg9FRSmUn/bRy53Amf5NVh1cZ4kw2bCVFRWXUVpclQP9AUw9j0GDyWRUEFOHUtof5cTawVzv1waaqSixgnGlWr9PBrdSRe9hUrrRcJJM7KBazVIN351Hmq2O6noTJ8YUqm4XpjAW/hJt54OMYF1fTOcoCKW+Kesc2uImMvZ+Js4zPp6qqlC4gfc8R0/3L4w6vcHitJPJ+NmsIFzFOmDbNo0hwl6rCfZOBu5X0hGMo6oidpTLbrvBXLPOJTNUkONPlLJNrKZ4xhhklWb7ENfPE6nWtY3dS6dmAyeJzA6No9d+IaVzBlXrei7R1vpMqpJBuW58Hs1E/mxK05ncSbeDanQ3a5deZS61x7h/OBk/iqm78UykT+D3XVTp6xlQSCq3nBgqZUf7cZRKvaP9FEroGIbzhgkb3cfl1psMTLxCW56jKn4qQoF4yaEcd7Tb0Et1nO9mrIpFKXnFVcSIKmMrFFXGViiqjK1QVBlboagytkJRZWyFosrYCkWVsRWKKmMrFFXGViiqjK1QVBlboQjK7qTEbyipCoNOTwt/tJFGNsS9aVFtmOPzXOgQ5xc52mi0iV+SabXkZiXWec54keG7+NHRaOF7BaHdZ8egRB2rOOpIt4dj28V+HUFQPraFAwM+uNbTwh/d4sUuYCdcqBcDm2GVoAtyI1PQjgLZh9qAAQy7QSrH/vnRAt+n3nPWiwaTMQZS/B0PP1pZ0jk04YJUcaP4nA4gHITVBfwGU6khTaYV43201gwa+zrxW1q+qriOh0RzwMzyQ5rSH6Q6SwU27ZQWEzTN8fAzGe1UkwgwNX6arM1Q5xnSzAlh0wJ4ZIz9VHGHZUcbuF80jH2BoQY1msTLSpSaKnbRbRY2PqifEvm8n0bK2EnvGrtmw+8Y6VLFKYOpckbZmJ0POizMLifIiZH0e0j1m3UwFXTmMuybapdyMVba1qyhNqIyVkt5yphd5YaU5Z2SgnyWn6YBNUAtndSci7GSeaYrHdWJahWf6y0bqcoBKaPfUf2NsJDMrM/HWbMx1nSaujgzpRqIIrUZQ/LbLM5ZKWGdcWylvdZ9Dlprx4GMoem6OW56LetktM0rNm2rnjVdQkU3kmi+qqiVM08PTgdVRykiSCslLa0ai8RvUZoaA+SB9pSPCJ8psSnDvkopNV+kEdEglzt1IgBSbmiO+cc/XegKCIZonq2mVjnk0JmMbTTEO8uGaZ6XzI3qRGUNe9tSYOAjKdQ6jkVCUxXLV8iwLw3in0YyFmYfCVKYqthkll/sVNtiv8W1C+0cFM3QDoPZpQCXhOg4sZbWoCBFnMhYNGeK49jBz4fUtZRYW6QpCIWsaeXMT5eZSpYmaqDX5NqxPcbEScY2G40zjiNn3OP0zAKQMzoTdYCCni/pJr3ujBvN9IS7Q6j8Y95NMlY6Q53U57bD9GKjOlHgTMs3FYg8ImFyMHIxMla+s0tlx4Ee4eMECdEx76oZa97kN9g9xnW/gQ2D1giDI5/fRvtSL2yMtjltjnvCIG056ixxWT+6dcKXkGYuJc77BR66DHO11eCV9ojN7E+nTgJsFQ/uDJGBSRvb+l251rAB+DrjT5HCBMlX56Etwgbd8/3Byhzf3aUJ4sjH1gc4sSaUoLQPtjhNYTy8XAyRKAkzHh0GTQHSotHJtnEjG8DUuJAJWMdq9PA9D43jEDJVz5ZsHmqxXagEl+Mj6QUNQKtYL9uk34ZFZFwzZ7buR06UsOSzHHNJjURORHqCEPbZQWOj17GNIpyokRNRpyN0/PKxVZQxbEmAKioAVcZWKKqMrVBUGVuhqDK2QlFlbIWiytgKha00Jk7IiJTODJklNfq7meTXC24bDX0uawQBXDRcgQ8d0OjhkTJqjGRCXQYv5Hdb/8z7g94xdiQZoDDjyTrz3y1io7rNIEuctomMcNHQaBdJehuNLhFrlfFic19SA+nqHQC6X2mjzzquLdvJ/rWLe0xarv7FjmL8lqKsqNcSss6yhWKQKJNpMNrbaAwStT6tPjQgAvFSitrFtQZBt8ORBFnNXRC2mmjXrgGTlqt/saMYjNWqSqqyLGe9bQBtsNFoIWODYtstok1LiBIcVx1Tj88fF8r+mbXANlqJoxiMtRVYa7UXtsrPRkOfCypfbRZ7SRtDMHaRQyqbxGQ0r8v+yYyTrW1RUAyvWFf7yRfuyVMV2Wg0ULX61WnpZLnetJ022tcJx0qj06EFslSltlShrX/woZU4isHYfh4twvuEuVFXwFZNYKORFcXUZtpQ01ASqiRcSak61GetNrUq15UJsm9KOvVneV7DPCf7Z16XtMz+JQMA/wfyiFRIWkWhUQAAAABJRU5ErkJggg==" />
+                        </svg>
+
+                    </div>
+                    <div class="company-item col">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151"
+                            height="58" viewBox="0 0 151 58">
+                            <image id="Group_56" data-name="Group 56" width="151" height="58"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+
+                    </div>
+                    <div class="company-item col">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123"
+                            height="71" viewBox="0 0 123 71">
+                            <image id="Group_57" data-name="Group 57" width="123" height="71"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </div>
+                    <div class="company-item col">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147"
+                            height="51" viewBox="0 0 147 51">
+                            <image id="Group_86" data-name="Group 86" width="147" height="51"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="welcome-item">
-            <img src="./img/phone-welcome.png" alt="">
+        <section class="section-features opacity">
+            <div class="features-list container">
+                <div class="features-item bg-mobile_big bg-mobile_big_right">
+                    <img src="./img/features-1.jpg" alt="" class="features-item_img">
+                </div>
+                <div class="features-item">
+                    <div class="title-container">
+                        <div class="title title_s">Awesome apps
+                            features
+                        </div>
+                    </div>
+                    <div class="descr-container">
+                        <div class="descr">
+                            Increase productivity with a simple to-do app. app for
+                            managing your personal budgets.
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item_img red">
+                            <svg class="card-svg">
+                                <use xlink:href="symbol-defs.svg#icon-display" class="svg"></use>
+                            </svg>
+                        </div>
+                        <div class="card-item_info">
+                            <div class="card-title red">
+                                Fast Performance
+                            </div>
+                            <div class="card-descr">
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item_img blue">
+                            <svg class="card-svg">
+                                <use xlink:href="symbol-defs.svg#icon-user" class="svg"></use>
+                            </svg>
+                        </div>
+                        <div class="card-item_info">
+                            <div class="card-title blue">
+                                Prototyping
+                            </div>
+                            <div class="card-descr">
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item_img green">
+                            <svg class="card-svg">
+                                <use xlink:href="symbol-defs.svg#icon-user-tie" class="svg"></use>
+                            </svg>
+                        </div>
+                        <div class="card-item_info">
+                            <div class="card-title green">
+                                Vector Editing
+                            </div>
+                            <div class="card-descr">
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about">
+            <div class="container about-container">
+                <div class="about-item">
+                    <div class="title-container">
+                        <div class="title title_m">
+                            Smart jackpots that
+                            you may love this
+                            anytime & anywhere
+                        </div>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="descr-container">
+                        <div class="descr">
+                            The rise of mobile devices transforms the way we
+                            consume information entirely and the world's most
+                            elevant channels such as Facebook.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="section-welcome_footer"></div>
-</section>
-
-<body>
-
+        <div class="card">
+            <div class="card-contain container">
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <div class="card-item">
+                            <div class="card-item_img red">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-rocket" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title red">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="card-item">
+                            <div class="card-item_img blue">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-hammer2" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title blue">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="card-item">
+                            <div class="card-item_img green">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-clipboard" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title green">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-design-build opacity">
+            <div class="design-build-container container">
+                <div class="design-build-item bg-mobile bg-mobile_right">
+                    <img src="./img/design-buid.png" alt="">
+                </div>
+                <div class="design-build-item">
+                    <div class="title-container">
+                        <div class="title title_s">
+                            Designed & built by
+                            the latest code
+                            integration
+                        </div>
+                    </div>
+                    <div class="descr-container">
+                        <div class="descr descr_s">
+                            The rise of mobile devices transforms the way we
+                            consume information entirely and the world's most
+                            elevant channels such as Facebook.
+                        </div>
+                    </div>
+                    <div class="btn btn-prime btn-prime_s">Learn more</div>
+                </div>
+            </div>
+        </div>
+        <div class="section-choose-app">
+            <div class="container app-container">
+                <div class="title title_s">
+                    Why you should choose
+                    our app
+                </div>
+                <div class="descr">
+                    The rise of mobile devices transforms the way we consume information entirely
+                    and the world's most elevant channels such as Facebook.
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img rose">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-cloud-check" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img light-blue">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-wink" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img light-yellow">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-point-right" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img light-green">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-checkmark" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img light-straw">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-make-group" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-item">
+                            <div class="card-item_img light-orange">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-hammer2" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="card-item_info">
+                                <div class="card-title">
+                                    Fast Performance
+                                </div>
+                                <div class="card-descr">
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-build">
+            <div class="build-container container">
+                <div class="title-container">
+                    <div class="title title_s">
+                        Ultimate features
+                        that we built
+                    </div>
+                </div>
+                <div class="descr-container">
+                    <div class="descr descr_s">
+                        The rise of mobile devices transforms the way we
+                        consume information entirely.
+                    </div>
+                </div>
+                <div class="build-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card-item">
+                                <div class="card-item_img rose">
+                                    <svg class="card-svg">
+                                        <use xlink:href="symbol-defs.svg#icon-cloud-check" class="svg"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-item_info">
+                                    <div class="card-title">
+                                        Fast Performance
+                                    </div>
+                                    <div class="card-descr">
+                                        Get your blood tests delivered at
+                                        home collect a sample from the
+                                        news your blood tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-item">
+                                <div class="card-item_img light-blue">
+                                    <svg class="card-svg">
+                                        <use xlink:href="symbol-defs.svg#icon-wink" class="svg"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-item_info">
+                                    <div class="card-title">
+                                        Fast Performance
+                                    </div>
+                                    <div class="card-descr">
+                                        Get your blood tests delivered at
+                                        home collect a sample from the
+                                        news your blood tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-item">
+                                <div class="card-item_img light-yellow">
+                                    <svg class="card-svg">
+                                        <use xlink:href="symbol-defs.svg#icon-point-right" class="svg"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-item_info">
+                                    <div class="card-title">
+                                        Fast Performance
+                                    </div>
+                                    <div class="card-descr">
+                                        Get your blood tests delivered at
+                                        home collect a sample from the
+                                        news your blood tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-item">
+                                <div class="card-item_img light-green">
+                                    <svg class="card-svg">
+                                        <use xlink:href="symbol-defs.svg#icon-checkmark" class="svg"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-item_info">
+                                    <div class="card-title">
+                                        Fast Performance
+                                    </div>
+                                    <div class="card-descr">
+                                        Get your blood tests delivered at
+                                        home collect a sample from the
+                                        news your blood tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-prime btn-prime_s">See all</div>
+            </div>
+            <div class="build-img">
+                <img src="./img/bild.png" alt="">
+            </div>
+        </div>
+        <div class="section-buy">
+            <div class="title title_s">
+                Get awesome features, without
+                extra charges
+            </div>
+            <div class="descr">
+                The rise of mobile devices transforms the way we consume information entirely
+                and the world's most elevant channels such as Facebook.
+            </div>
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="monthly-tab" data-toggle="pill" href="#pills-monthly" role="tab"
+                        aria-controls="pills-monthly" aria-selected="true">Monthly</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="annually-tab" data-toggle="pill" href="#pills-annually" role="tab"
+                        aria-controls="pills-annually" aria-selected="false">Annually</a>
+                </li>
+            </ul>
+            <div class="buy-container tab-content" id="pills-tabContent">
+                <div class="buy-item show active" id="pills-monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                    <div class="price-container">
+                        <div class="price">
+                            <div class="price-header">
+                                <div class="price-weight">$0</div>
+                                <p class="price-time">/ month</p>
+                            </div>
+                            <p class="price-class">Business Class</p>
+                            <p class="price-why">For small teams or office</p>
+                        </div>
+                    </div>
+                    <div class="buy-about-container">
+                        <div class="buy-about">
+                            Drag & Drop Builder
+                            1,000's of Templates
+                            Blog Support Tools
+                            eCommerce Store
+                        </div>
+                        <div class="btn btn-prime btn-prime_m">Start free trail</div>
+                    </div>
+                </div>
+                <div class="buy-item show" id="pills-annually" role="tabpanel" aria-labelledby="annually-tab">
+                    <div class="price-container">
+                        <div class="price">
+                            <div class="price-header">
+                                <div class="price-weight">$99</div>
+                                <p class="price-time">/ month</p>
+                            </div>
+                            <p class="price-class">Pro Master</p>
+                            <p class="price-why">For Best opportunities</p>
+                        </div>
+                    </div>
+                    <div class="buy-about-container">
+                        <div class="buy-about">
+                            Drag & Drop Builder
+                            1,000's of Templates
+                            Blog Support Tools
+                            eCommerce Store
+                        </div>
+                        <div class="btn btn-prime btn-prime_m">Subscribe Now</div>
+                        <p class="trial">Or Start 14 days trail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-clients">
+            <div class="container d-flex">
+                <img src="./img/world-people-map.jpg" alt="">
+                <div class="clients-container">
+                    <div class="clients">
+                        <div class="title-container">
+                            <div class="title title_m">
+                                Meet Client Satisfaction
+                                by using product
+                            </div>
+                        </div>
+                        <div class="descr-container">
+                            <div class="descr">
+                                The rise of mobile devices transforms the way we consume.
+                                elevant channels such as Facebook.
+                            </div>
+                        </div>
+                        <div class="clients-slider JS-slider-clients">
+                            <div class="slider-item">
+                                <div class="clients-point">
+                                    &#9733 &#9733 &#9733 &#9733 &#9733
+                                </div>
+                                <div class="clients-title">
+                                    User friendly & Customizable
+                                </div>
+                                <div class="clients-descr">Bring to the table win-win survival strategies to ensure
+                                    proactive
+                                    domination. At the end of the day, going forward, a new normal that has evolved from
+                                    generation
+                                    X is on the runway heading towards a streamlined cloud solution. User generated
+                                    content
+                                    in
+                                    real-time will have multiple touchpoints for offshoring.</div>
+                                <div class="clients-avatar">
+                                    <div class="avatar">
+                                        <img src="./img/slider-avatar-1.png" alt="">
+                                    </div>
+                                    <div class="avatar-descr">
+                                        <div class="avatar-name">Zoltan Nemeth</div>
+                                        <div class="avatar-position">CEO of Pixler Lab</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="clients-point">
+                                    &#9733 &#9733 &#9733 &#9733 &#9733
+                                </div>
+                                <div class="clients-title">
+                                    User friendly & Customizable
+                                </div>
+                                <div class="clients-descr">Bring to the table win-win survival strategies to ensure
+                                    proactive
+                                    domination. At the end of the day, going forward, a new normal that has evolved from
+                                    generation
+                                    X is on the runway heading towards a streamlined cloud solution. User generated
+                                    content
+                                    in
+                                    real-time will have multiple touchpoints for offshoring.</div>
+                                <div class="clients-avatar">
+                                    <div class="avatar">
+                                        <img src="./img//slider-avatar-2.png" alt="">
+                                    </div>
+                                    <div class="avatar-descr">
+                                        <div class="avatar-name">Zoltan Nemeth</div>
+                                        <div class="avatar-position">CEO of Pixler Lab</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-container">
+                            <div class="slide-btn next" id="next_btn">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-arrow-right" class="svg"></use>
+                                </svg>
+                            </div>
+                            <div class="slide-btn prev" id="prev_btn">
+                                <svg class="card-svg">
+                                    <use xlink:href="symbol-defs.svg#icon-arrow-left" class="svg"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-ask">
+            <div class="container">
+                <div class="title-container">
+                    <div class="title title_m">
+                        Frequently asked questions
+                    </div>
+                </div>
+                <div class="descr-container">
+                    <div class="descr">
+                        The rise of mobile devices transforms the way we consume information entirely
+                        and the world's most elevant channels such as Facebook.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="accordion" id="accordionAsk">
+                            <div class="ask-container card">
+                                <div class="card-header" id="headingOne">
+                                    <div class="mb-0">
+                                        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne" class="ask-header">
+                                            <div class="p-header">How to contact with riders emergency?</div>
+                                            <svg class="ask-svg">
+                                                <use xlink:href="symbol-defs.svg#icon-plus" class="svg"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionAsk">
+                                    <div class="ask-body">
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                        Iterative approaches to corporate strategy foster collaborative thinking to
+                                        further the overall value proposition. Organically grow the holistic world view
+                                        of disruptive innovation via workplace diversity and empowerment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ask-container card">
+                                <div class="card-header" id="headingTwo">
+                                    <div class="mb-0">
+                                        <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo" class="ask-header">
+                                            <div class="p-header">App installation failed, how to update system
+                                                information?</div>
+                                            <svg class="ask-svg">
+                                                <use xlink:href="symbol-defs.svg#icon-plus" class="svg"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionAsk">
+                                    <div class="ask-body">
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                        Iterative approaches to corporate strategy foster collaborative thinking to
+                                        further the overall value proposition. Organically grow the holistic world view
+                                        of disruptive innovation via workplace diversity and empowerment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ask-container card">
+                                <div class="card-header" id="headingThree">
+                                    <div class="mb-0">
+                                        <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree" class="ask-header">
+                                            <div class="p-header">New update fixed all bug and issues</div>
+                                            <svg class="ask-svg">
+                                                <use xlink:href="symbol-defs.svg#icon-plus" class="svg"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionAsk">
+                                    <div class="ask-body">
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                        Iterative approaches to corporate strategy foster collaborative thinking to
+                                        further the overall value proposition. Organically grow the holistic world view
+                                        of disruptive innovation via workplace diversity and empowerment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ask-container card">
+                                <div class="card-header" id="headingFoure">
+                                    <div class="mb-0">
+                                        <div data-toggle="collapse" data-target="#collapsFour" aria-expanded="false"
+                                            aria-controls="collapsFour" class="ask-header">
+                                            <div class="p-header">How to contact with riders emergency?</div>
+                                            <svg class="ask-svg">
+                                                <use xlink:href="symbol-defs.svg#icon-plus" class="svg"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapsFour" class="collapse" aria-labelledby="headingFoure"
+                                    data-parent="#accordionAsk">
+                                    <div class="ask-body">
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                        Iterative approaches to corporate strategy foster collaborative thinking to
+                                        further the overall value proposition. Organically grow the holistic world view
+                                        of disruptive innovation via workplace diversity and empowerment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ask-container card">
+                                <div class="card-header" id="headingFive">
+                                    <div class="mb-0">
+                                        <div data-toggle="collapse" data-target="#collapsFive" aria-expanded="false"
+                                            aria-controls="collapsFive" class="ask-header">
+                                            <div class="p-header">How to contact with riders emergency?</div>
+                                            <svg class="ask-svg">
+                                                <use xlink:href="symbol-defs.svg#icon-plus" class="svg"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapsFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordionAsk">
+                                    <div class="ask-body">
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                        Iterative approaches to corporate strategy foster collaborative thinking to
+                                        further the overall value proposition. Organically grow the holistic world view
+                                        of disruptive innovation via workplace diversity and empowerment.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="title-container">
+                            <div class="title title_l">
+                                Download our App now !
+                            </div>
+                        </div>
+                        <div class="descr-container">
+                            <div class="descr">
+                                The rise of mobile devices transforms the way we consume information entirely
+                                and the world's most elevant channels such as Facebook.
+                            </div>
+                        </div>
+                        <div class="mobile-container">
+                            <a class="mobile-item">
+                                <img src="./img/andoid-item.png" alt="">
+                            </a>
+                            <a class="mobile-item">
+                                <img src="./img/apple-item.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="section-footer text-center">
+            <div class="container">
+                <div class="footer-nav">
+                    <a class="navbar-brand logo" href="">
+                        <div class="logo_container">
+                            <div class="logo_text">
+                                <span>App</span><span>Lab</span> </div>
+                        </div>
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" aria-controls="home" data-toggle="tab">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#key" aria-controls="key" data-toggle="tab">Key
+                                Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing" aria-controls="Pricing" data-toggle="tab">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testiminial" aria-controls="testiminial"
+                                data-toggle="tab">Testiminial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq" aria-controls="faq" data-toggle="tab">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-container">
+                    <svg class="social-svg">
+                        <use xlink:href="symbol-defs.svg#icon-facebook" class="svg"></use>
+                    </svg>
+                    <svg class="social-svg">
+                        <use xlink:href="symbol-defs.svg#icon-twitter" class="svg"></use>
+                    </svg>
+                    <svg class="social-svg">
+                        <use xlink:href="symbol-defs.svg#icon-twitch" class="svg"></use>
+                    </svg>
+                    <svg class="social-svg">
+                        <use xlink:href="symbol-defs.svg#icon-github" class="svg"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="copy">
+                Copyright© Arifur Rahman Tushar 2019. All rights reserved
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./libs/jquery/jquery-2.2.4.js"></script>
+<script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+<!-- <script src="./libs/parallax-master/parallax-master/src/parallax.js"></script> -->
 <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 

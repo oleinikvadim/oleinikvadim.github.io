@@ -12,4 +12,12 @@
       color: $btn-blue;
     }
   }
+  @media (max-width: 991px) {
+    .navbar-nav {
+      align-items: center;
+      .nav-item {
+        margin-right: 0px;
+      }
+    }
+  }
 }

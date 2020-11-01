@@ -9,7 +9,34 @@
 @import "./components/color";
 @import "./components/btn";
 @import "./components/logo";
+@import "./components/header";
 @import "./components/navbar";
+@import "./components/welcome-content";
+@import "./components/title";
+@import "./components/descr";
+@import "./components/buy-item";
+@import "./components/slick-arrows";
+@import "./components/card-container";
+@import "./components/hamburger";
+@import "./components/opacity";
+@import "./components/bg-mobile";
 
 // section
 @import "./section/section-welcome";
+@import "./section/section-features";
+@import "./section/section-design-build";
+@import "./section/section-choose-app";
+@import "./section/section-build";
+@import "./section/section-buy";
+@import "./section/section-clients";
+@import "./section/section-ask";
+@import "./section/section-download";
+@import "./section/section-footer";
+
+// part
+@import "./part/company";
+@import "./part/about";
+@import "./part/card";
+
+// hamburgers
+@import "./hamburger/hamburgers.scss";

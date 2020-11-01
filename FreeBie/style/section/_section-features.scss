@@ -1,0 +1,48 @@
+.section-features {
+  padding-bottom: 65px;
+  position: relative;
+  .title {
+    margin-bottom: 20px;
+    max-width: 280px;
+  }
+  .descr-container {
+    margin-bottom: 80px;
+    max-width: 400px;
+  }
+  .card-item {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    &_img {
+      margin-right: 30px;
+    }
+    margin-bottom: 55px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & .card-title {
+      margin: 5px;
+    }
+    & .card-descr {
+      max-width: 260px;
+    }
+  }
+}
+.features-list {
+  display: flex;
+  flex-direction: row;
+
+  .features-item {
+    transform: translateX(-100px);
+    @media (max-width: 1200px) {
+      transform: translateX(0px);
+    }
+  }
+  .features-item:last-child {
+    padding-top: 55px;
+    @media (max-width: 992px) {
+      z-index: 3;
+      padding-top: 20px;
+    }
+  }
+}

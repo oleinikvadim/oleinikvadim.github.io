@@ -1,0 +1,23 @@
+.card-contain {
+  padding: 100px 15px;
+  @media (max-width: 1200px) {
+    padding: 30px 15px;
+  }
+  & .card-item_img {
+    margin-bottom: 30px;
+  }
+  & .card-item {
+    max-width: 260px;
+    margin-bottom: 40px;
+    &:last-child {
+      // margin-bottom: 0;
+      @media (max-width: 576px) {
+        max-width: 100%;
+        & .card-item_img {
+          width: 100%;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}

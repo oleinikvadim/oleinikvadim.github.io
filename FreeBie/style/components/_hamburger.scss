@@ -1,0 +1,8 @@
+.navbar {
+  .hamburger {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+}

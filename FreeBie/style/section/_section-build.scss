@@ -1,0 +1,24 @@
+.section-build {
+  display: flex;
+  align-content: space-around;
+  padding-left: 247px;
+  padding-bottom: 170px;
+  .title-container {
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+  .descr-container {
+    max-width: 380px;
+    margin-bottom: 60px;
+  }
+  .card-item {
+    max-width: 260px;
+    margin-bottom: 70px;
+    .card-item_img {
+      margin-bottom: 15px;
+    }
+    .card-title {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section-download {
+  padding: 85px 0px;
+  background: url(/img/download-bg.png) no-repeat;
+  background-position: right;
+  background-size: contain;
+  .descr-container {
+    margin-bottom: 40px;
+  }
+  .mobile-container {
+    .mobile-item {
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+}
