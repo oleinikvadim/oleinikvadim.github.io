@@ -10,3 +10,9 @@ h6 {
 p {
   margin-bottom: 0px;
 }
+
+h1 {
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}

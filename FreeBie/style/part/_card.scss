@@ -1,4 +1,10 @@
 .card-item {
+  @media (max-width: 576px) {
+    background-color: rgb(236, 236, 236);
+    border-radius: 31px;
+    padding: 10px;
+    width: 100%;
+  }
   &_img {
     width: 88px;
     height: 88px;
@@ -6,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     & .card-svg {
       height: 58px;
       display: flex;
@@ -47,7 +54,6 @@
   & .card-title {
     font-size: 20px;
     font-weight: 600;
-    // line-height: 2.9;
     &.red {
       color: #f55767;
     }

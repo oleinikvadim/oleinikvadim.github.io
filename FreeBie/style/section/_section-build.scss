@@ -1,8 +1,43 @@
 .section-build {
-  display: flex;
-  align-content: space-around;
-  padding-left: 247px;
   padding-bottom: 170px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 550px) {
+    padding-bottom: 50px;
+  }
+  &:after {
+    content: "";
+    background: url(/img/bild.png) no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: right;
+    background-size: 50%;
+
+    @media (max-width: 1200px) {
+      opacity: 0.5;
+    }
+    @media (max-width: 1050px) {
+      opacity: 0.1;
+      background-size: 100%;
+    }
+  }
+  .card-list {
+    max-width: 650px;
+    margin-bottom: 30px;
+
+    // @media (max-width: 1050px) {
+    //   max-width: 100%;
+    // }
+    @media (max-width: 550px) {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
   .title-container {
     max-width: 320px;
     margin-bottom: 30px;
@@ -13,12 +48,23 @@
   }
   .card-item {
     max-width: 260px;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
+    @media (max-width: 1050px) {
+      max-width: 100%;
+    }
     .card-item_img {
       margin-bottom: 15px;
+      @media (max-width: 550px) {
+        margin: 0 auto;
+      }
     }
     .card-title {
       margin-top: 15px;
+    }
+  }
+  .btn {
+    @media (max-width: 550px) {
+      width: 100%;
     }
   }
 }

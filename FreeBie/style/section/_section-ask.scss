@@ -11,13 +11,23 @@
     margin: 0 auto 66px;
     text-align: center;
   }
+  .accordion-container {
+    max-width: 960px;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
 }
 .ask-container {
   padding: 0px 38px 0px 49px;
   background-color: #f5f7fa;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+  margin: 0 auto 10px;
   cursor: pointer;
-
+  @media (max-width: 992px) {
+    padding: 10px;
+  }
   .ask-header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +37,12 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 2.9;
+      margin-right: 10px;
       color: #242f51;
+      @media (max-width: 992px) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
     }
   }
   .ask-svg {

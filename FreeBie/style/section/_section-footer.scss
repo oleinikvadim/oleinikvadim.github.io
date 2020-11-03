@@ -1,6 +1,9 @@
 .section-footer {
   padding: 100px 0px;
   background-color: #09142e;
+  @media (max-width: 532px) {
+    padding: 30px 0px;
+  }
   .footer-nav {
     // display: flex;
     // flex-direction: row;
@@ -13,9 +16,15 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 40px;
+    @media (max-width: 530px) {
+      flex-direction: column;
+    }
     .nav-item {
       margin-right: 38px;
       &:last-child {
+        margin-right: 0px;
+      }
+      @media (max-width: 530px) {
         margin-right: 0px;
       }
     }

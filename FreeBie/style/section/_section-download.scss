@@ -1,15 +1,39 @@
 .section-download {
-  padding: 85px 0px;
-  background: url(/img/download-bg.png) no-repeat;
-  background-position: right;
-  background-size: contain;
+  padding: 10px 0px;
+  position: relative;
   .descr-container {
     margin-bottom: 40px;
   }
   .mobile-container {
+    @media (max-width: 552px) {
+      text-align: center;
+    }
+
     .mobile-item {
-      &:first-child {
+      &:first-child img {
         margin-right: 30px;
+        @media (max-width: 452px) {
+          margin-right: 0px;
+        }
+        @media (max-width: 420px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .download-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    .download-item {
+      &:first-child {
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      &:last-child {
+        z-index: 3;
       }
     }
   }

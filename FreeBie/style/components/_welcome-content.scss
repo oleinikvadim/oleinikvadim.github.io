@@ -5,7 +5,10 @@
   position: relative;
   @media (max-width: 1200px) {
     padding: 80px 15px;
-    // flex-direction: column-reverse;
+  }
+  @media (max-width: 992px) {
+    padding: 40px 0;
+    height: 100%;
   }
 }
 .welcome-item {
@@ -14,7 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
+    height: 100%;
   }
   &_header {
     display: flex;

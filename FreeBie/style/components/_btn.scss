@@ -6,6 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 552px) {
+    height: 100%;
+  }
   &:hover {
     color: $orange;
   }

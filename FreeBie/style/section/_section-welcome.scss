@@ -4,6 +4,12 @@
   background-size: contain;
   background-position: bottom;
   z-index: 5;
+  @media (max-width: 992px) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &:before {
     content: "";
     position: absolute;

@@ -12,4 +12,15 @@
   &_l {
     font-size: 48px;
   }
+  @media (max-width: 992px) {
+    &_s {
+      font-size: 30px;
+    }
+    &_m {
+      font-size: 34px;
+    }
+    &_l {
+      font-size: 40px;
+    }
+  }
 }

@@ -9,10 +9,20 @@
   .descr {
     margin: 0 auto 75px;
     max-width: 632px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
   .buy-container {
     display: flex;
     justify-content: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      .buy-about {
+        display: none;
+      }
+    }
   }
 
   .nav-pills {
