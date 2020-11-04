@@ -9050,7 +9050,6 @@ p {
 }
 .section-features .card-item {
   display: flex;
-  align-items: center;
   max-width: 100%;
 }
 .section-features .card-item_img {
