@@ -12,19 +12,29 @@
   .card-item {
     display: flex;
     align-items: center;
-    padding-right: 40px;
+    max-width: 100%;
     &_img {
       margin-right: 30px;
+      margin-bottom: 0px;
+      @media (max-width: 576px) {
+        width: 88px !important;
+        height: 88px;
+        align-self: center;
+        margin: 0 5px 0 0;
+      }
     }
-    margin-bottom: 55px;
+
     &:last-child {
       margin-bottom: 0;
     }
     & .card-title {
-      margin: 5px;
+      // margin: 5px;
     }
     & .card-descr {
       max-width: 260px;
+      @media (max-width: 576px) {
+        max-width: 100%;
+      }
     }
   }
 }

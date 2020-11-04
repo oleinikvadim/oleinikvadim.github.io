@@ -1,10 +1,21 @@
 .card-item {
+  max-width: 260px;
+  margin-bottom: 40px;
   @media (max-width: 576px) {
+    max-width: 100%;
     background-color: rgb(236, 236, 236);
     border-radius: 31px;
     padding: 10px;
     width: 100%;
+    & .card-item_img {
+      width: 100%;
+      border-radius: 30px;
+    }
+    & .card-item_info {
+      text-align: center;
+    }
   }
+
   &_img {
     width: 88px;
     height: 88px;
@@ -12,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 30px;
     & .card-svg {
       height: 58px;
       display: flex;

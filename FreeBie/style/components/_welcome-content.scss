@@ -7,19 +7,29 @@
     padding: 80px 15px;
   }
   @media (max-width: 992px) {
-    padding: 40px 0;
-    height: 100%;
+    flex-direction: column;
   }
 }
 .welcome-item {
   position: relative;
-  @media (max-width: 992px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    height: 100%;
+  &:last-child {
+    @media (max-width: 992px) {
+      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  &:first-child {
+    z-index: 3;
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      height: 100%;
+    }
   }
   &_header {
     display: flex;
@@ -27,6 +37,7 @@
     align-items: center;
     background-color: #e2eaed;
     border-radius: 17.5px;
+    padding-right: 5px;
     margin-bottom: 15px;
     & .item_icon_svg {
       width: 39px;
@@ -62,8 +73,5 @@
     & .btn:first-child {
       margin-right: 27px;
     }
-  }
-  &:first-child {
-    z-index: 3;
   }
 }
