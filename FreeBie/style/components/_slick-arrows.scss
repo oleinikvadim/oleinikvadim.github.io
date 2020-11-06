@@ -45,3 +45,9 @@
 .slick-slide {
   outline: none;
 }
+.slick-active {
+  .slick-btn {
+    background-color: #eff3f8;
+    fill: #2500f9;
+  }
+}

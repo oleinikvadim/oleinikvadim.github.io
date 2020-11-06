@@ -41,7 +41,7 @@
       background-color: #2500f9;
     }
   }
-  .nav-link {
+  .nav-link-pills {
     width: 136px;
     height: 48px;
     border-radius: 26px;
@@ -51,5 +51,9 @@
     font-size: 16px;
     font-weight: 700;
     color: rgba(97, 99, 104, 0.75);
+    text-decoration: none;
+    &.active {
+      color: #fff;
+    }
   }
 }

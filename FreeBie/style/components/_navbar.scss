@@ -8,6 +8,9 @@
   }
   & .nav-link {
     transition: 0.3s all;
+    &.active {
+      color: $btn-blue;
+    }
     &:hover {
       color: $btn-blue;
     }

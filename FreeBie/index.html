@@ -10,7 +10,27 @@
 
 
 <body>
-    <header class="header">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header JS-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand logo" href="#">
@@ -19,7 +39,7 @@
                             <span>App</span><span>Lab</span> </div>
                     </div>
                 </a>
-                <div class="hamburger hamburger--spin JS-hamburger" data-target="#my-nav" data-toggle="collapse"
+                <div class="hamburger hamburger--vortex JS-hamburger" data-target="#my-nav" data-toggle="collapse"
                     aria-controls="my-nav">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
@@ -27,31 +47,31 @@
                 </div>
                 <div id="my-nav" class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home" aria-controls="home" data-toggle="tab">Home</a>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#home" aria-controls="home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#key" aria-controls="key" data-toggle="tab">Key
+                            <a class="nav-link" href="#key" aria-controls="key">Key
                                 Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing" aria-controls="pricing" data-toggle="tab">Pricing</a>
+                            <a class="nav-link" href="#pricing" aria-controls="pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testiminial" aria-controls="testiminial"
-                                data-toggle="tab">Testiminial</a>
+                            <a class="nav-link" href="#testiminial" aria-controls="testiminial">Testiminial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#faq" aria-controls="faq" data-toggle="tab">FAQ</a>
+                            <a class="nav-link" href="#faq" aria-controls="faq">FAQ</a>
                         </li>
                     </ul>
-                    <div class="btn btn-prime btn-prime_s">Try for free</div>
+                    <div class="btn btn-prime btn-prime_s">Try for free
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        <section class="section-welcome" id="scene">
+        <section class="section-welcome" id="home" aria-labelledby="home">
             <div class="welcome-list container">
                 <div class="welcome-item">
                     <div class="welcome-item_header">
@@ -66,12 +86,18 @@
                         <div class="welcome-descr">Increase productivity with a simple to-do app. app for
                             managing your personal budgets.</div>
                     </div>
-                    <div class="welcome-item_footer">
-                        <div class="btn btn-prime btn-prime_s">Try for free</div>
-                        <div class="btn btn-out-bg">Watch demo video</div>
+                    <div class="welcome-item_footer ">
+                        <div class="btn btn-prime btn-prime_s">
+                            Try for free
+                        </div>
+                        <div class="btn btn-out-bg btn-default" data-toggle="modal" data-target="#videoModal"
+                            data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">
+                            Watch demo video
+                        </div>
+
                     </div>
                 </div>
-                <div class="welcome-item">
+                <div class=" welcome-item">
                     <img src="./img/phone-welcome.png" alt="">
                 </div>
             </div>
@@ -122,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <section class="section-features opacity">
+        <section class="section-features opacity" id="key">
             <div class="features-list container">
                 <div class="features-item bg-mobile_big bg-mobile_big_right">
                     <img src="./img/features-1.jpg" alt="" class="features-item_img">
@@ -529,7 +555,7 @@
                 <div class="btn btn-prime btn-prime_s">See all</div>
             </div>
         </div>
-        <div class="section-buy">
+        <div class="section-buy" id="pricing">
             <div class="title title_s">
                 Get awesome features, without
                 extra charges
@@ -540,11 +566,11 @@
             </div>
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="monthly-tab" data-toggle="pill" href="#pills-monthly" role="tab"
-                        aria-controls="pills-monthly" aria-selected="true">Monthly</a>
+                    <a class="nav-link-pills active" id="monthly-tab" data-toggle="pill" href="#pills-monthly"
+                        role="tab" aria-controls="pills-monthly" aria-selected="true">Monthly</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="annually-tab" data-toggle="pill" href="#pills-annually" role="tab"
+                    <a class="nav-link-pills" id="annually-tab" data-toggle="pill" href="#pills-annually" role="tab"
                         aria-controls="pills-annually" aria-selected="false">Annually</a>
                 </li>
             </ul>
@@ -594,7 +620,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-clients">
+        <div class="section-clients" id="testiminial">
             <div class="clients-list container">
                 <div class="clients-item">
                     <img src="./img/world-people-map.jpg" alt=""></div>
@@ -684,7 +710,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-ask">
+        <div class="section-ask" id="faq">
             <div class="container mr-auto ">
                 <div class="title-container">
                     <div class="title title_m">
@@ -893,8 +919,22 @@
             <div class="copy">
                 Copyright© 2020. All rights reserved
             </div>
+
         </div>
     </footer>
+    <div class=" modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div>
+                        <iframe width="100%" height="350" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./libs/jquery/jquery-2.2.4.js"></script>
 <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
