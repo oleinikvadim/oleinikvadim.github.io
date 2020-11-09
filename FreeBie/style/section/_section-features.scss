@@ -1,58 +1,58 @@
 .section-features {
   padding-bottom: 65px;
   position: relative;
-  .title {
+  .section__title-container {
     margin-bottom: 20px;
     max-width: 280px;
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
   }
-  .descr-container {
+  .section__description-container {
     margin-bottom: 80px;
     max-width: 400px;
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
   }
   .card-item {
     display: flex;
     align-items: center;
-    max-width: 100%;
+    margin-bottom: 60px;
+    @media (max-width: 1200px) {
+      flex-direction: row;
+    }
     &_img {
       margin-right: 30px;
       margin-bottom: 0px;
-      @media (max-width: 576px) {
-        width: 88px !important;
-        height: 88px;
-        align-self: center;
-        margin: 0 5px 0 0;
-      }
     }
 
     &:last-child {
       margin-bottom: 0;
     }
-    & .card-title {
-      // margin: 5px;
-    }
-    & .card-descr {
-      max-width: 260px;
-      @media (max-width: 576px) {
-        max-width: 100%;
-      }
-    }
   }
 }
-.features-list {
+.features-content {
   display: flex;
-  flex-direction: row;
-
-  .features-item {
-    transform: translateX(-100px);
-    @media (max-width: 1200px) {
-      transform: translateX(0px);
-    }
+  flex-direction: row-reverse;
+  align-items: center;
+  transform: translateX(-170px);
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    transform: translateX(0px);
   }
-  .features-item:last-child {
-    padding-top: 55px;
-    @media (max-width: 992px) {
-      z-index: 3;
-      padding-top: 20px;
+  .features-image {
+    max-width: 100%;
+    img {
+      width: 100%;
+    }
+    z-index: 3;
+  }
+
+  .features-description {
+    max-width: 430px;
+    @media (max-width: 1200px) {
+      max-width: 100%;
     }
   }
 }

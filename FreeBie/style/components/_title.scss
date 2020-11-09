@@ -2,24 +2,25 @@
   font-weight: 600;
   color: #242f51;
   line-height: 1.28;
-  &_s {
+  &--sm {
     font-size: 36px;
   }
-  &_m {
+  &--md {
     font-size: 40px;
     line-height: 1.25;
   }
-  &_l {
-    font-size: 48px;
+  &--lg {
+    font-size: 46px;
+    line-height: 1.21;
   }
   @media (max-width: 992px) {
-    &_s {
+    &--sm {
       font-size: 30px;
     }
-    &_m {
+    &--md {
       font-size: 34px;
     }
-    &_l {
+    &--lg {
       font-size: 40px;
     }
   }

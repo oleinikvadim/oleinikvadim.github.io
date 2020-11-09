@@ -1,0 +1,13 @@
+.section-card {
+  padding-top: 115px;
+  padding-bottom: 70px;
+  @media (max-width: 567px) {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+  }
+}

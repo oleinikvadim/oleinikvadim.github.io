@@ -2,18 +2,10 @@
   font-weight: bold;
   font-size: 30px;
   transition: 0.5s all;
-  &:hover {
-    span:first-child {
-      color: #242f51;
-    }
-    span:last-child {
-      color: $orange;
-    }
-  }
   span:first-child {
     color: $orange;
   }
   span:last-child {
-    color: #242f51;
+    color: $secondary;
   }
 }

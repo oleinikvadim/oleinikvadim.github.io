@@ -1,25 +1,28 @@
-.navbar {
-  padding: 0px;
-  & .nav-item {
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 50px;
+.header {
+  .navbar {
+    padding: 0px;
+    &-nav {
+      @media (max-width: 992px) {
+        align-items: center;
+      }
     }
-  }
-  & .nav-link {
-    transition: 0.3s all;
-    &.active {
-      color: $btn-blue;
-    }
-    &:hover {
-      color: $btn-blue;
-    }
-  }
-  @media (max-width: 991px) {
-    .navbar-nav {
-      align-items: center;
-      .nav-item {
+    & .nav-item {
+      margin-right: 20px;
+      @media (max-width: 992px) {
         margin-right: 0px;
+      }
+      .nav-link {
+        color: $secondary;
+        &:hover,
+        &.active {
+          color: $primary;
+        }
+      }
+      &:last-child {
+        margin-right: 50px;
+        @media (max-width: 992px) {
+          margin-right: 0px;
+        }
       }
     }
   }

@@ -2,38 +2,16 @@
   text-align: center;
   padding-bottom: 105px;
   border-bottom: 2px solid #e5e6e5;
-  .title {
+  .title-container {
     margin: 0 auto 35px;
     max-width: 568px;
   }
-  .descr {
+  .description-container {
     margin: 0 auto 75px;
     max-width: 632px;
     @media (max-width: 768px) {
       margin-bottom: 30px;
     }
-  }
-  .buy-container {
-    display: flex;
-    justify-content: center;
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      .buy-about {
-        display: none;
-      }
-    }
-  }
-
-  .nav-pills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    max-width: 283px;
-    margin: 0 auto 39px;
-    padding: 5px;
-    border-radius: 28.5px;
-    border: solid 2px #ebebeb;
   }
   .nav-item {
     border-radius: 28.5px;
@@ -41,6 +19,16 @@
       background-color: #2500f9;
     }
   }
+}
+.nav-pills {
+  display: inline-flex;
+  justify-content: center;
+  // flex-wrap: nowrap;
+  // max-width: 283px;
+  margin: 0 auto 39px;
+  padding: 5px;
+  border-radius: 28.5px;
+  border: solid 2px #ebebeb;
   .nav-link-pills {
     width: 136px;
     height: 48px;
@@ -55,5 +43,14 @@
     &.active {
       color: #fff;
     }
+  }
+}
+
+.buy-container {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
   }
 }

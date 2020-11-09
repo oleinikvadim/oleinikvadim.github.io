@@ -14,27 +14,8 @@
       width: 100%;
     }
   }
-  // & .JS-header {
-  //   &_down {
-  //     transform: translateY(-150px);
-  //   }
-  // }
 }
-.navbar {
-  padding: 0px;
-  & .nav-item {
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 50px;
-    }
-  }
-  & .nav-link {
-    transition: 0.3s all;
-    &:hover {
-      color: $btn-blue;
-    }
-  }
-}
+
 .JS-header {
   transition: 0.3s all;
   &_down {

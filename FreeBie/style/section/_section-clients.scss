@@ -1,30 +1,57 @@
 .section-clients {
   padding: 150px 0px;
-  display: flex;
   position: relative;
-  transform: translateX(-15%);
+  // transform: translateX(-15%);
   @media (max-width: 1200px) {
-    transform: translateX(0%);
+    // transform: translateX(0%);
     padding: 50px 0px;
   }
-  .title-container {
-    margin-bottom: 28px;
-  }
-
-  .descr-container {
-    margin-bottom: 22px;
-  }
-}
-.clients {
-  max-width: 560px;
-  @media (max-width: 1200px) {
-    max-width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(./img/world-people-map.jpg) no-repeat;
+    background-position: center;
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }
 .clients-container {
   position: relative;
 }
 
+.clients-content {
+  &__description {
+    margin-left: 50%;
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+    }
+    .clients {
+      position: relative;
+      max-width: 560px;
+      @media (max-width: 1200px) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__image {
+    max-width: 100%;
+    img {
+      max-height: 500px;
+      align-self: flex-end;
+      @media (max-width: 1200px) {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// clients slider setup
 .clients-slider {
   .clients-point {
     color: #ffcc00;
@@ -69,25 +96,6 @@
       color: #242f51;
     }
     .avatar-position {
-    }
-  }
-}
-.clients-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  @media (max-width: 1200px) {
-    flex-direction: column;
-  }
-  .clients-item {
-    max-width: 100%;
-    img {
-      max-height: 500px;
-      align-self: flex-end;
-      @media (max-width: 1200px) {
-        max-width: 100%;
-        margin-bottom: 20px;
-      }
     }
   }
 }

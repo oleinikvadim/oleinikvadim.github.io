@@ -23,7 +23,10 @@
 
 // section
 @import "./section/section-welcome";
+@import "./section/section-company";
 @import "./section/section-features";
+@import "./section/section-about";
+@import "./section/section-card";
 @import "./section/section-design-build";
 @import "./section/section-choose-app";
 @import "./section/section-build";
@@ -34,8 +37,6 @@
 @import "./section/section-footer";
 
 // part
-@import "./part/company";
-@import "./part/about";
 @import "./part/card";
 
 // hamburgers

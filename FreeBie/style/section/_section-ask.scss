@@ -4,6 +4,7 @@
   .title-container {
     text-align: center;
     width: 100%;
+    margin-bottom: 30px;
   }
   .descr-container {
     max-width: 630px;
@@ -32,8 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 20px;
-    .p-header {
+    .card-header__title {
       font-size: 20px;
       font-weight: 600;
       line-height: 2.9;
@@ -45,10 +45,12 @@
       }
     }
   }
+
   .ask-svg {
     width: 19px;
     height: 19px;
-    &_on {
+    opacity: 1;
+    &_off {
       opacity: 0;
     }
   }
@@ -58,4 +60,8 @@
   .ask-body {
     padding-bottom: 78px;
   }
+}
+
+.ask-header[aria-expanded="true"] {
+  padding-bottom: 10px;
 }

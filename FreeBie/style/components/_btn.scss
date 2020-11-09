@@ -1,27 +1,13 @@
-.btn-prime {
-  background-color: $btn-blue;
-  color: #fff;
+.btn {
+  font-weight: 700;
   height: 57px;
-  border-radius: 28.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   @media (max-width: 552px) {
     height: 100%;
   }
-  &:hover {
-    color: $orange;
-  }
-  &_s {
+  &--sm {
     width: 170px;
   }
-  &_m {
+  &--md {
     width: 210px;
-  }
-}
-.btn-out-bg {
-  color: $btn-blue;
-  &:hover {
-    color: $orange;
   }
 }
