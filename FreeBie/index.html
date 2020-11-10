@@ -555,39 +555,40 @@
                 </div>
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link-pills active" id="monthly-tab" data-toggle="pill" href="#pills-monthly"
+                        <a class="nav-link-pills active" id="monthly-tab" data-toggle="tab" href="#pills-monthly"
                             role="tab" aria-controls="pills-monthly" aria-selected="true">Monthly</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link-pills" id="half-year-tab" data-toggle="pill" href="#pills-half-year"
+                        <a class="nav-link-pills" id="half-year-tab" data-toggle="tab" href="#pills-half-year"
                             role="tab" aria-controls="pills-half-year" aria-selected="false">Half-year</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link-pills" id="annually-tab" data-toggle="pill" href="#pills-annually" role="tab"
+                        <a class="nav-link-pills" id="annually-tab" data-toggle="tab" href="#pills-annually" role="tab"
                             aria-controls="pills-annually" aria-selected="false">Annually</a>
                     </li>
                 </ul>
-                <div class="buy-container tab-content" id="pills-tabContent">
-                    <div class="buy-item show active" id="pills-monthly" role="tabpanel" aria-labelledby="monthly-tab">
-                        <div class="price-container">
-                            <div class="price">
-                                <div class="price-header">
-                                    <div class="price-weight">$0</div>
-                                    <p class="price-time">/ month</p>
+                <div class="card-deck">
+                    <div class="card" id="pills-monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                        <div class="card-title">
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-header">
+                                        <div class="price-weight">$0</div>
+                                        <p class="price-time">/ month</p>
+                                    </div>
+                                    <p class="price-class">Try Class</p>
+                                    <p class="price-why">For person</p>
                                 </div>
-                                <p class="price-class">Try Class</p>
-                                <p class="price-why">For person</p>
                             </div>
+                            <div class="buy-about-container">
+                                <ul class="buy-about">
+                                    <li>Drag & Drop Builder</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--md">Start free trail</button>
                         </div>
-                        <div class="buy-about-container">
-                            <ul class="buy-about">
-                                <li>Drag & Drop Builder</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn--md">Start free trail</button>
                     </div>
-                    <div class="buy-item show" id="pills-half-year" role="tabpanel"
-                        aria-labelledby="annually-half-year">
+                    <div class="card" id="pills-half-year" role="tabpanel" aria-labelledby="annually-half-year">
                         <div class="price-container">
                             <div class="price">
                                 <div class="price-header">
@@ -606,7 +607,7 @@
                         </div>
                         <button class="btn btn--md">Subscribe Now</button>
                     </div>
-                    <div class="buy-item show" id="pills-annually" role="tabpanel" aria-labelledby="annually-tab">
+                    <div class="card" id="pills-annually" role="tabpanel" aria-labelledby="annually-tab">
                         <div class="price-container">
                             <div class="price">
                                 <div class="price-header">
@@ -624,13 +625,13 @@
                                 <li>Blog Support Tools</li>
                                 <li>eCommerce Store</li>
                             </ul>
-                            <!-- <p class="trial">Or Start 14 days trail</p> -->
+
                         </div>
                         <button class="btn btn--md">Subscribe Now</button>
+                        <!-- <p class="trial">Or Start 14 days trail</p> -->
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="section-clients" id="testiminial">
             <div class="container">
