@@ -1,4 +1,5 @@
 (function ($) {
+
     $(document).ready(function () {
       jsSliderClients();
       hamburgerCollapse();
@@ -6,9 +7,8 @@
       navActiveOnClick();
       scrollSmooth();
       navMenuCollapse();
-     autoPlayYouTubeModal();
-     scrollSpy();
-    //  fadeTrial();
+      autoPlayYouTubeModal();
+      scrollSpy();
     }); 
    
     function jsSliderClients(){
@@ -57,38 +57,30 @@
         }
       });
     
-  }
+    }
 
-  function navMenuCollapse(){
-    $(".nav-link").on("click",function() {
-      $(".JS-hamburger").removeClass("is-active");
-      $(".navbar-collapse").removeClass("show");
-    })
-  }
-  
-  function autoPlayYouTubeModal() {
-    var trigger = $("body").find('[data-toggle="modal"]');
-    trigger.click(function () {
-        var theModal = $(this).data("target"),
-            videoSRC = $(this).attr("data-theVideo"),
-            videoSRCauto = videoSRC + "?autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-            $(theModal + ' iframe').attr('src', videoSRC);
-        });
-    });
-}
+    function navMenuCollapse(){
+      $(".nav-link").on("click",function() {
+        $(".JS-hamburger").removeClass("is-active");
+        $(".navbar-collapse").removeClass("show");
+      })
+    }
+    
+    function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-toggle="modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+    }
 
-function scrollSpy(){
-  $('body').scrollspy({target: ".navbar", offset: 50});
-}
-// function fadeTrial(){
-//   $(".card-price:last-child").on('click', function() {
-//     $(".trial").fadeIn();
-   
-//   });
-
-// }
-
+    function scrollSpy(){
+      $('body').scrollspy({target: ".navbar", offset: 50});
+    }
 
   })(jQuery);

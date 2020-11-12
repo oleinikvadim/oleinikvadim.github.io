@@ -1,133 +1,4 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -8761,6 +8632,135 @@ a.text-dark:hover, a.text-dark:focus {
   display: none;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("/font/Poppins/Poppins-Regular.ttf") format("ttf"), url("/font/Poppins/Poppins-SemiBold.ttf") format("ttf"), url("/font/Poppins/Poppins-Medium.ttf") format("ttf"), url("/font/Poppins/Poppins-Bold.ttf") format("ttf");
@@ -9103,7 +9103,7 @@ p {
   position: relative;
 }
 .card-price .price-container {
-  box-shadow: inset 3.8px 54.9px 62px 0 rgba(144, 163, 177, 0.18);
+  box-shadow: inset -5px -98px 167px -8px rgba(0, 0, 0, 0.18);
   border-radius: 7px 7px 0 0;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -9313,6 +9313,10 @@ p {
   pointer-events: none;
 }
 
+.demo-watch-video {
+  cursor: pointer;
+}
+
 .section-company {
   padding-top: 114px;
   padding-bottom: 140px;
@@ -9406,20 +9410,26 @@ p {
   }
 }
 
-.about-container {
+.section-about .about-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .about-container {
+  .section-about .about-container {
     flex-direction: column;
   }
 }
-.about-container .section-about__title-container {
+.section-about__title-container {
   position: relative;
+  max-width: 450px;
 }
-.about-container .section-about__title-container:before {
+@media (max-width: 768px) {
+  .section-about__title-container {
+    max-width: 100%;
+  }
+}
+.section-about__title-container:before {
   content: "";
   display: block;
   position: absolute;
@@ -9430,22 +9440,24 @@ p {
   background: #4b4a48;
 }
 @media (max-width: 768px) {
-  .about-container .section-about__title-container:before {
+  .section-about__title-container:before {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .about-container .section-about__title-container {
+  .section-about__title-container {
     margin-right: 0px;
     margin-bottom: 20px;
   }
 }
-.about-container .section-about__subtitle-container {
+.section-about__subtitle-container {
   margin-left: 20px;
+  max-width: 400px;
 }
 @media (max-width: 768px) {
-  .about-container .section-about__subtitle-container {
+  .section-about__subtitle-container {
     margin-left: 0px;
+    max-width: 100%;
   }
 }
 
@@ -9515,7 +9527,7 @@ p {
 }
 .section-choose-app .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
   grid-gap: 30px;
 }
 .section-choose-app .card-item {
@@ -10120,3 +10132,4 @@ p {
   bottom: 0;
   transform: rotate(90deg);
 }
+/*# sourceMappingURL=style.css.map */
