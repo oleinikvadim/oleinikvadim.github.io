@@ -99,19 +99,9 @@
     letter-spacing: normal;
     color: #2500f9;
     opacity: 0;
-    // transition: 0.5 all;
   }
   &.active {
     box-shadow: 3.8px 54.9px 62px 0 rgba(144, 163, 177, 0.18);
     border-radius: 9px;
-    // border: none;
   }
-}
-// .card-price:last-child:hover .trial {
-//   display: block;
-// }
-.card-price:last-child:hover {
-  // position: absolute;
-  // top: 0;
-  // height: 0;
 }
