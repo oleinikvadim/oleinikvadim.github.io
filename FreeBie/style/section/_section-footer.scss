@@ -27,18 +27,23 @@
   }
   .nav-link {
     color: #fff;
+    &:hover {
+      opacity: 0.5;
+    }
   }
-  .social-container {
+  .social-list {
     display: flex;
     justify-content: center;
     margin-bottom: 90px;
+    .social-item {
+      margin-right: 20px;
+      transition: 0.3s all;
+      cursor: pointer;
+    }
     .social-svg {
       width: 28px;
       height: 30px;
-      margin-right: 20px;
       fill: #273043;
-      transition: 0.3s all;
-      cursor: pointer;
       &:hover {
         fill: #fff;
       }

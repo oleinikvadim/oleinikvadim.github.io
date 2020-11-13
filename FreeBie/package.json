@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^4.5.3",
+    "slick-carousel": "^1.8.1"
   }
 }

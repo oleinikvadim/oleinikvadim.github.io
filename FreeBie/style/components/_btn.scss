@@ -1,8 +1,7 @@
 .btn {
   font-weight: 700;
-  height: 57px;
-  @media (max-width: 552px) {
-    height: 100%;
+  @media (min-width: 552px) {
+    height: 57px;
   }
   &--sm {
     width: 170px;

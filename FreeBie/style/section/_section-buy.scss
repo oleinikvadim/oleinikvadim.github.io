@@ -28,8 +28,9 @@
     border: solid 2px #ebebeb;
     @media (max-width: 576px) {
       flex-direction: column;
+      width: 100%;
     }
-    .nav-link-pills {
+    .nav-link {
       width: 136px;
       height: 48px;
       border-radius: 26px;
@@ -42,6 +43,11 @@
       text-decoration: none;
       &.active {
         color: #fff;
+      }
+      @media (max-width: 576px) {
+        // flex-direction: column;
+        width: 100%;
+        // margin: 0 auto;
       }
     }
   }

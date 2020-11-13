@@ -77,10 +77,16 @@
                                     <button class="btn btn-primary btn--sm">
                                         Try for free
                                     </button>
-                                    <a class="demo-watch-video" data-toggle="modal" data-target="#videoModal"
-                                        data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">
-                                        Watch demo video
-                                    </a>
+                                    <!-- Modal btn play -->
+                                    <div class="video-player-wrapper">
+                                        <div class="video-player-main">
+                                            <a href="#" class="btn btn-default" data-toggle="modal"
+                                                data-target="#videoModal1"
+                                                data-theVideo="https://www.youtube.com/embed/XsI9F3n-Bog">Watch demo
+                                                video</a>
+                                        </div>
+                                    </div>
+                                    <!-- Modal btn stop -->
                                 </div>
                             </div>
                         </div>
@@ -152,14 +158,14 @@
                             </div>
                         </div>
                         <ul class="card-list">
-                            <li class="card-item">
-                                <div class="card-item_img red">
+                            <li class="card-item card-item--red card-item--left-img">
+                                <div class="card-item_img">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-display" class="svg"></use>
                                     </svg>
                                 </div>
                                 <div class="card-item_info">
-                                    <div class="card-title red">
+                                    <div class="card-title">
                                         Fast Performance
                                     </div>
                                     <div class="card-descr">
@@ -169,14 +175,14 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="card-item">
-                                <div class="card-item_img blue">
+                            <li class="card-item  card-item--blue card-item--left-img">
+                                <div class="card-item_img">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-user" class="svg"></use>
                                     </svg>
                                 </div>
                                 <div class="card-item_info">
-                                    <div class="card-title blue">
+                                    <div class="card-title">
                                         Prototyping
                                     </div>
                                     <div class="card-descr">
@@ -186,14 +192,14 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="card-item">
+                            <li class="card-item card-item--green card-item--left-img">
                                 <div class="card-item_img green">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-user-tie" class="svg"></use>
                                     </svg>
                                 </div>
                                 <div class="card-item_info">
-                                    <div class="card-title green">
+                                    <div class="card-title">
                                         Vector Editing
                                     </div>
                                     <div class="card-descr">
@@ -236,14 +242,14 @@
         <section class="section-card">
             <div class="container">
                 <ul class="card-list">
-                    <li class="card-item">
-                        <div class="card-item_img red">
+                    <li class="card-item card-item--red">
+                        <div class="card-item_img">
                             <svg class="card-svg">
                                 <use xlink:href="symbol-defs.svg#icon-rocket" class="svg"></use>
                             </svg>
                         </div>
                         <div class="card-item_info">
-                            <div class="card-title red">
+                            <div class="card-title">
                                 Fast Performance
                             </div>
                             <div class="card-descr">
@@ -253,14 +259,14 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-item">
-                        <div class="card-item_img blue">
+                    <li class="card-item card-item--blue">
+                        <div class="card-item_img">
                             <svg class="card-svg">
                                 <use xlink:href="symbol-defs.svg#icon-hammer2" class="svg"></use>
                             </svg>
                         </div>
                         <div class="card-item_info">
-                            <div class="card-title blue">
+                            <div class="card-title">
                                 Fast Performance
                             </div>
                             <div class="card-descr">
@@ -270,14 +276,14 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-item">
-                        <div class="card-item_img green">
+                    <li class="card-item card-item--green">
+                        <div class="card-item_img">
                             <svg class="card-svg">
                                 <use xlink:href="symbol-defs.svg#icon-clipboard" class="svg"></use>
                             </svg>
                         </div>
                         <div class="card-item_info">
-                            <div class="card-title green">
+                            <div class="card-title">
                                 Fast Performance
                             </div>
                             <div class="card-descr">
@@ -337,8 +343,8 @@
                         </div>
                     </div>
                     <ul class="card-list">
-                        <li class="card-item">
-                            <div class="card-item_img rose">
+                        <li class="card-item card-item--rose card-item--center-content">
+                            <div class="card-item_img">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-cloud-check" class="svg"></use>
                                 </svg>
@@ -354,8 +360,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card-item">
-                            <div class="card-item_img light-blue">
+                        <li class="card-item card-item--light-blue card-item--center-content">
+                            <div class="card-item_img ">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-wink" class="svg"></use>
                                 </svg>
@@ -371,8 +377,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card-item">
-                            <div class="card-item_img light-yellow">
+                        <li class="card-item card-item--light-yellow card-item--center-content">
+                            <div class="card-item_img ">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-point-right" class="svg"></use>
                                 </svg>
@@ -388,8 +394,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card-item">
-                            <div class="card-item_img light-green">
+                        <li class="card-item card-item--light-green card-item--center-content">
+                            <div class="card-item_img ">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-checkmark" class="svg"></use>
                                 </svg>
@@ -405,8 +411,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card-item">
-                            <div class="card-item_img light-straw">
+                        <li class="card-item card-item--light-straw card-item--center-content">
+                            <div class="card-item_img ">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-make-group" class="svg"></use>
                                 </svg>
@@ -422,8 +428,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card-item">
-                            <div class="card-item_img light-orange">
+                        <li class="card-item card-item--light-orange card-item--center-content">
+                            <div class="card-item_img ">
                                 <svg class="card-svg">
                                     <use xlink:href="symbol-defs.svg#icon-hammer2" class="svg"></use>
                                 </svg>
@@ -463,8 +469,8 @@
                             </div>
                         </div>
                         <div class="card-list">
-                            <div class="card-item">
-                                <div class="card-item_img rose">
+                            <div class="card-item card-item--rose">
+                                <div class="card-item_img">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-cloud-check" class="svg"></use>
                                     </svg>
@@ -480,8 +486,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item">
-                                <div class="card-item_img light-blue">
+                            <div class="card-item card-item--light-blue">
+                                <div class="card-item_img ">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-wink" class="svg"></use>
                                     </svg>
@@ -497,8 +503,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item">
-                                <div class="card-item_img light-yellow">
+                            <div class="card-item card-item--light-yellow">
+                                <div class="card-item_img ">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-point-right" class="svg"></use>
                                     </svg>
@@ -514,8 +520,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item">
-                                <div class="card-item_img light-green">
+                            <div class="card-item card-item--light-green">
+                                <div class="card-item_img ">
                                     <svg class="card-svg">
                                         <use xlink:href="symbol-defs.svg#icon-checkmark" class="svg"></use>
                                     </svg>
@@ -567,8 +573,8 @@
                 </ul>
                 <div class="card-deck tab-content" id="pills-tabContent">
                     <div class="card-price active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="card-wrapper">
-                            <div class="price-container">
+                        <div class="card-price-wrapper">
+                            <div class="card-price__container">
                                 <div class="price">
                                     <div class="price-header">
                                         <div class="price-weight">$0</div>
@@ -578,8 +584,8 @@
                                     <p class="price-why">For person</p>
                                 </div>
                             </div>
-                            <div class="buy-about-container">
-                                <ul class="buy-about">
+                            <div class="card-price__profit">
+                                <ul class="profit-about">
                                     <li>Drag & Drop Builder</li>
                                 </ul>
                             </div>
@@ -587,8 +593,8 @@
                         </div>
                     </div>
                     <div class="card-price" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="card-wrapper">
-                            <div class="price-container">
+                        <div class="card-price-wrapper">
+                            <div class="card-price__container">
                                 <div class="price">
                                     <div class="price-header">
                                         <div class="price-weight">$99</div>
@@ -598,8 +604,8 @@
                                     <p class="price-why">For person</p>
                                 </div>
                             </div>
-                            <div class="buy-about-container">
-                                <ul class="buy-about">
+                            <div class="card-price__profit">
+                                <ul class="profit-about">
                                     <li>Drag & Drop Builder</li>
                                     <li>1,000's of Templates </li>
                                 </ul>
@@ -608,8 +614,8 @@
                         </div>
                     </div>
                     <div class="card-price" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="card-wrapper">
-                            <div class="price-container">
+                        <div class="card-price-wrapper">
+                            <div class="card-price__container">
                                 <div class="price">
                                     <div class="price-header">
                                         <div class="price-weight">$299</div>
@@ -619,8 +625,8 @@
                                     <p class="price-why">For 6 person</p>
                                 </div>
                             </div>
-                            <div class="buy-about-container">
-                                <ul class="buy-about">
+                            <div class="card-price__profit">
+                                <ul class="profit-about">
                                     <li>Drag & Drop Builder</li>
                                     <li>Blog Support Tools</li>
                                     <li>eCommerce Store</li>
@@ -742,109 +748,107 @@
                         and the world's most elevant channels such as Facebook.
                     </div>
                 </div>
-                <div class="row accordion-container">
-                    <div class="col-12">
-                        <div class="accordion" id="accordionAsk">
-                            <div class="ask-container card">
-                                <div class="card-header" id="headingOne">
-                                    <div class="mb-0">
-                                        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne" class="ask-header">
-                                            <div class="card-header__title">How to contact with riders emergency?</div>
-                                            <div class="plus-button "></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionAsk">
-                                    <div class="ask-body">
-                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition. Organically grow the holistic world view
-                                        of disruptive innovation via workplace diversity and empowerment.
+                <div class="accordion-container">
+                    <div class="accordion" id="accordionAsk">
+                        <div class="ask-container card">
+                            <div class="card-header" id="headingOne">
+                                <div class="mb-0">
+                                    <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne" class="ask-header">
+                                        <div class="card-header__title">How to contact with riders emergency?</div>
+                                        <div class="plus-button "></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ask-container card">
-                                <div class="card-header" id="headingTwo">
-                                    <div class="mb-0">
-                                        <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo" class="ask-header">
-                                            <div class="card-header__title">App installation failed, how to update
-                                                system
-                                                information?</div>
-                                            <div class="plus-button"></div>
-                                        </div>
-                                    </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionAsk">
+                                <div class="ask-body">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to
+                                    further the overall value proposition. Organically grow the holistic world view
+                                    of disruptive innovation via workplace diversity and empowerment.
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionAsk">
-                                    <div class="ask-body">
-                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition. Organically grow the holistic world view
-                                        of disruptive innovation via workplace diversity and empowerment.
+                            </div>
+                        </div>
+                        <div class="ask-container card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="mb-0">
+                                    <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo" class="ask-header">
+                                        <div class="card-header__title">App installation failed, how to update
+                                            system
+                                            information?</div>
+                                        <div class="plus-button"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ask-container card">
-                                <div class="card-header" id="headingThree">
-                                    <div class="mb-0">
-                                        <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree" class="ask-header">
-                                            <div class="card-header__title">New update fixed all bug and issues</div>
-                                            <div class="plus-button"></div>
-                                        </div>
-                                    </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionAsk">
+                                <div class="ask-body">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to
+                                    further the overall value proposition. Organically grow the holistic world view
+                                    of disruptive innovation via workplace diversity and empowerment.
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionAsk">
-                                    <div class="ask-body">
-                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition. Organically grow the holistic world view
-                                        of disruptive innovation via workplace diversity and empowerment.
+                            </div>
+                        </div>
+                        <div class="ask-container card">
+                            <div class="card-header" id="headingThree">
+                                <div class="mb-0">
+                                    <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree" class="ask-header">
+                                        <div class="card-header__title">New update fixed all bug and issues</div>
+                                        <div class="plus-button"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ask-container card">
-                                <div class="card-header" id="headingFoure">
-                                    <div class="mb-0">
-                                        <div data-toggle="collapse" data-target="#collapsFour" aria-expanded="false"
-                                            aria-controls="collapsFour" class="ask-header">
-                                            <div class="card-header__title">How to contact with riders emergency?</div>
-                                            <div class="plus-button"></div>
-                                        </div>
-                                    </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionAsk">
+                                <div class="ask-body">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to
+                                    further the overall value proposition. Organically grow the holistic world view
+                                    of disruptive innovation via workplace diversity and empowerment.
                                 </div>
-                                <div id="collapsFour" class="collapse" aria-labelledby="headingFoure"
-                                    data-parent="#accordionAsk">
-                                    <div class="ask-body">
-                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition. Organically grow the holistic world view
-                                        of disruptive innovation via workplace diversity and empowerment.
+                            </div>
+                        </div>
+                        <div class="ask-container card">
+                            <div class="card-header" id="headingFoure">
+                                <div class="mb-0">
+                                    <div data-toggle="collapse" data-target="#collapsFour" aria-expanded="false"
+                                        aria-controls="collapsFour" class="ask-header">
+                                        <div class="card-header__title">How to contact with riders emergency?</div>
+                                        <div class="plus-button"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ask-container card">
-                                <div class="card-header" id="headingFive">
-                                    <div class="mb-0">
-                                        <div data-toggle="collapse" data-target="#collapsFive" aria-expanded="false"
-                                            aria-controls="collapsFive" class="ask-header">
-                                            <div class="card-header__title">How to contact with riders emergency?</div>
-                                            <div class="plus-button"></div>
-                                        </div>
+                            <div id="collapsFour" class="collapse" aria-labelledby="headingFoure"
+                                data-parent="#accordionAsk">
+                                <div class="ask-body">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to
+                                    further the overall value proposition. Organically grow the holistic world view
+                                    of disruptive innovation via workplace diversity and empowerment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ask-container card">
+                            <div class="card-header" id="headingFive">
+                                <div class="mb-0">
+                                    <div data-toggle="collapse" data-target="#collapsFive" aria-expanded="false"
+                                        aria-controls="collapsFive" class="ask-header">
+                                        <div class="card-header__title">How to contact with riders emergency?</div>
+                                        <div class="plus-button"></div>
                                     </div>
                                 </div>
-                                <div id="collapsFive" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordionAsk">
-                                    <div class="ask-body">
-                                        Leverage agile frameworks to provide a robust synopsis for high level overviews.
-                                        Iterative approaches to corporate strategy foster collaborative thinking to
-                                        further the overall value proposition. Organically grow the holistic world view
-                                        of disruptive innovation via workplace diversity and empowerment.
-                                    </div>
+                            </div>
+                            <div id="collapsFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionAsk">
+                                <div class="ask-body">
+                                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to
+                                    further the overall value proposition. Organically grow the holistic world view
+                                    of disruptive innovation via workplace diversity and empowerment.
                                 </div>
                             </div>
                         </div>
@@ -861,7 +865,7 @@
                     <div class="download-content__description">
                         <div class="title-container">
                             <div class="title title--lg">
-                                Download our App now !
+                                Download our App now!
                             </div>
                         </div>
                         <div class="descr-container">
@@ -911,34 +915,52 @@
                     </li>
                 </ul>
             </div>
-            <div class="social-container">
-                <svg class="social-svg">
-                    <use xlink:href="symbol-defs.svg#icon-facebook" class="svg"></use>
-                </svg>
-                <svg class="social-svg">
-                    <use xlink:href="symbol-defs.svg#icon-twitter" class="svg"></use>
-                </svg>
-                <svg class="social-svg">
-                    <use xlink:href="symbol-defs.svg#icon-twitch" class="svg"></use>
-                </svg>
-                <svg class="social-svg">
-                    <use xlink:href="symbol-defs.svg#icon-github" class="svg"></use>
-                </svg>
-            </div>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#">
+                        <svg class="social-svg">
+                            <use xlink:href="symbol-defs.svg#icon-facebook" class="svg"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <svg class="social-svg">
+                            <use xlink:href="symbol-defs.svg#icon-twitter" class="svg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <svg class="social-svg">
+                            <use xlink:href="symbol-defs.svg#icon-twitch" class="svg"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <svg class="social-svg">
+                            <use xlink:href="symbol-defs.svg#icon-github" class="svg"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="copyright">
             Copyright© 2020. All rights reserved
         </div>
     </footer>
     <!-- Modal video play -->
-    <div class=" modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal"
+    <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModal"
         aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <div>
-                        <iframe width="100%" height="350" src=""></iframe>
+                        <iframe width="100%" height="350" src="" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -948,9 +970,7 @@
 </body>
 <script src="./libs/jquery/jquery-2.2.4.js"></script>
 <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
-<!-- <script src="./libs/parallax-master/parallax-master/src/parallax.js"></script> -->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./libs/bootsrap/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 
 </html>
