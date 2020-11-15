@@ -1,3 +1,6 @@
+// @prepros-append ../node_modules/bootstrap/dist/js/bootstrap.min.js;
+
+
 (function ($) {
 
     $(document).ready(function () {

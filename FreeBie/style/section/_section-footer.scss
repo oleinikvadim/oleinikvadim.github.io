@@ -27,6 +27,7 @@
   }
   .nav-link {
     color: #fff;
+    transition: 0.3s all;
     &:hover {
       opacity: 0.5;
     }
@@ -44,6 +45,7 @@
       width: 28px;
       height: 30px;
       fill: #273043;
+      transition: 0.3s all;
       &:hover {
         fill: #fff;
       }
