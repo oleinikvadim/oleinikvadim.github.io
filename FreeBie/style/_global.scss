@@ -4,62 +4,62 @@ h3,
 h4,
 h5,
 h6 {
-  color: #242f51;
+	color: #242f51;
 }
 
 p {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 h1 {
-  // @media (max-width: 768px) {
-  //   font-size: 2.5rem;
-  // }
-  @media (max-width: 576px) {
-    font-size: 2.5rem;
-  }
+	// @media (max-width: 768px) {
+	//   font-size: 2.5rem;
+	// }
+	@media (max-width: 576px) {
+		font-size: 2.5rem;
+	}
 }
 
 #video-section .modal-content {
-  min-width: 600px;
+	min-width: 600px;
 }
 
 #video-section .modal-content iframe {
-  width: 560px;
-  height: 315px;
+	width: 560px;
+	height: 315px;
 }
 
 .plus-button {
-  position: relative;
-  min-width: 18px;
+	position: relative;
+	min-width: 18px;
 
-  min-height: 18px;
-  transition: 0.3s all;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    transform: translateX(1px);
-    background-color: #242f51;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    background-color: #242f51;
-    transition: 0.3s all;
-    opacity: 1;
-    transform: translateY(1px);
-  }
+	min-height: 18px;
+	transition: 0.3s all;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		transform: translateX(1px);
+		background-color: #242f51;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 3px;
+		height: 100%;
+		background-color: #242f51;
+		transition: 0.3s all;
+		opacity: 1;
+		transform: translateY(1px);
+	}
 }
 .ask-header[aria-expanded="true"] {
-  .plus-button:after {
-    opacity: 0;
-  }
+	.plus-button:after {
+		opacity: 0;
+	}
 }
