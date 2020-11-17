@@ -1,0 +1,33 @@
+// @include font-face(
+// 	"Montserrat",
+// 	"../font/Montserrat/Montserrat-Medium.ttf",
+// 	500
+// );
+// @include font-face(
+// 	"Montserrat",
+// 	"../font/Montserrat/Montserrat-SemiBold.ttf",
+// 	600
+// );
+// @include font-face("Muli", "../font/Muli/muli-v21-latin-regular.ttf", 400);
+// @include font-face("Nunito", "../font/Nunito/NunitoSans-Regular.ttf", 400);
+// @include font-face("Nunito", "../font/Nunito/NunitoSans-SemiBold.ttf", 600);
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-SemiBold.ttf") format("ttf"), 500;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Medium.ttf") format("ttf");
+}
+@font-face {
+	font-family: "Muli";
+	src: url("../font/Muli/muli-v21-latin-regular.ttf") format("ttf");
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../font/Nunito/NunitoSans-Regular.ttf") format("ttf");
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../font/Nunito/NunitoSans-SemiBold.ttf") format("ttf");
+}

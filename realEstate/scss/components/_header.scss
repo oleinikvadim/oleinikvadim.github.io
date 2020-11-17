@@ -1,0 +1,27 @@
+.header {
+	max-height: 70px;
+	height: 100%;
+	background-color: #fff;
+	img {
+		@include sizeElement(25px);
+		margin-right: 14px;
+	}
+	.navbar-brand {
+		display: flex;
+	}
+	.nav-link {
+		color: #454545;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.6px;
+		color: #171717;
+		transition: 0.2s all;
+		&:hover,
+		&.active {
+			color: #fff;
+			background-color: $primary;
+			border-radius: 5px;
+		}
+	}
+}

@@ -1,0 +1,92 @@
+// Cover background image ------------------------------------
+@mixin bgCover() {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+// EXAMPLE: @include bgCover;
+
+// Flex center alignment ------------------------------------
+@mixin flexCenter() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// EXAMPLE: @include flexCenter;
+
+// Position absolute center alignment ------------------------------------
+@mixin absoluteCenter($position: null) {
+	position: absolute;
+
+	@if $position == "v" {
+		top: 50%;
+		transform: translate(0, -50%);
+	} @else if $position == "h" {
+		left: 50%;
+		transform: translate(-50%, 0);
+	} @else if $position == null {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+// EXAMPLE: @include absoluteCenter;
+
+// Absolute cover ------------------------------------
+@mixin absoluteCover() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// EXAMPLE: @include absoluteCover;
+
+// Size of element ------------------------------------
+@mixin sizeElement($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+// EXAMPLE: @include sizeElement(50px);\
+
+// Adding fonts ------------------------------------
+// @mixin font-face(
+// 	$font-family,
+// 	$file-path,
+// 	$weight: normal,
+// 	$style: normal,
+// 	$asset-pipeline: false
+// ) {
+// 	@font-face {
+// 		font-family: $font-family;
+// 		font-weight: $weight;
+// 		font-style: $style;
+// 		@if $asset-pipeline == true {
+// 			src: font-url("#{$file-path}.eot");
+// 			src: font-url("#{$file-path}.eot?#iefix")
+// 					format("embedded-opentype"),
+// 				font-url("#{$file-path}.woff2") format("woff2"),
+// 				font-url("#{$file-path}.woff") format("woff"),
+// 				font-url("#{$file-path}.ttf") format("truetype");
+// 		} @else {
+// 			src: url("#{$file-path}.eot");
+// 			src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+// 				url("#{$file-path}.woff2") format("woff2"),
+// 				url("#{$file-path}.woff") format("woff"),
+// 				url("#{$file-path}.ttf") format("truetype");
+// 		}
+// 	}
+// }
+
+// EXAMPLE:
+
+// @include font-face("Roboto", "../fonts/Roboto/Roboto-Regular", 400);
+// @include font-face("Roboto", "../fonts/Roboto/Roboto-Italic", 400, italic);
+// @include font-face("Roboto", "../fonts/Roboto/Roboto-Bold", 700);

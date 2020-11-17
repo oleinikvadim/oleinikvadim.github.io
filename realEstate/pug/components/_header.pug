@@ -1,0 +1,25 @@
+header.header.JS-header
+	.container
+		nav.navbar.navbar-expand-lg
+			a.navbar-brand(href='index.html')
+				img.brand-svg(src="../img/svg/icon.png")
+				.brand-title RealEstate
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#header-navbar', aria-controls='header-navbar', aria-expanded='false', aria-label='Toggle navigation')
+				span.hamburger.hamburger--collapse.js-hamburger
+					span.hamburger-box
+								span.hamburger-inner
+				.nav-bar.nav
+			#header-navbar.collapse.navbar-collapse
+				ul.navbar-nav.mr-auto.ml-auto
+					li.nav-item
+						a.nav-link.active(href='#', class = item == 'home' ? 'active' : '') Home
+					li.nav-item
+						a.nav-link(href='#' , class = item == 'properties' ? 'active' : '') Properties
+					li.nav-item
+						a.nav-link(href='#' , class = item == 'agencies' ? 'active' : '') Agencies
+					li.nav-item
+						a.nav-link(href='#' , class = item == 'about' ? 'active' : '') About
+					li.nav-item
+						a.nav-link(href='#' , class = item == 'news' ? 'active' : '') News
+					li.nav-item
+						a.nav-link(href='#' , class = item == 'contacts' ? 'active' : '') Contacts Us
