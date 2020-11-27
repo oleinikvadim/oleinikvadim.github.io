@@ -2,26 +2,74 @@
 	max-height: 70px;
 	height: 100%;
 	background-color: #fff;
-	img {
+	display: flex;
+	align-items: center;
+	.brand-svg {
 		@include sizeElement(25px);
-		margin-right: 14px;
+		margin-right: 12px;
+		fill: $primary;
 	}
 	.navbar-brand {
 		display: flex;
+		// margin-right: 175px;
+	}
+	.brand-title {
+		color: #171717;
+		font-weight: 500;
+		font-size: $font-size-base;
+	}
+	.nav-item {
+		margin-right: 5px;
 	}
 	.nav-link {
-		color: #454545;
 		text-transform: uppercase;
+		transition: 0.2s all;
 		font-size: 12px;
 		font-weight: 500;
 		letter-spacing: 0.6px;
-		color: #171717;
-		transition: 0.2s all;
 		&:hover,
 		&.active {
 			color: #fff;
 			background-color: $primary;
-			border-radius: 5px;
+			border-radius: $border-radius;
+		}
+	}
+	.login-content {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		font-size: 12px;
+		&__svg {
+			fill: $primary;
+			@include sizeElement(14px);
+			margin-right: 10px;
+		}
+		&__container {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+		&__login {
+			padding-right: 8px;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				top: 0;
+				left: 100%;
+				background-color: #171717;
+			}
+		}
+		&__register {
+			margin-left: 8px;
+		}
+		&__login,
+		&__register {
+			&:hover {
+				opacity: 0.7;
+			}
 		}
 	}
 }

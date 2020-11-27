@@ -1,0 +1,51 @@
+.section-best-agencies {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	&__subtitle {
+		margin-bottom: 65px;
+	}
+}
+.agencies-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-gap: 30px;
+}
+.agencies-item {
+	border: solid 1px #ececec;
+	border-radius: $border-radius;
+	&__top {
+		position: relative;
+		// &:before {
+		// 	content: "";
+		// 	@include absoluteCover;
+		// 	background-image: linear-gradient(
+		// 		to top,
+		// 		rgba(#000, 0.4) 0%,
+		// 		rgba(#000, 0.4) 100%
+		// 	);
+		// 	border-radius: $border-radius;
+		// }
+	}
+	&__img {
+		width: 100%;
+	}
+	&__body {
+		text-align: center;
+		padding: 25px;
+	}
+	&__title {
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	&__descr {
+		font-size: 16px;
+		color: #6b6b6b;
+		font-weight: 500;
+	}
+	.btn {
+		display: block;
+		margin: 0 auto 25px;
+		// max-width: 142px;
+		// padding: 15px 23px;
+	}
+}

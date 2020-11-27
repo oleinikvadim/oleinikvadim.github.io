@@ -2,7 +2,8 @@ header.header.JS-header
 	.container
 		nav.navbar.navbar-expand-lg
 			a.navbar-brand(href='index.html')
-				img.brand-svg(src="../img/svg/icon.png")
+				svg.brand-svg
+					use(xlink:href="./img/svg/SVG-sprite.svg#home" class="svg") 
 				.brand-title RealEstate
 			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#header-navbar', aria-controls='header-navbar', aria-expanded='false', aria-label='Toggle navigation')
 				span.hamburger.hamburger--collapse.js-hamburger
@@ -22,4 +23,10 @@ header.header.JS-header
 					li.nav-item
 						a.nav-link(href='#' , class = item == 'news' ? 'active' : '') News
 					li.nav-item
-						a.nav-link(href='#' , class = item == 'contacts' ? 'active' : '') Contacts Us
+						a.nav-link(href='#' , class = item == 'contacts' ? 'active' : '') Contact Us
+				.login-content
+					svg.login-content__svg
+						use(xlink:href="./img/svg/SVG-sprite.svg#padlock" class="svg") 
+					.login-content__container
+						a.login-content__login Login
+						a.login-content__register Register

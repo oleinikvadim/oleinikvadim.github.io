@@ -1,0 +1,16 @@
+.section-properties {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	position: relative;
+	&__bg {
+		position: absolute;
+		z-index: -1;
+		top: 50px;
+	}
+	.map {
+		height: 100%;
+	}
+	.google-map {
+		height: 100%;
+	}
+}

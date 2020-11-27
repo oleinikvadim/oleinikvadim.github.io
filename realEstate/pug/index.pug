@@ -2,4 +2,384 @@ html(lang="en")
 	include components/_head.pug
 	body
 		include components/_header.pug
-		include components/_footer.pug
+		section.section-welcome
+			.slider.JS-slider
+				.slider-item
+					.container
+						.row.align-items-center
+							.col-6
+								.slider__description
+									div.sticker.sticker--sale Sale
+									h2.slider__description__title 372 Central Park W #17N, New York
+									p.slider__description__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+									button.btn.btn-lg.btn-primary view detail
+							.col-4.offset-2
+								.slider__card
+									.row
+										.col-12
+											.card
+												img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+												.card-body
+													p.card-title Central Park, Manhattan, NY
+													p.card-subtitle $5,630,000
+													p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+													.card-benefits
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+														p 2bd
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+														p 1ba
+														.card-benefits__size-of 756 sqft
+				.slider-item
+					.container
+						.row.align-items-center
+							.col-6
+								.slider__description
+									div.sticker.sticker--sale Sale
+									h2.slider__description__title 372 Central Park W #17N, New York
+									p.slider__description__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+									button.btn.btn-lg.btn-primary view detail
+							.col-4.offset-2
+								.slider__card
+									.row
+										.col-12
+											.card
+												img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+												.card-body
+													p.card-title Central Park, Manhattan, NY
+													p.card-subtitle $5,630,000
+													p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+													.card-benefits
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+														p 2bd
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+														p 1ba
+														.card-benefits__size-of 756 sqft
+				.slider-item
+					.container
+						.row.align-items-center
+							.col-6
+								.slider__description
+									div.sticker.sticker--sale Sale
+									h2.slider__description__title 372 Central Park W #17N, New York
+									p.slider__description__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+									button.btn.btn-lg.btn-primary view detail
+							.col-4.offset-2
+								.slider__card
+									.row
+										.col-12
+											.card
+												img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+												.card-body
+													p.card-title Central Park, Manhattan, NY
+													p.card-subtitle $5,630,000
+													p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+													.card-benefits
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+														p 2bd
+														svg.card-benefits__svg
+															use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+														p 1ba
+														.card-benefits__size-of 756 sqft
+		section.section-properties
+			.container
+				.section-properties__bg
+					img(src="./img/map-bg.png")
+				h3.section-properties__title.section-title Search Property
+				p.section-properties__subtitle.section-subtitle.section-subtitle--mrb65 Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
+				.properties
+					.row
+						.col-8
+							.properties__map
+								.google-map.JS-googleMap(id="JS-map")
+						.col-4
+							.properties__setup
+								.row
+									.col-12
+										include components/parts/_form-properties-setup.pug	
+		section.section-new-listing
+			.container
+				h3.section-properties__title.section-title New Listings
+				ul.nav.nav-pills(id="pills-tab" role="tablist")
+					li.nav-item(role="presentation")
+						a.nav-link.active(id="pills-rent-tab" data-toggle="pill" href="#rent" role="tab" aria-controls="pills-rent" aria-selected="true") Rent	
+					li.nav-item(role="presentation")
+						a.nav-link(id="pills-buy-tab" data-toggle="pill" href="#buy" role="tab" aria-controls="pills-buy" aria-selected="false") Buy	
+				.tab-content(id="pills-tabContent")
+					.tab-pane.show.fade.active(id="rent" role="tabpanel" aria-labelledby="pills-rent-tab")
+						ul.card-list
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.sticker.sticker--sale Sale
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.sticker.sticker--hot Hote
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.sticker.sticker--favorite Favorite
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+					.tab-pane.fade(id="buy" role="tabpanel" aria-labelledby="pills-buy-tab")
+						ul.card-list
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+							li.card-item
+								.card
+									img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p 1ba
+											.card-benefits__size-of 756 sqft
+				button.btn.btn-lg.btn-primary load more
+		section.section-best-agencies
+			.container
+				h3.section-best-agencies__title.section-title The Best Agencies
+				.section-best-agencies__subtitle.section-subtitle Lorem ipsum dolor sit amet,consectetur adipiscing.
+				ul.agencies-list
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-primary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-primary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-primary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-primary view profile
+		section.section-comment
+			img.section-comment__bg(src="..//img/map-bg.png")
+			.slider.JS-slider-comment
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="..//img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="..//img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="..//img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+		section.section-news
+			.container
+				h3.section-news__title.section-title Latest News
+				.section-news__list
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+				button.btn.btn-lg.btn-primary view more
+		section.section-about-us
+			include components/parts/_section-about-us.pug
+		section.section-contact
+			include components/parts/_section-contact.pug
+		include components/_footer.pug 

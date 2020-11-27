@@ -1,0 +1,30 @@
+form(action="#").form
+	label(for="city") City
+	select.custom-select(id="city")
+		option(selected) New-York
+		option(value="1") Kharkiv
+		option(value="2") Kiev
+		option(value="3") Moscow
+	label(for="property") Property Type
+	select.custom-select(id="Property")
+		option(selected) Center City
+		option(value="1") Large Bed
+		option(value="2") Small
+		option(value="3") First
+	label(for="purpose") Purpose
+	select.custom-select(id="Purpose")
+		option(selected) One Day
+		option(value="1") Week
+		option(value="2") 2-3 days
+		option(value="3") 1 month
+	label(for="bedrooms") Bedrooms
+	select.custom-select(id="Bedrooms")
+		option(selected) One
+		option(value="1") Two
+	label(for="bathroom") Bathrooms
+	select.custom-select(id="bathroom")
+		option(selected) One
+		option(value="1") Two
+	label(for="price") Price
+	input(type="text" class="js-range-slider slider-cost" name="my_range" value="" id="price")
+	.btn.btn-primary.btn-form Search properties

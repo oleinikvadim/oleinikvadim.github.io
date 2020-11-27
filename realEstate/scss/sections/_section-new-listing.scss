@@ -1,0 +1,44 @@
+.section-new-listing {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	background-color: #f7f7f7;
+	.nav {
+		display: inline-flex;
+		justify-content: center;
+		margin: 0 auto;
+		box-shadow: 0px 0px 0px 1px rgba(0, 189, 116, 1);
+		border-radius: $border-radius;
+		margin-bottom: 70px;
+		.nav-item {
+			font-size: 12px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.nav-link {
+			padding: 9px 26px;
+		}
+		#pills-rent-tab {
+			border-radius: 3px 0 0 3px;
+		}
+		#pills-buy-tab {
+			border-radius: 0 3px 3px 0;
+		}
+	}
+	.card-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-gap: 30px;
+	}
+	.card-img-top {
+		position: relative;
+	}
+	.sticker {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.tab-content {
+		margin-bottom: 70px;
+	}
+}

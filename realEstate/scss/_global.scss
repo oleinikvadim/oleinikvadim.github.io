@@ -1,13 +1,24 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-link,
-.navbar-brand {
-	font-family: "Montserrat";
+.btn {
+	font-weight: 600;
+	text-transform: uppercase;
 }
-p {
-	font-family: "Nunito";
+
+.section-title {
+	font-weight: 600;
+	margin: 0 auto;
+	color: #171717;
+	margin-bottom: 35px;
+	text-align: center;
+}
+.section-subtitle {
+	font-family: "Nunito Sans";
+	line-height: 1.44;
+	color: #4e4e4e;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 550px;
+	width: 100%;
+	&--mrb65 {
+		margin-bottom: 65px;
+	}
 }

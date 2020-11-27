@@ -1,0 +1,17 @@
+.sticker {
+	display: inline-block;
+	padding: 5px 13px;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: $border-radius;
+	&--sale {
+		background-color: #ffa656;
+	}
+	&--hot {
+		background-color: #f86363;
+	}
+	&--favorite {
+		background-color: #a770ca;
+	}
+}

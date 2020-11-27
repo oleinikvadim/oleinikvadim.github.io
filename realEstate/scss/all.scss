@@ -1,8 +1,26 @@
 // Main
-@import "reset";
 @import "libs";
+@import "reset";
 @import "font";
 @import "mixin";
+@import "global";
 
 // components
 @import "../scss/components/header";
+
+// section
+@import "../scss/sections/section-welcome";
+@import "../scss/sections/section-properties";
+@import "../scss/sections/section-new-listing";
+@import "../scss/sections/section-best-agencies";
+@import "../scss/sections/section-comment";
+@import "../scss/sections/section-news";
+@import "../scss/sections/section-about-us";
+@import "../scss/sections/section-contact";
+
+// parts
+@import "../scss/parts/sticker-level";
+@import "../scss/parts/card";
+@import "../scss/parts/slick-custom";
+@import "../scss/parts/form";
+@import "../scss/parts/ion.rangeSlider";
