@@ -746,7 +746,7 @@ $nav-divider-margin-y: $spacer / 2 !default;
 
 // Navbar
 
-$navbar-padding-y: $spacer / 2 !default;
+$navbar-padding-y: 1rem !default;
 $navbar-padding-x: 0px !default;
 
 $navbar-nav-link-padding-x: 0.75rem !default;
@@ -758,7 +758,7 @@ $navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) / 2 !default;
 
 $navbar-toggler-padding-y: 0.25rem !default;
-$navbar-toggler-padding-x: 0.75rem !default;
+$navbar-toggler-padding-x: 0 !default;
 $navbar-toggler-font-size: $font-size-lg !default;
 $navbar-toggler-border-radius: $btn-border-radius !default;
 

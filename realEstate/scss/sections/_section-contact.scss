@@ -7,20 +7,24 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 992px) {
+			flex-direction: column;
+		}
 	}
 	&__description {
+		max-width: 570px;
+		@media (max-width: 992px) {
+			max-width: 100%;
+		}
 		font-size: 26px;
 		letter-spacing: -0.4;
+		@media (max-width: 992px) {
+			margin-bottom: 30px;
+		}
 	}
-}
-.btn-outline--lite {
-	border-color: #fff;
-	color: #fff;
-	display: block;
-	max-height: 50px;
-	height: 100%;
-	&:hover {
-		color: #171717;
-		background-color: #fff;
+	.btn {
+		@media (max-width: 992px) {
+			width: 100%;
+		}
 	}
 }

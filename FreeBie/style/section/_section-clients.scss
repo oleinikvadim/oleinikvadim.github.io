@@ -1,101 +1,101 @@
 .section-clients {
-  padding: 150px 0px;
-  position: relative;
-  @media (max-width: 1200px) {
-    padding: 50px 0px;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: url(./img/world-people-map.jpg) no-repeat;
-    background-position: center;
-    background-size: contain;
-    @media (max-width: 1200px) {
-      display: none;
-    }
-  }
+	padding: 150px 0px;
+	position: relative;
+	@media (max-width: 1200px) {
+		padding: 50px 0px;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: url(./img/world-people-map.jpg) no-repeat;
+		background-position: center;
+		background-size: contain;
+		@media (max-width: 1200px) {
+			display: none;
+		}
+	}
 }
 .clients-container {
-  position: relative;
+	position: relative;
 }
 
 .clients-content {
-  &__description {
-    margin-left: 50%;
-    @media (max-width: 1200px) {
-      margin: 0 auto;
-    }
-    .clients {
-      // position: relative;
-      max-width: 560px;
-      @media (max-width: 1200px) {
-        max-width: 100%;
-      }
-    }
-  }
-  &__image {
-    max-width: 100%;
-    img {
-      max-height: 500px;
-      align-self: flex-end;
-      @media (max-width: 1200px) {
-        max-width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-  }
+	&__description {
+		margin-left: 50%;
+		@media (max-width: 1200px) {
+			margin: 0 auto;
+		}
+		.clients {
+			// position: relative;
+			max-width: 560px;
+			@media (max-width: 1200px) {
+				max-width: 100%;
+			}
+		}
+	}
+	&__image {
+		max-width: 100%;
+		img {
+			max-height: 500px;
+			align-self: flex-end;
+			@media (max-width: 1200px) {
+				max-width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+	}
 }
 
 // clients slider setup
 .clients-list {
-  position: relative;
-  .client-item {
-    &__point {
-      color: #ffcc00;
-      font-size: 30px;
-      // margin-bottom: 15px;
-    }
-    &__title {
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 2.9;
-      color: #242f51;
-    }
-    &__descr {
-      margin-bottom: 60px;
-      line-height: 1.63;
-      color: #616368;
-    }
-    &__avatar {
-      display: flex;
-      align-items: center;
-      @media (max-width: 530px) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+	position: relative;
+	.client-item {
+		&__point {
+			color: #ffcc00;
+			font-size: 30px;
+			// margin-bottom: 15px;
+		}
+		&__title {
+			margin-bottom: 10px;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 2.9;
+			color: #242f51;
+		}
+		&__descr {
+			margin-bottom: 60px;
+			line-height: 1.63;
+			color: #616368;
+		}
+		&__avatar {
+			display: flex;
+			align-items: center;
+			@media (max-width: 530px) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
 
-      .avatar {
-        max-width: 90px;
-        width: 100%;
-        max-height: 90px;
-        height: 100%;
-        margin-right: 30px;
-        img {
-          object-fit: fill;
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .avatar-name {
-        font-size: 18px;
-        font-weight: 600;
-        color: #242f51;
-      }
-    }
-  }
+			.avatar {
+				max-width: 90px;
+				width: 100%;
+				max-height: 90px;
+				height: 100%;
+				margin-right: 30px;
+				img {
+					object-fit: fill;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.avatar-name {
+				font-size: 18px;
+				font-weight: 600;
+				color: #242f51;
+			}
+		}
+	}
 }

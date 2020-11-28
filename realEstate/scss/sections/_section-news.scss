@@ -7,11 +7,15 @@
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
 		grid-gap: 30px;
 		margin-bottom: 70px;
+		justify-content: center;
 	}
 	.card {
+		@media (max-width: 576px) {
+			max-width: 100%;
+		}
 		.card-title {
 			line-height: 1.39;
 		}

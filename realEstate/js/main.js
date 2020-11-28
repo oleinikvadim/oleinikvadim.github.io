@@ -5,6 +5,7 @@
 	myMap();
 	jsSlideCost();
 	jsVideoTeam();
+	hamburgerCollapse();
     }); 
    
 	function jsSlideCost(){
@@ -21,17 +22,33 @@
 	}
 	
 	function slick() {
-		$('.JS-slider').slick({
+		$('.JS-slider-welcome').slick({
 			dots: true,
 			infinite: false,
-			arrows: true
+			arrows: true,
+			responsive: [
+				{
+				breakpoint: 1400,
+				settings: {
+					arrows: false
+					}
+				}
+			]
 		  });
 	}
 	function slickComment() {
 		$('.JS-slider-comment').slick({
 			dots: true,
 			infinite: false,
-			arrows: true
+			arrows: true,
+			responsive: [
+				{
+				breakpoint: 992,
+				settings: {
+					arrows: false
+					}
+				}
+			]
 		  });
 	}
 
@@ -85,5 +102,14 @@
 			$(".video-bg").fadeOut('normal');
 		});
 	}
+
+	function hamburgerCollapse() {
+		$('#header-navbar').on("show.bs.collapse", function(){
+		  $(".JS-hamburger").addClass("is-active");
+		})
+		$("#header-navbar").on("hidden.bs.collapse", function(){
+		  $(".JS-hamburger").removeClass("is-active");
+		})
+	  } 
 	  
 })(jQuery);

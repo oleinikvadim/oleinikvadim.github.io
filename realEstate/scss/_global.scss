@@ -2,6 +2,25 @@
 	font-weight: 600;
 	text-transform: uppercase;
 }
+@media (max-width: 992px) {
+	.container {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	// h1 {
+	// 	font-size: 1.7rem;
+	// }
+	// h2 {
+	// 	font-size: 1.6rem;
+	// }
+	// h3{
+	// 	font-size: 1.02rem;
+	// }
+	// .mb-5{
+	// 	margin-bottom: 1.5rem !important;
+	// }
+}
 
 .section-title {
 	font-weight: 600;
@@ -20,5 +39,28 @@
 	width: 100%;
 	&--mrb65 {
 		margin-bottom: 65px;
+	}
+}
+
+.section-copyright {
+	background-color: #191919;
+	padding: 28px;
+	&__title {
+		text-align: center;
+		font-family: "Nunito Sans";
+		font-size: 16px;
+		line-height: 1.75;
+		color: #7b7b7b;
+	}
+}
+.btn-outline--lite {
+	border-color: #fff;
+	color: #fff;
+	display: block;
+	max-height: 50px;
+	height: 100%;
+	&:hover {
+		color: #171717;
+		background-color: #fff;
 	}
 }
