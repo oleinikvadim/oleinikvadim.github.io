@@ -9825,7 +9825,7 @@ button {
 .section-welcome {
   padding-top: 95px;
   padding-bottom: 95px;
-  background-image: url(/img/welcome-bg.jpg);
+  background-image: url(./img/welcome-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
