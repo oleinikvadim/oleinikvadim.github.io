@@ -2,6 +2,7 @@
 /* Bootstrap  v4.5.3 ====================================*/
 @import "../libs/slick-1.8.1/slick/slick.css";
 @import "../libs/slick-1.8.1/slick/slick-theme.css";
+@import "../libs/select2-4.0.10/dist/css/select2.min.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9736,6 +9737,10 @@ button {
   background-color: #fff;
   display: flex;
   align-items: center;
+  position: fixed;
+  min-height: 70px;
+  width: 100%;
+  z-index: 100;
 }
 .header .brand-svg {
   width: 25px;
@@ -9822,8 +9827,12 @@ button {
   opacity: 0.7;
 }
 
+.JS-header_down {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .section-welcome {
-  padding-top: 95px;
+  padding-top: 165px;
   padding-bottom: 95px;
   background: url("../img/welcome-bg.jpg");
   background-size: cover;
@@ -10136,7 +10145,7 @@ button {
 }
 .section-about-us .video-bg {
   width: 100%;
-  min-height: 100%;
+  min-height: 340px;
 }
 .section-about-us .start-video {
   width: 60px;

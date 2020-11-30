@@ -6,6 +6,11 @@
 	jsSlideCost();
 	jsVideoTeam();
 	hamburgerCollapse();
+	scrollSpy();
+	navActiveOnClick();
+	scrollSmooth();
+	headerZeroY();
+	// select2();
     }); 
    
 	function jsSlideCost(){
@@ -36,6 +41,7 @@
 			]
 		  });
 	}
+
 	function slickComment() {
 		$('.JS-slider-comment').slick({
 			dots: true,
@@ -97,7 +103,6 @@
 		
 		$(document).on('click', '.start-video', function () {
 			$(this).fadeOut('normal');
-
 			player.playVideo();
 			$(".video-bg").fadeOut('normal');
 		});
@@ -110,6 +115,44 @@
 		$("#header-navbar").on("hidden.bs.collapse", function(){
 		  $(".JS-hamburger").removeClass("is-active");
 		})
-	  } 
+	} 
+
+	function scrollSpy(){
+		$('body').scrollspy({target: ".navbar", offset: 50});
+	  }
+
+	  function navActiveOnClick(){
+		$('.navbar-nav .nav-link').click(function(){
+		  $('.navbar-nav .nav-link').removeClass('active');
+		  $(this).addClass('active');
+		})
+	  }
 	  
+	  function scrollSmooth() {
+		$(".nav-link.JS-scroll").on('click', function(event) {
+		  if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+			  scrollTop: $(hash).offset().top
+			}, 800, function(){
+			});
+		  }
+		});
+	  
+		
+	  }
+
+	  function headerZeroY() {
+		$(window).on("scroll",function() {    
+		  var scroll = $(window).scrollTop();
+			if (scroll >= 70) {
+			  $(".JS-header").addClass("JS-header_down");
+			}  else {$(".JS-header").removeClass("JS-header_down");}
+		})   
+	  }
+	  
+	  function select2() {
+		$('select').select2();
+	  }
 })(jQuery);
