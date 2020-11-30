@@ -10,7 +10,7 @@
 	navActiveOnClick();
 	scrollSmooth();
 	headerZeroY();
-	// select2();
+	select2();
     }); 
    
 	function jsSlideCost(){
@@ -153,6 +153,8 @@
 	  }
 	  
 	  function select2() {
-		$('select').select2();
+		$('select').select2({
+			minimumResultsForSearch: -1
+		});
 	  }
 })(jQuery);

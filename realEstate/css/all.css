@@ -10380,42 +10380,6 @@ button {
   z-index: 5;
 }
 
-.form {
-  background-color: #f7f7f7;
-  padding: 20px 25px;
-  border-radius: 5px;
-  position: relative;
-}
-.form:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #e7e7e7;
-  bottom: 100px;
-  left: 0;
-}
-.form label {
-  font-family: "Nunito Sans";
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.form .custom-select {
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  padding: 0px 15px;
-  height: 42px;
-  margin-bottom: 20px;
-}
-.form .btn-form {
-  width: 100%;
-}
-.form .custom-select:focus {
-  box-shadow: none;
-  border: none;
-}
-
 /**
 Ion.RangeSlider, 2.3.1
 © Denis Ineshin, 2010 - 2019, IonDen.com
@@ -11186,5 +11150,61 @@ Build date: 2019-12-19 16:51:02
 .irs--square .irs-grid-text {
   color: silver;
   font-size: 11px;
+}
+
+.form {
+  background-color: #f7f7f7;
+  padding: 20px 25px;
+  border-radius: 5px;
+  position: relative;
+}
+.form label {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.form .btn-form {
+  width: 100%;
+}
+.form .custom-select:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.select2-container--default .select2-selection--single {
+  border: solid 1px #ececec;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 17px;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #00bd74;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: solid 1px #ececec;
+}
+
+.select2-container--open .select2-dropdown--below,
+.custom-select {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+}
+
+.select2-results__option {
+  padding-left: 17px;
 }
 /*# sourceMappingURL=all.css.map */
