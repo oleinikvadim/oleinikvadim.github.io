@@ -1,50 +1,266 @@
+
 <html lang="en">
-
-<head>
-	<title>Real Estate</title>
-	<meta name="description" content="Description of the site" />
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1" />
-	<link rel="stylesheet" href="css/all.css" />
-</head>
-
-<body>
-	<header class="header JS-header">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="index.html">
-					<svg class="brand-svg">
-						<use class="svg" xlink:href="./img/svg/SVG-sprite.svg#home"> </use>
-					</svg>
-					<div class="brand-title">RealEstate</div>
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar"
-					aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-						class="hamburger hamburger--slider js-hamburger"><span class="hamburger-box"><span
-								class="hamburger-inner"></span></span></span>
-					<div class="nav-bar nav"></div>
-				</button>
-				<div class="collapse navbar-collapse" id="header-navbar">
-					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Agencies</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">News</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-					</ul>
-					<div class="login-content">
-						<svg class="login-content__svg">
-							<use class="svg" xlink:href="./img/svg/SVG-sprite.svg#padlock"> </use>
-						</svg>
-						<div class="login-content__container"><a class="login-content__login">Login</a><a
-								class="login-content__register">Register</a></div>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-</body>
-
+  <head>
+    <title>Real Estate</title>
+    <meta name="description" content="Description of the site"/>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/all.css"/>
+  </head>
+  <body>
+    <header class="header JS-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="index.html">
+            <svg class="brand-svg">
+              <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#home"> </use>
+            </svg>
+            <div class="brand-title">RealEstate</div></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--slider js-hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
+            <div class="nav-bar nav"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="header-navbar">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+              <li class="nav-item"><a class="nav-link" href="agency.html">Agencies</a></li>
+              <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+            <div class="login-content">
+              <svg class="login-content__svg">
+                <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#padlock"> </use>
+              </svg>
+              <div class="login-content__container"><a class="login-content__login">Login</a><a class="login-content__register">Register</a></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="properties-container">
+      <form class="form" action="#">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <label for="city">City</label>
+              <select class="custom-select" id="city">
+                <option selected="selected">New-York</option>
+                <option value="1">Kharkiv</option>
+                <option value="2">Kiev</option>
+                <option value="3">Moscow</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="property">Property Type</label>
+              <select class="custom-select" id="Property">
+                <option selected="selected">Center City</option>
+                <option value="1">Large Bed</option>
+                <option value="2">Small</option>
+                <option value="3">First</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="purpose">Purpose</label>
+              <select class="custom-select" id="Purpose">
+                <option selected="selected">One Day</option>
+                <option value="1">Week</option>
+                <option value="2">2-3 days</option>
+                <option value="3">1 month</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="bedrooms">Bedrooms</label>
+              <select class="custom-select" id="Bedrooms">
+                <option selected="selected">One</option>
+                <option value="1">Two</option>
+                <label for="bathroom">Bathrooms</label>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="bathroom">Bathrooms</label>
+              <select class="custom-select" id="bathroom">
+                <option selected="selected">One</option>
+                <option value="1">Two</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="keywords">Keywords</label>
+              <input class="search-keywords" type="search" id="site-search" name="keyword"/>
+            </div>
+            <div class="col-lg-12">
+              <label for="price">Price</label>
+              <input class="js-range-slider slider-cost" type="text" name="my_range" value="" id="price-properties"/>
+            </div>
+            <div class="btn btn-primary btn-form">Search properties</div>
+          </div>
+        </div>
+      </form>
+      <div class="properties-container__map">
+        <div class="google-map JS-googleMap" id="JS-map"></div>
+      </div>
+      <div class="properties-container__cards">
+        <div class="container-fluid">
+          <div class="properties-container__card-list">
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties-container__card-item">
+              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+                <div class="card-body">
+                  <p class="card-title">Central Park, Manhattan, NY</p>
+                  <p class="card-subtitle">$5,630,000</p>
+                  <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <div class="card-benefits">
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                    </svg>
+                    <p>2bd</p>
+                    <svg class="card-benefits__svg">
+                      <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                    </svg>
+                    <p>1ba</p>
+                    <div class="card-benefits__size-of">756 sqft</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-primary btn-lg">load more</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer--properties">
+      <ul class="about-social">
+        <li class="social-item"><a class="social-link">
+            <svg class="social-svg">
+              <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-facebook"> </use>
+            </svg></a></li>
+        <li class="social-item"><a class="social-link">
+            <svg class="social-svg">
+              <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-twitter"> </use>
+            </svg></a></li>
+        <li class="social-item"><a class="social-link">
+            <svg class="social-svg">
+              <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-instagram"> </use>
+            </svg></a></li>
+        <li class="social-item"><a class="social-link">
+            <svg class="social-svg">
+              <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-behance"> </use>
+            </svg></a></li>
+        <li class="social-item"><a class="social-link">
+            <svg class="social-svg">
+              <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-pinterest"></use>
+            </svg></a></li>
+      </ul>
+      <div class="section-copyright__title">© 2020 . All rights reserved.</div>
+    </footer>
+    <!-- connection SCRIPT-->
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/select2-4.0.10/dist/js/select2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQgLezKvC0Eo0-UNTfxyqlLWFp4QN4nw0" defer="defer"></script>
+    <script src="./libs/ion.rangeSlider-master/ion.rangeSlider.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- connection SCRIPT END-->
+  </body>
 </html>

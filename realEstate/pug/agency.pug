@@ -1,0 +1,101 @@
+html(lang="en")
+	include components/_head.pug
+	body.agency
+		include components/_header.pug
+		.container
+			.breadcrumbs
+				nav(aria-label="breadcrumb")
+					ol(class="breadcrumb")
+						li(class="breadcrumb-item")
+							a(href="#") Home
+						li(class="breadcrumb-item active")
+							a(href="agency.html") Agencies
+			form(action="#").form.agencies-form
+				.row
+					.col-md-4.col-12
+						label(for="city") City
+						select.custom-select(id="city")
+							option(selected) New-York
+							option(value="1") Kharkiv
+							option(value="2") Kiev
+							option(value="3") Moscow
+					.col-md-4.col-12
+						label(for="purpose") Purpose
+						select.custom-select(id="purpose")
+							option(selected) New-York
+							option(value="1") Kharkiv
+							option(value="2") Kiev
+							option(value="3") Moscow
+					.col-md-4.col-12
+						label(for="keywords") Keywords
+						input(type="search" id="site-search" name="keyword").search-keywords
+				.btn.btn-lg.btn-primary search agencies
+		section.section-best-agencies
+			.container
+				ul.agencies-list
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+					li.agencies-item
+						.agencies-item__top
+							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first")
+						.agencies-item__body
+							h5.agencies-item__title Real Estate TX Agency
+							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
+						button.btn.btn-secondary view profile
+				.row
+					.col.text-center
+						.btn.btn-primary.btn-lg load more
+		section.section-contact
+			include components/parts/_section-contact.pug
+		footer.section-footer
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
+		include components/_scripts.pug

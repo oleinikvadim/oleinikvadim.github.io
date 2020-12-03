@@ -1,0 +1,86 @@
+.properties-container {
+	padding-top: 70px;
+	position: relative;
+	border: 1px solid#e7e7e7;
+	background-color: #f7f7f7;
+	@media (max-width: 1200px) {
+		display: flex;
+		flex-direction: column;
+	}
+	.form {
+		padding-bottom: 40px;
+		border-radius: 0;
+		border-bottom: solid 1px #ececec;
+		max-width: 50%;
+		padding-left: 0;
+		padding-right: 0;
+		@media (max-width: 1200px) {
+			max-width: 100%;
+		}
+	}
+	&__map {
+		position: fixed;
+		max-width: 50%;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 50%;
+		@media (max-width: 1200px) {
+			position: relative;
+			height: 500px;
+			left: 0;
+			max-width: 100%;
+		}
+	}
+	.google-map {
+		height: 100%;
+	}
+	.btn {
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	&__cards {
+		padding-top: 40px;
+		padding-bottom: 60px;
+		max-width: 50%;
+		@media (max-width: 1200px) {
+			max-width: 100%;
+		}
+	}
+	&__card-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 320px));
+		grid-gap: 30px;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 40px;
+		.btn {
+			max-width: 165px;
+		}
+	}
+}
+
+.footer--properties {
+	background-color: #212121;
+	padding-top: 46px;
+	padding-bottom: 46px;
+	max-width: 50%;
+	@media (max-width: 1200px) {
+		max-width: 100%;
+	}
+	.about-social {
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+}
+
+.search-keywords {
+	width: 100%;
+	height: 42px;
+	border: solid 1px #ececec;
+	height: 42px;
+	display: flex;
+	align-items: center;
+}

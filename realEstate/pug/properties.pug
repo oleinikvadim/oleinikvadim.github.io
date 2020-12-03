@@ -2,3 +2,168 @@ html(lang="en")
 	include components/_head.pug
 	body
 		include components/_header.pug
+		.properties-container
+			form(action="#").form
+				.container-fluid
+					.row
+						.col-md-6.col-12
+							label(for="city") City
+							select.custom-select(id="city")
+								option(selected) New-York
+								option(value="1") Kharkiv
+								option(value="2") Kiev
+								option(value="3") Moscow
+						.col-md-6.col-12
+							label(for="property") Property Type
+							select.custom-select(id="Property")
+								option(selected) Center City
+								option(value="1") Large Bed
+								option(value="2") Small
+								option(value="3") First
+						.col-md-6.col-12
+							label(for="purpose") Purpose
+							select.custom-select(id="Purpose")
+								option(selected) One Day
+								option(value="1") Week
+								option(value="2") 2-3 days
+								option(value="3") 1 month
+						.col-md-6.col-12
+							label(for="bedrooms") Bedrooms
+							select.custom-select(id="Bedrooms")
+								option(selected) One
+								option(value="1") Two
+								label(for="bathroom") Bathrooms
+						.col-md-6.col-12
+							label(for="bathroom") Bathrooms
+							select.custom-select(id="bathroom")
+								option(selected) One
+								option(value="1") Two
+						.col-md-6.col-12
+							label(for="keywords") Keywords
+							input(type="search" id="site-search" name="keyword").search-keywords
+						.col-lg-12
+							label(for="price") Price
+							input(type="text" class="js-range-slider slider-cost" name="my_range" value="" id="price-properties")
+						.btn.btn-primary.btn-form Search properties
+			.properties-container__map
+				.google-map.JS-googleMap(id="JS-map")
+			.properties-container__cards
+				.container-fluid
+							.properties-container__card-list
+								.properties-container__card-item
+									.card
+										img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+										.card-body
+											p.card-title Central Park, Manhattan, NY
+											p.card-subtitle $5,630,000
+											p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+											.card-benefits
+												svg.card-benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p 2bd
+												svg.card-benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p 1ba
+												.card-benefits__size-of 756 sqft
+								.properties-container__card-item
+										.card
+											img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+											.card-body
+												p.card-title Central Park, Manhattan, NY
+												p.card-subtitle $5,630,000
+												p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+												.card-benefits
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+													p 2bd
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+													p 1ba
+													.card-benefits__size-of 756 sqft
+								.properties-container__card-item
+										.card
+											img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+											.card-body
+												p.card-title Central Park, Manhattan, NY
+												p.card-subtitle $5,630,000
+												p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+												.card-benefits
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+													p 2bd
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+													p 1ba
+													.card-benefits__size-of 756 sqft
+								.properties-container__card-item
+										.card
+											img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+											.card-body
+												p.card-title Central Park, Manhattan, NY
+												p.card-subtitle $5,630,000
+												p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+												.card-benefits
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+													p 2bd
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+													p 1ba
+													.card-benefits__size-of 756 sqft
+								.properties-container__card-item
+										.card
+											img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+											.card-body
+												p.card-title Central Park, Manhattan, NY
+												p.card-subtitle $5,630,000
+												p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+												.card-benefits
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+													p 2bd
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+													p 1ba
+													.card-benefits__size-of 756 sqft
+								.properties-container__card-item
+										.card
+											img.card-img-top(src="./img/card-img-1.jpg"  alt="card image cap")
+											.card-body
+												p.card-title Central Park, Manhattan, NY
+												p.card-subtitle $5,630,000
+												p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+												.card-benefits
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+													p 2bd
+													svg.card-benefits__svg
+														use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+													p 1ba
+													.card-benefits__size-of 756 sqft
+							
+							.btn.btn-primary.btn-lg load more
+		footer.footer.footer--properties
+			ul.about-social
+				li.social-item
+					a.social-link
+						svg.social-svg
+							use(xlink:href="./img/svg/social-svg.svg#icon-facebook" class="svg") 
+				li.social-item
+					a.social-link
+						svg.social-svg
+							use(xlink:href="./img/svg/social-svg.svg#icon-twitter" class="svg") 
+				li.social-item
+					a.social-link
+						svg.social-svg
+							use(xlink:href="./img/svg/social-svg.svg#icon-instagram" class="svg") 
+				li.social-item
+					a.social-link
+						svg.social-svg
+							use(xlink:href="./img/svg/social-svg.svg#icon-behance" class="svg")  
+				li.social-item
+					a.social-link
+						svg.social-svg
+							use(xlink:href="./img/svg/social-svg.svg#icon-pinterest" class="svg")
+			.section-copyright__title © 2020 . All rights reserved.
+		include components/_scripts.pug
+		

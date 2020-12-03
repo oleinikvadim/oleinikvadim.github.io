@@ -64,3 +64,13 @@
 		background-color: #fff;
 	}
 }
+
+.btn-secondary {
+	color: #fff;
+	background-color: #b2b2b2;
+	border-color: #b2b2b2;
+	&:hover {
+		background-color: #8c8c8c;
+		border-color: #8c8c8c;
+	}
+}

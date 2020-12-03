@@ -1,0 +1,18 @@
+html(lang="en")
+	include components/_head.pug
+	body
+		include components/_header.pug
+		.about-us
+			.container
+				.breadcrumbs
+					nav(aria-label="breadcrumb")
+						ol(class="breadcrumb")
+							li(class="breadcrumb-item")
+								a(href="#") Home
+							li(class="breadcrumb-item active")
+								a(href="about-us.html") About US
+				img(src="./img/about-us_first_img.jpg").about-us__main-img
+		section.section-about-us
+			include components/parts/_section-about-us.pug
+		section.about-us-
+		include components/_scripts.pug

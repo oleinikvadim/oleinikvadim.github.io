@@ -2,7 +2,6 @@
     $(document).ready(function () {
 	slick();
 	slickComment();
-	myMap();
 	jsSlideCost();
 	jsVideoTeam();
 	hamburgerCollapse();
@@ -11,6 +10,7 @@
 	scrollSmooth();
 	headerZeroY();
 	select2();
+	myMap();
     }); 
    
 	function jsSlideCost(){
@@ -41,6 +41,12 @@
 			]
 		  });
 	}
+
+	function select2() {
+		$('select').select2({
+			minimumResultsForSearch: -1
+		});
+	  }
 
 	function slickComment() {
 		$('.JS-slider-comment').slick({
@@ -152,9 +158,5 @@
 		})   
 	  }
 	  
-	  function select2() {
-		$('select').select2({
-			minimumResultsForSearch: -1
-		});
-	  }
+	  
 })(jQuery);
