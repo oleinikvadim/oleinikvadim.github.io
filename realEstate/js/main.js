@@ -6,11 +6,14 @@
 	jsVideoTeam();
 	hamburgerCollapse();
 	scrollSpy();
-	navActiveOnClick();
+	// navActiveOnClick();
 	scrollSmooth();
 	headerZeroY();
 	select2();
 	myMap();
+	gallerySlickOn();
+	// progressAnimate();
+	slickLightBox();
     }); 
    
 	function jsSlideCost(){
@@ -39,7 +42,12 @@
 					}
 				}
 			]
-		  });
+		});
+		// $('.section-gallery__list').slick({
+		// 	centerMode: true,
+		// 	centerPadding: '20px',
+		// 	slidesToShow: 3
+		// });
 	}
 
 	function select2() {
@@ -65,18 +73,22 @@
 	}
 
 	function myMap() {
-		var coordinates = {lat: 49.988989, lng: 36.232946},
-			map = new google.maps.Map(document.getElementById('JS-map'), {
-				center: coordinates,
-				zoom:15,
-			  }
-			),
-		
-			marker = new google.maps.Marker({
-				position: coordinates,
-				map: map,
-				animation: google.maps.Animation.BOUNCE
-			});
+		let mapElement = document.getElementById('JS-map'); 
+
+		if(mapElement){
+			var coordinates = {lat: 49.988989, lng: 36.232946},
+				map = new google.maps.Map(mapElement, {
+					center: coordinates,
+					zoom:15,
+				  }
+				),
+			
+				marker = new google.maps.Marker({
+					position: coordinates,
+					map: map,
+					animation: google.maps.Animation.BOUNCE
+				});
+		}
 	}
 
 	function jsVideoTeam(){
@@ -125,16 +137,16 @@
 
 	function scrollSpy(){
 		$('body').scrollspy({target: ".navbar", offset: 50});
-	  }
+	}
 
-	  function navActiveOnClick(){
-		$('.navbar-nav .nav-link').click(function(){
-		  $('.navbar-nav .nav-link').removeClass('active');
-		  $(this).addClass('active');
-		})
-	  }
+	// function navActiveOnClick(){
+	// 	$('.navbar-nav .nav-link').click(function(){
+	// 	  $('.navbar-nav .nav-link').removeClass('active');
+	// 	  $(this).addClass('active');
+	// 	})
+	// }
 	  
-	  function scrollSmooth() {
+	function scrollSmooth() {
 		$(".nav-link.JS-scroll").on('click', function(event) {
 		  if (this.hash !== "") {
 			event.preventDefault();
@@ -147,16 +159,32 @@
 		});
 	  
 		
-	  }
+	}
 
-	  function headerZeroY() {
+	function headerZeroY() {
 		$(window).on("scroll",function() {    
 		  var scroll = $(window).scrollTop();
 			if (scroll >= 70) {
 			  $(".JS-header").addClass("JS-header_down");
 			}  else {$(".JS-header").removeClass("JS-header_down");}
 		})   
-	  }
+	}
+
+	function gallerySlickOn() {
+		$(".section-gallery__item").on("click",function() {
+			$(".gallery-slider").addClass("gallery-slider--opacity");
+		})
+	}
 	  
+	function progressAnimate() {
+		$('.progress-bar').each(function() {
+			var bar_value = $(this).attr('aria-valuenow') + '%';                
+			$(this).animate({ width: bar_value }, { duration: 2000, easing: 'easeOutCirc' });
+		  });
+	} 
+
+	function slickLightBox() {
+		lightGallery(document.getElementById('ul-li'));
+	}
 	  
 })(jQuery);

@@ -1,0 +1,53 @@
+html(lang="en")
+	include components/_head.pug
+	body.agency
+		include components/_header.pug
+		+header('contacts')
+		.container
+			.breadcrumbs
+				nav(aria-label="breadcrumb")
+					ol(class="breadcrumb")
+						li(class="breadcrumb-item")
+							a(href="#") Home
+						li(class="breadcrumb-item active")
+							a(href="contact-us.html") Contact Us
+		section.section-contact-us-main
+			.container
+				.section-contact-us-main__map
+					.google-map.JS-googleMap(id="JS-map")
+				.section-contact-us-main__contact-info.contact-info
+					.contact-info__description
+						.row
+							.col-xl-4
+								.section-contact-us-main__title Contact Info:
+								.section-contact-us-main__subtitle To give give beginning divide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry
+								ul.section-contact-us-main__info-list
+									li.info-item
+										.info-item__description Address:
+										a(href="" type="address").info-item__link 10111 Santa Monica Boulevard, LA
+									li.info-item
+										.info-item__description Phone:
+										a(href="tel:+44 987 065 908" type="phone").info-item__link +44 987 065 908
+									li.info-item
+										.info-item__description Email:
+										a(href="mailto:info@realestate.com").info-item__link info@realestate.com
+									li.info-item
+										.info-item__description Fax:
+										a(href="fax:+44 987 065 908" type="phone").info-item__link +44 987 065 909
+							.col-xl-7.offset-xl-1
+								form.form-contact(action="#")
+									.row
+										.col
+											input(type="text" class="form-control" placeholder="Name*")
+										.col
+											input(type="email" class="form-control" placeholder="Email*")
+										.col-12
+											input(type="text" class="form-control" placeholder="Title")
+										.col-12
+											textarea(type="textarea" class="form-control" rows="8" placeholder="Message*")
+				.btn.btn-primary.btn-lg Send Message
+		footer.section-footer
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
+		include components/_scripts.pug

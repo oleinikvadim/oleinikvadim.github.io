@@ -1,0 +1,124 @@
+html(lang="en")
+	include components/_head.pug
+	body
+		include components/_header.pug
+		+header('news')
+		.container
+			.breadcrumbs
+				nav(aria-label="breadcrumb")
+					ol(class="breadcrumb")
+						li(class="breadcrumb-item")
+							a(href="#") Home
+						li(class="breadcrumb-item active")
+							a(href="news.html") News
+		section.section-news-main
+			.container
+				h3.section-news__title.section-title Latest News
+				ul.nav.nav-pills(id="news-pills-tab" role="news-tablist" class="news-pills")
+					li.nav-item(role="presentationNews")
+						a.nav-link.active(id="news-all-tab" data-toggle="pill" href="#all-tab" role="tab" aria-controls="pills-all" aria-selected="true") All
+					li.nav-item(role="presentationNews")
+						a.nav-link(id="interior-tab" data-toggle="pill" href="#interior" role="tab" aria-controls="pills-interior" aria-selected="false") Interiors	
+					li.nav-item(role="presentationNews")
+						a.nav-link(id="agencies-tab" data-toggle="pill" href="#agencies" role="tab" aria-controls="pills-agencies" aria-selected="false") Agencies	
+					li.nav-item(role="presentationNews")
+						a.nav-link(id="our-team-tab" data-toggle="pill" href="#our-team" role="tab" aria-controls="pills-our-team" aria-selected="false") Our team	
+				.tab-content(id="pills-newsContent")
+					.tab-pane.show.fade.active(id="all-tab" role="tabpanel" aria-labelledby="news-all-tab")
+						ul.section-news__list
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+					.tab-pane.fade(id="interior" role="tabpanel" aria-labelledby="pills-interior")
+						ul.section-news__list
+							li.section-news__item
+									.card
+										img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+										.card-body
+											h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+											p.card-subtitle interiors / 12.04.2018
+											p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.s
+					.tab-pane.fade(id="agencies" role="tabpanel" aria-labelledby="pills-agencies")
+						ul.section-news__list
+							li.section-news__item
+									.card
+										img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+										.card-body
+											h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+											p.card-subtitle interiors / 12.04.2018
+											p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.s
+					.tab-pane.fade(id="our-team" role="tabpanel" aria-labelledby="pills-our-team")
+						ul.section-news__list
+							li.section-news__item
+									.card
+										img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+										.card-body
+											h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+											p.card-subtitle interiors / 12.04.2018
+											p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+							li.section-news__item
+								.card
+									img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+									.card-body
+										h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+										p.card-subtitle interiors / 12.04.2018
+										p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.s
+				button.btn.btn-lg.btn-primary view more
+		footer.section-footer
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
+		include components/_scripts.pug

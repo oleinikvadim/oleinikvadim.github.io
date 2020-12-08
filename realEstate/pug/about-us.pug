@@ -2,6 +2,7 @@ html(lang="en")
 	include components/_head.pug
 	body
 		include components/_header.pug
+		+header('about')
 		.about-us
 			.container
 				.breadcrumbs
@@ -10,11 +11,12 @@ html(lang="en")
 							li(class="breadcrumb-item")
 								a(href="#") Home
 							li(class="breadcrumb-item active")
-								a(href="about-us.html") About US
+								a(href="about-us.html") About Us
 				img(src="./img/about-us_first_img.jpg").about-us__main-img
 		section.section-about-us
 			include components/parts/_section-about-us.pug
 		section.about-us-features
+			img(src="./img/map-bg.png").about-us-features__bg
 			.container
 				.about-us-features__list
 					.about-us-features__item
@@ -33,4 +35,114 @@ html(lang="en")
 						<i class="fas fa-umbrella"></i>
 						p.about-us-features__title Talanted team
 						p.about-us-features__subtitle Morning his saying moveth it multiply appear life be
+		section.section-gallery
+			.container
+				h3.section-best-agencies__title.section-title Our Gallery
+				.section-best-agencies__subtitle.section-subtitle Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
+				ul(id='ul-li').section-gallery__list
+					li(data-src="./img/gallary-1.jpg").section-gallery__item
+						img(src="./img/gallary-1.jpg")
+					li(data-src="./img/gallary-2.jpg").section-gallery__item
+						img(src="./img/gallary-2.jpg")
+					li(data-src="./img/gallary-3.jpg").section-gallery__item
+						img(src="./img/gallary-3.jpg")
+					li(data-src="./img/gallary-4.jpg").section-gallery__item
+						img(src="./img/gallary-4.jpg")
+					li(data-src="./img/gallary-5.jpg").section-gallery__item
+						img(src="./img/gallary-5.jpg")
+					li(data-src="./img/gallary-6.jpg").section-gallery__item
+						img(src="./img/gallary-6.jpg")
+			//- .gallery-slider
+			//- 	.gallery-slider__list
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-1.jpg")
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-2.jpg")
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-3.jpg")
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-4.jpg")
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-5.jpg")
+			//- 		.gallery-slider__item
+			//- 			img(src="./img/gallary-6.jpg")
+		section.section-skills
+			.container
+				.row
+					.col-lg-6.col-12
+						.section-skills__content
+							h3.section-skills__title.section-title Professional Skills
+							h5.section-skills__description Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis,vel vestibulum nisl volutpat faucibus.
+							h5.section-skills__description Suspendisse volutpat feugiat hendrerit. Donec ullamcorper ex sed gravida efficitur tincidunt dui arcu.
+					.col-lg-5.offset-lg-1.col-12
+						.section-skills__progress-list
+							.section-skills__progress-item
+								p.section-skills__progress-item__name UI/UX Design 75%
+								.progress.progress-xxs
+									.skill-bar.progress-bar(role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%")
+							.section-skills__progress-item
+								p.section-skills__progress-item__name Web development 90%
+								.progress.progress-xxs
+									.skill-bar.progress-bar(role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%")
+							.section-skills__progress-item
+								p.section-skills__progress-item__name Marketing 65%
+								.progress.progress-xxs
+									.skill-bar.progress-bar(role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%")
+							.section-skills__progress-item
+								p.section-skills__progress-item__name Mobile design 80%
+								.progress.progress-xxs
+									.skill-bar.progress-bar(role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%")
+		section.section-comment
+			img(src="./img/map-bg.png").section-comment__bg
+			.slider.JS-slider-comment
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="./img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="./img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+				.slider-item
+					.container
+						.section-comment__container
+							img.section-comment__img(src="./img/quotes.png")
+							h4.section-comment__title Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.
+							.section-comment__person Michael Hopkins
+		section.section-news
+			.container
+				h3.section-news__title.section-title Latest News
+				.section-news__list
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-1.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-2.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+					.section-news__item
+						.card
+							img.card-img-top(src="./img/news-3.jpg"  alt="card image cap")
+							.card-body
+								h5.card-title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
+								p.card-subtitle interiors / 12.04.2018
+								p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+				button.btn.btn-lg.btn-primary view more
+		section.section-contact
+			include components/parts/_section-contact.pug
+		footer.section-footer
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
 		include components/_scripts.pug

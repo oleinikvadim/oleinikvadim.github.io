@@ -25,7 +25,7 @@
 /* @import "../libs/bootstrap/scss/badge";*/
 /* @import "../libs/bootstrap/scss/jumbotron";*/
 /* @import "../libs/bootstrap/scss/alert";*/
-/* @import "../libs/bootstrap/scss/progress";*/
+@import "../libs/bootstrap/scss/progress";
 /* @import "../libs/bootstrap/scss/media";*/
 /* @import "../libs/bootstrap/scss/list-group";*/
 @import "../libs/bootstrap/scss/close";
@@ -41,6 +41,9 @@
 // Slick
 @import "../libs/slick-1.8.1/slick/slick.css";
 @import "../libs/slick-1.8.1/slick/slick-theme.css";
+
+// lightbox
+@import "../libs/lightgallery/lightgallery.min.css";
 
 // hamburger
 @import "../libs/hamburgers-master/hamburgers-master/_sass/hamburgers/hamburgers";

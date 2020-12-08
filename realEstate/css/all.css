@@ -2,6 +2,7 @@
 /* Bootstrap  v4.5.3 ====================================*/
 @import "../libs/slick-1.8.1/slick/slick.css";
 @import "../libs/slick-1.8.1/slick/slick-theme.css";
+@import "../libs/lightgallery/lightgallery.min.css";
 @import "../libs/select2-4.0.10/dist/css/select2.min.css";
 :root {
   --blue: #007bff;
@@ -4590,7 +4591,55 @@ input[type=button].btn-block {
 /* @import "../libs/bootstrap/scss/badge";*/
 /* @import "../libs/bootstrap/scss/jumbotron";*/
 /* @import "../libs/bootstrap/scss/alert";*/
-/* @import "../libs/bootstrap/scss/progress";*/
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.84375rem;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #00bd74;
+  transition: width 0.6s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+  animation: progress-bar-stripes 1s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-animated {
+    animation: none;
+  }
+}
+
 /* @import "../libs/bootstrap/scss/media";*/
 /* @import "../libs/bootstrap/scss/list-group";*/
 .close {
@@ -10111,6 +10160,12 @@ button {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (max-width: 992px) {
+  .section-about-us {
+    padding-top: 40px;
+    padding-bottom: 4ыы0px;
+  }
+}
 .section-about-us__title {
   text-align: left;
   margin-bottom: 30px;
@@ -10296,6 +10351,216 @@ button {
 }
 .about-social .social-svg:hover {
   opacity: 0.6;
+}
+
+.section-gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .section-gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.section-gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 360px));
+  grid-gap: 30px;
+  justify-content: center;
+}
+.section-gallery__item {
+  position: relative;
+  transition: 0.3s all;
+}
+.section-gallery__item:hover:before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.gallery-slider {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #212121;
+}
+.gallery-slider--opacity {
+  opacity: 1;
+  pointer-events: all;
+}
+.gallery-slider__list {
+  margin: auto;
+}
+.gallery-slider__list img {
+  border-radius: 5px;
+}
+.gallery-slider .slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+}
+
+.section-skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+}
+@media (max-width: 992px) {
+  .section-skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.section-skills__title {
+  text-align: left;
+}
+.section-skills__description {
+  font-family: "Nunito Sans";
+  line-height: 1.44;
+}
+.section-skills__progress-item {
+  margin-bottom: 30px;
+}
+.section-skills__progress-item__name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2.5;
+  letter-spacing: 0.6px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.progress {
+  height: 3px;
+}
+
+.progress-bar {
+  transition-duration: 3s;
+}
+
+.section-news-main {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .section-news-main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.section-news-main .news-pills {
+  justify-content: center;
+  margin-bottom: 70px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.17;
+  letter-spacing: 0.6px;
+  color: #6b6b6b;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .section-news-main .news-pills {
+    flex-direction: column;
+  }
+}
+.section-news-main .nav-link {
+  padding: 1px 10px;
+  margin-right: 15px;
+}
+@media (max-width: 576px) {
+  .section-news-main .nav-link {
+    margin: auto;
+  }
+}
+.section-news-main .nav-link.active {
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 0px 1px #00bd74;
+  color: #00bd74;
+  border-radius: 3px;
+}
+.section-contact-us-main {
+  padding-bottom: 100px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .section-contact-us-main {
+    padding-bottom: 30px;
+  }
+}
+.section-contact-us-main__map {
+  height: 480px;
+  margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .section-contact-us-main__map {
+    margin-bottom: 30px;
+  }
+}
+.section-contact-us-main__map .google-map {
+  height: 100%;
+}
+.section-contact-us-main__title {
+  font-size: 30px;
+  line-height: 2.8;
+  color: #171717;
+  text-align: left;
+}
+.section-contact-us-main__subtitle {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b6b6b;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.section-contact-us-main__info-list {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  line-height: 2.25;
+  color: #6b6b6b;
+}
+@media (max-width: 1200px) {
+  .section-contact-us-main__info-list {
+    margin-bottom: 30px;
+  }
+}
+.section-contact-us-main .form-control {
+  margin-bottom: 30px;
+  border: solid 1px #e8e8e8;
+}
+.section-contact-us-main .form-control::placeholder {
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  line-height: 1.6;
+  color: #787878;
+}
+
+.info-item {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .info-item {
+    flex-direction: column;
+  }
+}
+.info-item__description {
+  font-weight: 600;
+  color: #171717;
+  margin-right: 10px;
 }
 
 .sticker {
@@ -11369,17 +11634,30 @@ Build date: 2019-12-19 16:51:02
   padding-bottom: 100px;
   background-color: #212121;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.about-us-features__bg {
+  opacity: 0.2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .about-us-features__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
   grid-gap: 50px;
+  justify-content: center;
+}
+.about-us-features__item {
+  text-align: center;
 }
 .about-us-features .far,
 .about-us-features .fas {
   color: #ffa656;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .about-us-features__title {
   text-transform: uppercase;

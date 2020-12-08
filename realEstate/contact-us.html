@@ -24,10 +24,10 @@
                 <ul class="navbar-nav mr-auto ml-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="agency.html">Agencies</a></li>
+                  <li class="nav-item"><a class="nav-link" href="agency.html">Agencies</a></li>
                   <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
                 </ul>
                 <div class="login-content">
                   <svg class="login-content__svg">
@@ -44,119 +44,59 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active"><a href="agency.html">Agencies</a></li>
+            <li class="breadcrumb-item active"><a href="contact-us.html">Contact Us</a></li>
           </ol>
         </nav>
       </div>
-      <form class="form agencies-form" action="#">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <label for="city">City</label>
-            <select class="custom-select" id="city">
-              <option selected="selected">New-York</option>
-              <option value="1">Kharkiv</option>
-              <option value="2">Kiev</option>
-              <option value="3">Moscow</option>
-            </select>
-          </div>
-          <div class="col-md-4 col-12">
-            <label for="purpose">Purpose</label>
-            <select class="custom-select" id="purpose">
-              <option selected="selected">New-York</option>
-              <option value="1">Kharkiv</option>
-              <option value="2">Kiev</option>
-              <option value="3">Moscow</option>
-            </select>
-          </div>
-          <div class="col-md-4 col-12">
-            <label for="keywords">Keywords</label>
-            <input class="search-keywords" type="search" id="site-search" name="keyword"/>
-          </div>
-        </div>
-        <div class="btn btn-lg btn-primary">search agencies</div>
-      </form>
     </div>
-    <section class="section-best-agencies">
+    <section class="section-contact-us-main">
       <div class="container">
-        <ul class="agencies-list">
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
+        <div class="section-contact-us-main__map">
+          <div class="google-map JS-googleMap" id="JS-map"></div>
+        </div>
+        <div class="section-contact-us-main__contact-info contact-info">
+          <div class="contact-info__description">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="section-contact-us-main__title">Contact Info:</div>
+                <div class="section-contact-us-main__subtitle">To give give beginning divide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry</div>
+                <ul class="section-contact-us-main__info-list">
+                  <li class="info-item">
+                    <div class="info-item__description">Address:</div><a class="info-item__link" href="" type="address">10111 Santa Monica Boulevard, LA</a>
+                  </li>
+                  <li class="info-item">
+                    <div class="info-item__description">Phone:</div><a class="info-item__link" href="tel:+44 987 065 908" type="phone">+44 987 065 908</a>
+                  </li>
+                  <li class="info-item">
+                    <div class="info-item__description">Email:</div><a class="info-item__link" href="mailto:info@realestate.com">info@realestate.com</a>
+                  </li>
+                  <li class="info-item">
+                    <div class="info-item__description">Fax:</div><a class="info-item__link" href="fax:+44 987 065 908" type="phone">+44 987 065 909</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-7 offset-xl-1">
+                <form class="form-contact" action="#">
+                  <div class="row">
+                    <div class="col">
+                      <input class="form-control" type="text" placeholder="Name*"/>
+                    </div>
+                    <div class="col">
+                      <input class="form-control" type="email" placeholder="Email*"/>
+                    </div>
+                    <div class="col-12">
+                      <input class="form-control" type="text" placeholder="Title"/>
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control" type="textarea" rows="8" placeholder="Message*"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-          <li class="agencies-item">
-            <div class="agencies-item__top"><img class="agencies-item__img" src="./img/agenci-bg1.png" alt="acencies first"/></div>
-            <div class="agencies-item__body">
-              <h5 class="agencies-item__title">Real Estate TX Agency</h5>
-              <div class="agencies-item__descr">Morbi vel mauris feugiat, sodales mi eu, pharetra.</div>
-            </div>
-            <button class="btn btn-secondary">view profile</button>
-          </li>
-        </ul>
-        <div class="row">
-          <div class="col text-center">
-            <div class="btn btn-primary btn-lg">load more</div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-contact">
-      <div class="container">
-        <div class="section-contact__container">
-          <div class="section-contact__description">If you have any questions – please contact us via the contact form.</div>
-          <button class="btn btn-outline-primary btn-outline--lite btn-lg">contact us</button>
-        </div>
+        <div class="btn btn-primary btn-lg">Send Message</div>
       </div>
     </section>
     <footer class="section-footer">
