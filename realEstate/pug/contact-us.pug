@@ -8,7 +8,7 @@ html(lang="en")
 				nav(aria-label="breadcrumb")
 					ol(class="breadcrumb")
 						li(class="breadcrumb-item")
-							a(href="#") Home
+							a(href="index.html") Home
 						li(class="breadcrumb-item active")
 							a(href="contact-us.html") Contact Us
 		section.section-contact-us-main
@@ -19,9 +19,9 @@ html(lang="en")
 					.contact-info__description
 						.row
 							.col-xl-4
-								.section-contact-us-main__title Contact Info:
+								h3.section-contact-us-main__title Contact Info:
 								.section-contact-us-main__subtitle To give give beginning divide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry
-								ul.section-contact-us-main__info-list
+								ul.info-list
 									li.info-item
 										.info-item__description Address:
 										a(href="" type="address").info-item__link 10111 Santa Monica Boulevard, LA
@@ -35,18 +35,20 @@ html(lang="en")
 										.info-item__description Fax:
 										a(href="fax:+44 987 065 908" type="phone").info-item__link +44 987 065 909
 							.col-xl-7.offset-xl-1
-								form.form-contact(action="#")
+								form.form-contact(action="#").text-left
 									.row
 										.col
-											input(type="text" class="form-control" placeholder="Name*")
+											.form-group
+												input(type="text" class="form-control" placeholder="Name*")
 										.col
-											input(type="email" class="form-control" placeholder="Email*")
-										.col-12
-											input(type="text" class="form-control" placeholder="Title")
-										.col-12
-											textarea(type="textarea" class="form-control" rows="8" placeholder="Message*")
-				.btn.btn-primary.btn-lg Send Message
-		footer.section-footer
+											.form-group
+												input(type="email" class="form-control" placeholder="Email*")
+									.form-group
+												input(type="text" class="form-control" placeholder="Title")
+									.form-group
+												textarea.message(type="textarea" class="form-control" rows="8" placeholder="Message*")
+									.btn.btn-primary.btn-lg Send Message
+		footer.footer
 			include components/_footer.pug
 		section.section-copyright
 			include components/parts/_section-copyright.pug

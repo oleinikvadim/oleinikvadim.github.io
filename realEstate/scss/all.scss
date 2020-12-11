@@ -4,6 +4,7 @@
 @import "font";
 @import "mixin";
 @import "global";
+@import "helper";
 
 // components
 @import "../scss/components/header";
@@ -17,7 +18,6 @@
 @import "../scss/sections/section-news";
 @import "../scss/sections/section-about-us";
 @import "../scss/sections/section-contact";
-@import "../scss/sections/section-footer";
 @import "../scss/sections/section-gallery";
 @import "../scss/sections/section-skills";
 @import "../scss/sections/section-news-main";
@@ -29,6 +29,7 @@
 @import "../scss/parts/slick-custom";
 @import "../scss/parts/ion.rangeSlider";
 @import "../scss/parts/select";
+@import "../scss/parts/footer";
 
 // main-link
 

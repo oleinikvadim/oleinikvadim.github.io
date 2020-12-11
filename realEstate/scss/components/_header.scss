@@ -5,6 +5,7 @@
 	display: flex;
 	align-items: center;
 	position: fixed;
+	top: 0;
 	min-height: 70px;
 	width: 100%;
 	z-index: 100;
@@ -98,3 +99,7 @@
 .JS-header_down {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
+// .header-plug {
+// 	padding-bottom: 70px;
+// }

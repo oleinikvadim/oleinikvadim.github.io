@@ -13,16 +13,16 @@
 		font-family: "Nunito Sans";
 		line-height: 1.44;
 	}
-	&__progress-item {
-		margin-bottom: 30px;
-		&__name {
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 2.5;
-			letter-spacing: 0.6px;
-			margin-bottom: 5px;
-			text-transform: uppercase;
-		}
+}
+.progress-item {
+	margin-bottom: 30px;
+	&__name {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 2.5;
+		letter-spacing: 0.6px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
 	}
 }
 
@@ -32,30 +32,3 @@
 .progress-bar {
 	transition-duration: 3s;
 }
-
-// .progress-bar {
-// 	width: 0;
-// 	animation: progress 1.5s ease-in-out forwards;
-
-// 	.title {
-// 		opacity: 0;
-// 		animation: show 0.35s forwards ease-in-out 0.5s;
-// 	}
-// }
-
-// @keyframes progress {
-// 	from {
-// 		width: 0;
-// 	}
-// 	to {
-// 		width: 100%;
-// 	}
-// }
-// @keyframes show {
-// 	from {
-// 		opacity: 0;
-// 	}
-// 	to {
-// 		opacity: 1;
-// 	}
-// }

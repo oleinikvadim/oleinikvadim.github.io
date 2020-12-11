@@ -1,16 +1,10 @@
 .section-welcome {
-	padding-top: 165px;
+	padding-top: 96px;
 	padding-bottom: 95px;
-	// background-image: url("./img/welcome-bg.jpg");
 	background: url("../img/welcome-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	// height: 600px;
-	// @media (max-width: 992px) {
-	// 	height: 900px;
-	// }
-	// z-index: 2;
 	&:before {
 		content: "";
 		@include absoluteCover;
@@ -19,6 +13,10 @@
 			rgba(#000, 0.5) 0%,
 			rgba(#000, 0.5) 100%
 		);
+	}
+	.card-img-top {
+		padding-bottom: 220px;
+		position: relative;
 	}
 	.card {
 		width: 360px;

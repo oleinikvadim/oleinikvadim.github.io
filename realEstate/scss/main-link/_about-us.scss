@@ -1,4 +1,12 @@
-.about-us {
+.about-us-img-top {
+	position: relative;
+	padding-bottom: 540px;
+	@media (max-width: 992px) {
+		padding-bottom: 250px;
+	}
+	.resp-img {
+		object-fit: contain;
+	}
 }
 .about-us-features {
 	padding-top: 100px;
@@ -11,13 +19,13 @@
 		opacity: 0.2;
 		@include absoluteCenter;
 	}
-	&__list {
+	.features__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
 		grid-gap: 50px;
 		justify-content: center;
 	}
-	&__item {
+	.features__item {
 		text-align: center;
 	}
 	.far,
@@ -26,14 +34,14 @@
 		font-size: 40px;
 		margin-bottom: 25px;
 	}
-	&__title {
+	.features__title {
 		text-transform: uppercase;
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 2.5;
 		letter-spacing: 0.6px;
 	}
-	&__subtitle {
+	.features__subtitle {
 		font-family: "Nunito Sans";
 		font-size: 16px;
 		line-height: 1.5;

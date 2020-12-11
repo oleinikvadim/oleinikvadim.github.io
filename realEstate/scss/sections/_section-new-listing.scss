@@ -27,12 +27,15 @@
 	}
 	.card-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 345px));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		grid-gap: 30px;
 		justify-content: center;
 	}
 	.card-img-top {
 		position: relative;
+		padding-bottom: 220px;
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
 	}
 	.sticker {
 		position: absolute;

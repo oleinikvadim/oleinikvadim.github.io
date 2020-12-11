@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.css"/>
   </head>
   <body>
+        <div class="header-plug"></div>
         <header class="header JS-header">
           <div class="container">
             <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="index.html">
@@ -44,54 +45,68 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-12">
-              <label for="city">City</label>
-              <select class="custom-select" id="city">
-                <option selected="selected">New-York</option>
-                <option value="1">Kharkiv</option>
-                <option value="2">Kiev</option>
-                <option value="3">Moscow</option>
-              </select>
+              <div class="form-group">
+                <label for="city">City</label>
+                <select class="custom-select form-control" id="city">
+                  <option selected="selected">New-York</option>
+                  <option value="1">Kharkiv</option>
+                  <option value="2">Kiev</option>
+                  <option value="3">Moscow</option>
+                </select>
+              </div>
             </div>
             <div class="col-md-6 col-12">
-              <label for="property">Property Type</label>
-              <select class="custom-select" id="Property">
-                <option selected="selected">Center City</option>
-                <option value="1">Large Bed</option>
-                <option value="2">Small</option>
-                <option value="3">First</option>
-              </select>
+              <div class="form-group">
+                <label for="property">Property Type</label>
+                <select class="custom-select form-control" id="Property">
+                  <option selected="selected">Center City</option>
+                  <option value="1">Large Bed</option>
+                  <option value="2">Small</option>
+                  <option value="3">First</option>
+                </select>
+              </div>
             </div>
             <div class="col-md-6 col-12">
-              <label for="purpose">Purpose</label>
-              <select class="custom-select" id="Purpose">
-                <option selected="selected">One Day</option>
-                <option value="1">Week</option>
-                <option value="2">2-3 days</option>
-                <option value="3">1 month</option>
-              </select>
+              <div class="form-group">
+                <label for="purpose">Purpose</label>
+                <select class="custom-select form-control" id="Purpose">
+                  <option selected="selected">One Day</option>
+                  <option value="1">Week</option>
+                  <option value="2">2-3 days</option>
+                  <option value="3">1 month</option>
+                </select>
+              </div>
             </div>
             <div class="col-md-6 col-12">
-              <label for="bedrooms">Bedrooms</label>
-              <select class="custom-select" id="Bedrooms">
-                <option selected="selected">One</option>
-                <option value="1">Two</option>
+              <div class="form-group">
+                <label for="bedrooms">Bedrooms</label>
+                <select class="custom-select form-control" id="Bedrooms">
+                  <option selected="selected">One</option>
+                  <option value="1">Two</option>
+                  <label for="bathroom">Bathrooms</label>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
                 <label for="bathroom">Bathrooms</label>
-              </select>
+                <select class="custom-select form-control" id="bathroom">
+                  <option selected="selected">One</option>
+                  <option value="1">Two</option>
+                </select>
+              </div>
             </div>
             <div class="col-md-6 col-12">
-              <label for="bathroom">Bathrooms</label>
-              <select class="custom-select" id="bathroom">
-                <option selected="selected">One</option>
-                <option value="1">Two</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-12">
-              <label for="keywords">Keywords</label>
-              <input class="search-keywords" type="search" id="site-search" name="keyword"/>
+              <div class="form-group">
+                <label for="keywords">Keywords</label>
+                <input class="search-keywords" type="search" form-control="form-control" id="site-search" name="keyword"/>
+              </div>
             </div>
             <div class="col-lg-12">
-              <label for="price">Price</label>
-              <input class="js-range-slider slider-cost" type="text" name="my_range" value="" id="price-properties"/>
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input class="form-control js-range-slider slider-cost" type="text" name="my_range" value="" id="price-properties"/>
+              </div>
             </div>
             <div class="btn btn-primary btn-form">Search properties</div>
           </div>
@@ -104,7 +119,8 @@
         <div class="container-fluid">
           <div class="properties-container__card-list">
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -124,7 +140,8 @@
               </div>
             </div>
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -144,7 +161,8 @@
               </div>
             </div>
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -164,7 +182,8 @@
               </div>
             </div>
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -184,7 +203,8 @@
               </div>
             </div>
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -204,7 +224,8 @@
               </div>
             </div>
             <div class="properties-container__card-item">
-              <div class="card"><img class="card-img-top" src="./img/card-img-1.jpg" alt="card image cap"/>
+              <div class="card">
+                <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
                 <div class="card-body">
                   <p class="card-title">Central Park, Manhattan, NY</p>
                   <p class="card-subtitle">$5,630,000</p>
@@ -259,7 +280,7 @@
     <script src="./libs/select2-4.0.10/dist/js/select2.min.js"></script>
     <script src="./libs/ion.rangeSlider-master/ion.rangeSlider.min.js"></script>
     <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./libs/lightgallery/lightgallery.min.js"></script>
+    <script src="./libs/lightgallery/dist/js/lightgallery.min.js"></script>
     <script src="https://kit.fontawesome.com/f70f7a1dd5.js" crossorigin="anonymous"></script>
     <script src="./libs/bootstrap/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

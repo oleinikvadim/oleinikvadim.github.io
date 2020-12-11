@@ -7,7 +7,7 @@
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		grid-gap: 30px;
 		margin-bottom: 70px;
 		justify-content: center;
@@ -18,6 +18,10 @@
 		}
 		.card-title {
 			line-height: 1.39;
+		}
+		.card-img-top {
+			position: relative;
+			padding-bottom: 220px;
 		}
 	}
 	.btn {

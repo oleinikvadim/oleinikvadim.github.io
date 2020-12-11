@@ -5,8 +5,8 @@
 	jsSlideCost();
 	jsVideoTeam();
 	hamburgerCollapse();
-	scrollSpy();
-	// navActiveOnClick();
+	// scrollSpy();
+	navActiveOnClick();
 	scrollSmooth();
 	headerZeroY();
 	select2();
@@ -52,7 +52,8 @@
 
 	function select2() {
 		$('select').select2({
-			minimumResultsForSearch: -1
+			minimumResultsForSearch: -1,
+			width: '100%'
 		});
 	  }
 
@@ -139,12 +140,12 @@
 		$('body').scrollspy({target: ".navbar", offset: 50});
 	}
 
-	// function navActiveOnClick(){
-	// 	$('.navbar-nav .nav-link').click(function(){
-	// 	  $('.navbar-nav .nav-link').removeClass('active');
-	// 	  $(this).addClass('active');
-	// 	})
-	// }
+	function navActiveOnClick(){
+		$('.navbar-nav .nav-link').click(function(){
+		  $('.navbar-nav .nav-link').removeClass('active');
+		  $(this).addClass('active');
+		})
+	}
 	  
 	function scrollSmooth() {
 		$(".nav-link.JS-scroll").on('click', function(event) {
@@ -184,7 +185,7 @@
 	} 
 
 	function slickLightBox() {
-		lightGallery(document.getElementById('ul-li'));
+		lightGallery(document.getElementById("JS-lightGallery"));
 	}
 	  
 })(jQuery);
