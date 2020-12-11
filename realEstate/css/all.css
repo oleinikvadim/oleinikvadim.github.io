@@ -9869,38 +9869,36 @@ input[type=submit] {
   background-color: #00bd74;
   border-radius: 5px;
 }
-.header .login-content {
+
+.login-content {
   display: flex;
   align-items: center;
   text-transform: uppercase;
   font-size: 12px;
 }
 @media (max-width: 992px) {
-  .header .login-content {
+  .login-content {
     justify-content: flex-end;
   }
 }
 @media (max-width: 552px) {
-  .header .login-content {
+  .login-content {
     justify-content: center;
   }
 }
-.header .login-content__svg {
+.login-content__svg {
   fill: #00bd74;
   width: 14px;
   height: 14px;
   margin-right: 10px;
 }
-.header .login-content__container {
+.login-content__login {
   display: flex;
   align-items: center;
-  cursor: pointer;
-}
-.header .login-content__login {
   padding-right: 8px;
   position: relative;
 }
-.header .login-content__login:before {
+.login-content__login:before {
   content: "";
   position: absolute;
   width: 1px;
@@ -9909,10 +9907,10 @@ input[type=submit] {
   left: 100%;
   background-color: #171717;
 }
-.header .login-content__register {
+.login-content__register {
   margin-left: 8px;
 }
-.header .login-content__login:hover, .header .login-content__register:hover {
+.login-content__login:hover, .login-content__register:hover {
   opacity: 0.7;
 }
 

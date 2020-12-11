@@ -27,8 +27,9 @@ mixin header(item)
 						li.nav-item
 							a.nav-link(href='contact-us.html' , class = item == 'contacts' ? 'active' : '') Contact Us
 					.login-content
-						svg.login-content__svg
-							use(xlink:href="./img/svg/SVG-sprite.svg#padlock" class="svg") 
-						.login-content__container
-							a.login-content__login Login
-							a.login-content__register Register
+						a.login-content__login(href="#")
+							svg.login-content__svg
+								use(xlink:href="./img/svg/SVG-sprite.svg#padlock" class="svg")
+							p Login
+						a.login-content__register(href="#") 
+							p Register
