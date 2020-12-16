@@ -9852,6 +9852,7 @@ input[type=submit] {
   width: 100%;
   z-index: 100;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.08);
+  transition: 0.3s all;
 }
 .header .brand-svg {
   width: 25px;
