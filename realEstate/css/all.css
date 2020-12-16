@@ -4,6 +4,7 @@
 @import "../libs/slick-1.8.1/slick/slick-theme.css";
 @import "..//libs/lightgallery/dist/css/lightgallery.min.css";
 @import "../libs/select2-4.0.10/dist/css/select2.min.css";
+@import "../libs/swiper/swiper-css.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9807,6 +9808,11 @@ input[type=submit] {
   padding-bottom: 220px;
 }
 
+.breadcrumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .resp-img {
   position: absolute;
   top: 0px;
@@ -9818,6 +9824,22 @@ input[type=submit] {
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.opacity-container:before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 .header {
@@ -10140,7 +10162,7 @@ input[type=submit] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/map-bg.png");
+  background-image: url("..//img/map-bg.png");
   background-position: center 20px;
   background-repeat: no-repeat;
 }
@@ -10227,19 +10249,36 @@ input[type=submit] {
     text-align: center;
   }
 }
+
 .section-about-us__video {
   margin-left: -30px;
   min-height: 340px;
   height: 100%;
-  position: relative;
   border-radius: 5px;
+  position: relative;
 }
 @media (max-width: 992px) {
   .section-about-us__video {
     margin-left: inherit;
   }
 }
-.section-about-us__video:before {
+
+.video-plug {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 340px;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: 1;
+}
+.video-plug--off {
+  opacity: 0;
+  z-index: -1;
+}
+.video-plug:after {
   content: "";
   position: absolute;
   top: 0;
@@ -10250,11 +10289,8 @@ input[type=submit] {
   height: 100%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-.section-about-us .video-bg {
-  width: 100%;
-  min-height: 340px;
-}
-.section-about-us .start-video {
+
+.video-play-button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -10263,14 +10299,16 @@ input[type=submit] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s all;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  z-index: 100;
 }
-.section-about-us .start-video:hover {
+.video-play-button:hover {
   background-color: #ff993d;
   width: 70px;
   height: 70px;
 }
-.section-about-us .start-video:after {
+.video-play-button:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -10343,21 +10381,6 @@ input[type=submit] {
   position: relative;
   object-fit: cover;
   cursor: pointer;
-}
-.gallery-item:before {
-  content: "";
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-  pointer-events: none;
-  opacity: 0;
-  transition: all 0.3s;
 }
 .gallery-item:hover:before {
   opacity: 1;
@@ -10611,7 +10634,7 @@ input[type=submit] {
   height: 20px;
   margin-right: 8px;
 }
-.card-benefits p {
+.card-benefits__title {
   margin-right: 25px;
   margin-bottom: 0px;
   font-weight: 500;
@@ -11767,5 +11790,210 @@ Build date: 2019-12-19 16:51:02
   font-family: "Nunito Sans";
   font-size: 16px;
   line-height: 1.5;
+}
+
+.single-property {
+  padding-bottom: 50px;
+}
+.single-property .agencies-item__top {
+  padding-bottom: 250px;
+}
+.single-property .form-contact {
+  padding: 25px;
+  background-color: #ececec;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.single-property .agencies-item {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.single-property .btn {
+  width: 100%;
+}
+.single-property .form-property {
+  background-color: #ececec;
+}
+.single-property .card-benefits {
+  margin-bottom: 65px;
+}
+.single-property .google-map {
+  height: 460px;
+  margin-bottom: 70px;
+}
+.single-property .card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+}
+.single-property .card-list .card {
+  border: solid 1px #ececec;
+}
+.single-property .card-list .card-benefits {
+  margin-bottom: 0;
+}
+
+.link-list {
+  margin-bottom: 20px;
+}
+
+.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-item__title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #171717;
+  margin-right: 20px;
+}
+.link-item__link {
+  color: #6b6b6b;
+  font-size: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list .social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: 0.3 all;
+}
+.social-list .social-item:first-child {
+  background-color: #3d5b97;
+}
+.social-list .social-item:nth-child(2) {
+  background-color: #2fa1dc;
+}
+.social-list .social-item:nth-child(3) {
+  background-color: #d95249;
+}
+.social-list .social-item:hover {
+  opacity: 0.8;
+}
+.social-list .social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.title-top {
+  display: flex;
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 600;
+}
+.title-top__title {
+  background-color: #00bd74;
+  padding: 20px 15px 17px;
+  flex: 1;
+  border-top-left-radius: 5px;
+}
+.title-top__price {
+  border-top-right-radius: 5px;
+  background-color: #00935a;
+  padding: 20px 15px 17px;
+}
+
+.gallery-top {
+  max-height: 430px;
+  position: relative;
+}
+.gallery-top .sticker-list {
+  position: absolute;
+  z-index: 10;
+  left: 10;
+  top: 10;
+}
+.gallery-top .sticker {
+  margin-right: 10px;
+}
+.gallery-thumbs {
+  max-height: 100px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  margin-bottom: 65px;
+}
+.gallery-thumbs .swiper-wrapper {
+  max-height: 80px;
+}
+.gallery-thumbs .swiper-slide {
+  object-fit: contain;
+  background-repeat: no-repeat;
+  max-width: 114px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+}
+.gallery-thumbs .swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 0.6;
+}
+
+.single-property-title {
+  margin-bottom: 40px;
+  font-size: 26px;
+  color: #171717;
+}
+
+.single-property-description {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  line-height: 1.44;
+  color: #4e4e4e;
+  margin-bottom: 65px;
+}
+
+.property-features__list {
+  margin-bottom: 70px;
+}
+
+.property-item {
+  display: flex;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  line-height: 1.44;
+  color: #4e4e4e;
+  margin-bottom: 15px;
+}
+.property-item__check {
+  color: #00bd74;
+  margin-right: 15px;
+}
+
+.floor-plan__list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+.floor-plan__item {
+  margin-right: 20px;
+  position: relative;
+}
+.floor-plan-item__container:hover:before {
+  opacity: 1;
 }
 /*# sourceMappingURL=all.css.map */

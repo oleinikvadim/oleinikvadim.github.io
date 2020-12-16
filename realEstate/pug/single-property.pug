@@ -1,0 +1,204 @@
+html(lang="en")
+	include components/_head.pug
+	body
+		include components/_header.pug
+		+header()
+		.container
+			.breadcrumbs
+				nav(aria-label="breadcrumb")
+					ol(class="breadcrumb")
+						li(class="breadcrumb-item")
+							a(href="#") Home
+						li(class="breadcrumb-item")
+							a(href="#") Agencies
+						li(class="breadcrumb-item active")
+							a(href="single-property.html") Single Property
+		section.single-property
+			.container
+				.row.flex-row-reverse
+					.col-4
+						ul.agencies-list
+							li.agencies-item
+								.agencies-item__top
+									img.agencies-item__img(src="./img/single-property-img-1.jpg" alt="single-property-1").resp-img
+								.agencies-item__body
+									h5.agencies-item__title Real Estate NY Agency
+									ul.link-list
+										li.link-item 
+											.link-item__title Office:  
+											.link-item__link 1-222-333-4444
+										li.link-item 
+											.link-item__title Mobile: 
+											.link-item__link 1-234-456-7893
+										li.link-item 
+											.link-item__title Fax:  
+											.link-item__link 1-333-444-5555
+										li.link-item 
+											.link-item__title Email:  
+											.link-item__link hello@realestate.com
+									ul.social-list
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-facebook" class="svg")
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-twitter" class="svg")
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-pinterest" class="svg")
+						form.form-contact(action="#")
+							.form-group
+								input(type="text" class="form-control" placeholder="Name*")
+							.form-group
+								input(type="email" class="form-control" placeholder="Email*")
+							.form-group
+								input(type="text" class="form-control" placeholder="Title")
+							.form-group
+								textarea.message(type="textarea" class="form-control" rows="2" placeholder="Message*")
+							.btn.btn-primary.btn-lg Send Message
+						include components/parts/_form-properties-setup.pug
+					.col-8
+						.title-top
+							.title-top__title
+								p Upper West Side, Manhattan, NY
+							.title-top__price 
+								p $1,200 / mon
+						.swiper-container.gallery-top
+							ul.sticker-list
+									li.sticker.sticker--sale Sale
+									li.sticker.sticker--hot Hot
+									li.sticker.sticker--favorite Favorite
+							.swiper-wrapper
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-img-1.jpg)")
+							.swiper-button-next.swiper-button-white
+							.swiper-button-prev.swiper-button-white
+						.swiper-container.gallery-thumbs
+							.swiper-wrapper
+								.swiper-slide(style="background-image:url(../img/slider-property-min-1_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-2_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-3_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-4_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-5_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-6_.jpg)")
+								.swiper-slide(style="background-image:url(../img/slider-property-min-6_.jpg)")
+						p.single-property-title Overview
+						.card-benefits
+							svg.card-benefits__svg
+								use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+							p.card-benefits__title Bedroom: 2
+							svg.card-benefits__svg
+								use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+							p.card-benefits__title Bathroom: 3
+							svg.card-benefits__svg
+								use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+							p.card-benefits__title Garage: 1
+							svg.card-benefits__svg
+								use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+							p.card-benefits__title 756 sqft
+						p.single-property-title Description
+						p.single-property-description Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id set accumsan in, cursus eu mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer dictum lacus nec leo tincidunt, blandit rhoncus elit aliquam. Duis maximus sed velit sed pellentesque. Phasellus nec dapibus dolor. Ut nec augue quis dolor bibendum mattis vel eu turpis. Suspendisse molestie augue massa, vitae eleifend antePraesent sed elit id ipsum tempor bibendum a ut arcu. Vivamus rutrum leo at nulla luctus finibus. Donec molestie ipsum ac orci volutpat, nec consectetur urna venenatis. Cras sagittis enim vel purus volutpat dignissim. Maecenas quis varius tortor.
+						p.single-property-title Additional Features
+							.row
+								.col-6
+									ul.property-features__list
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Additional Storage
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Elevator
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Dishwasher
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Flooring: Hardwood
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Valet On-Site
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Bamboo Floors
+								.col-6
+									ul.property-features__list
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Additional Storage
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Elevator
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Dishwasher
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Flooring: Hardwood
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Valet On-Site
+										li.property-item
+											.property-item__check &#10003;
+											.property-item__title Bamboo Floors
+						p.single-property-title Floor Plan
+						ul.floor-plan__list
+							li.floor-plan__item
+								.floor-plan-item__container.opacity-container
+									img(src="./img/floor-plan-1.jpg")
+							li.floor-plan__item
+								.floor-plan-item__container.opacity-container
+									img(src="./img/floor-plan-2.jpg")
+							li.floor-plan__item
+								.floor-plan-item__container.opacity-container
+									img(src="./img/floor-plan-3.jpg")
+						p.single-property-title Property Location
+						.google-map.JS-googleMap(id="JS-map")
+						p.single-property-title Similar Properties
+						ul.card-list
+							li.card-item
+								.card
+									.card-img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card-body
+										p.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p.card-benefits__title 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p.card-benefits__title 1ba
+											p.card-benefits__title 756 sqft
+							li.card-item
+								.card
+									.card-img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card-body
+										p.card-title Central Park, Manhattan, NY
+										p.card-subtitle $5,630,000
+										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.card-benefits
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+											p.card-benefits__title 2bd
+											svg.card-benefits__svg
+												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+											p.card-benefits__title 1ba
+											p.card-benefits__title 756 sqft
+		section.section-contact
+			include components/parts/_section-contact.pug
+		footer.footer
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
+		include components/_scripts.pug
