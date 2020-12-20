@@ -1,0 +1,24 @@
+.slider {
+	height: fit-content;
+	@media (max-width: 992px) {
+		text-align: center;
+	}
+	.sticker {
+		margin-bottom: 15px;
+	}
+	&__description {
+		color: #fff;
+		@media (max-width: 992px) {
+			margin-bottom: 20px;
+		}
+		&__title {
+			margin-bottom: 25px;
+			letter-spacing: -0.5;
+		}
+		&__subtitle {
+			line-height: 1.44;
+			font-family: "Nunito Sans";
+			margin-bottom: 40px;
+		}
+	}
+}

@@ -3,8 +3,8 @@ html(lang="en")
 	body
 		include components/_header.pug
 		+header('properties')
-		.properties-container
-			form(action="#").form
+		.properties-container.section--bg-dark
+			form(action="#").form.form-property
 				.container-fluid
 					.row
 						.col-md-6.col-12
@@ -53,110 +53,128 @@ html(lang="en")
 								label(for="price") Price
 								input.form-control(type="text" class="js-range-slider slider-cost" name="my_range" value="" id="price-properties")
 						.btn.btn-primary.btn-form Search properties
-			.properties-container__map
+			.main-link__properties-map
 				.google-map.JS-googleMap(id="JS-map")
 			.properties-container__cards
 				.container-fluid
-					.properties-container__card-list
-						.properties-container__card-item
+					ul.card-list.card-list--mrb-sm
+						li.card-item
 							.card
-								.card-img-top
+								.card__img-top
 									img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-								.card-body
-									p.card-title Central Park, Manhattan, NY
-									p.card-subtitle $5,630,000
-									p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-									.card-benefits
-										svg.card-benefits__svg
-											use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-										p.card-benefits__title 2bd
-										svg.card-benefits__svg
-											use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-										p.card-benefits__title 1ba
-										p.card-benefits__title 756 sqft
+								.card__body
+									h5.card__title Central Park, Manhattan, NY
+									p.card__subtitle $5,630,000
+									p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+									.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
+						li.card-item
+								.card
+									.card__img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card__body
+										h5.card__title Central Park, Manhattan, NY
+										p.card__subtitle $5,630,000
+										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
+						li.card-item
+								.card
+									.card__img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card__body
+										h5.card__title Central Park, Manhattan, NY
+										p.card__subtitle $5,630,000
+										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
+						li.card-item
+								.card
+									.card__img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card__body
+										h5.card__title Central Park, Manhattan, NY
+										p.card__subtitle $5,630,000
+										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
+						li.card-item
+								.card
+									.card__img-top
+										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
+									.card__body
+										h5.card__title Central Park, Manhattan, NY
+										p.card__subtitle $5,630,000
+										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
 						.properties-container__card-item
 								.card
-									.card-img-top
+									.card__img-top
 										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-									.card-body
-										p.card-title Central Park, Manhattan, NY
-										p.card-subtitle $5,630,000
-										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.card-benefits
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-											p.card-benefits__title 2bd
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-											p.card-benefits__title 1ba
-											p.card-benefits__title 756 sqft
-						.properties-container__card-item
-								.card
-									.card-img-top
-										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-									.card-body
-										p.card-title Central Park, Manhattan, NY
-										p.card-subtitle $5,630,000
-										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.card-benefits
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-											p.card-benefits__title 2bd
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-											p.card-benefits__title 1ba
-											p.card-benefits__title 756 sqft
-						.properties-container__card-item
-								.card
-									.card-img-top
-										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-									.card-body
-										p.card-title Central Park, Manhattan, NY
-										p.card-subtitle $5,630,000
-										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.card-benefits
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-											p.card-benefits__title 2bd
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-											p.card-benefits__title 1ba
-											p.card-benefits__title 756 sqft
-						.properties-container__card-item
-								.card
-									.card-img-top
-										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-									.card-body
-										p.card-title Central Park, Manhattan, NY
-										p.card-subtitle $5,630,000
-										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.card-benefits
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-											p.card-benefits__title 2bd
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-											p.card-benefits__title 1ba
-											p.card-benefits__title 756 sqft
-						.properties-container__card-item
-								.card
-									.card-img-top
-										img(src="./img/card-img-1.jpg"  alt="card image cap").resp-img
-									.card-body
-										p.card-title Central Park, Manhattan, NY
-										p.card-subtitle $5,630,000
-										p.card-text Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.card-benefits
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
-											p.card-benefits__title 2bd
-											svg.card-benefits__svg
-												use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
-											p.card-benefits__title 1ba
-											p.card-benefits__title 756 sqft	
+									.card__body
+										h5.card__title Central Park, Manhattan, NY
+										p.card__subtitle $5,630,000
+										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.benefits
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
+												p.benefits__title 2bd
+											.benefits__item
+												svg.benefits__svg
+													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
+												p.benefits__title 1ba
+											.benefits__item
+												p.benefits__title 756 sqft
 					.btn.btn-primary.btn-lg load more
 		footer.footer.footer--properties
-			ul.about-social
+			ul.social-svg-links
 				li.social-item
 					a.social-link
 						svg.social-svg

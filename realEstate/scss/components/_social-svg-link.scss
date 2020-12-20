@@ -1,0 +1,14 @@
+.social-svg-links {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20px, 0fr));
+	grid-gap: 15px;
+	.social-svg {
+		@include sizeElement(20px);
+		fill: #fff;
+		cursor: pointer;
+		transition: 0.3s all;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}

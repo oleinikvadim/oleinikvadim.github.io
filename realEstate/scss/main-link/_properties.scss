@@ -1,39 +1,10 @@
 .properties-container {
 	position: relative;
-	background-color: #f7f7f7;
 	@media (max-width: 1200px) {
 		display: flex;
 		flex-direction: column;
 	}
-	.form {
-		border-radius: 0;
-		border-bottom: solid 1px #ececec;
-		max-width: 50%;
-		padding: 30px 0;
-		@media (max-width: 1200px) {
-			max-width: 100%;
-		}
-		label {
-			margin-bottom: 10px;
-		}
-	}
-	&__map {
-		position: fixed;
-		max-width: 50%;
-		width: 100%;
-		height: 100vh;
-		top: 0;
-		left: 50%;
-		@media (max-width: 1200px) {
-			position: relative;
-			height: 500px;
-			left: 0;
-			max-width: 100%;
-		}
-	}
-	.google-map {
-		height: 100%;
-	}
+
 	.btn {
 		max-width: 300px;
 		width: 100%;
@@ -44,47 +15,8 @@
 		padding-top: 40px;
 		padding-bottom: 60px;
 		max-width: 50%;
-
 		@media (max-width: 1200px) {
 			max-width: 100%;
 		}
 	}
-	&__card-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		grid-gap: 30px;
-		align-items: center;
-		justify-content: center;
-		padding-bottom: 40px;
-		.card-img-top {
-			position: relative;
-			padding-bottom: 220px;
-		}
-		.btn {
-			max-width: 165px;
-		}
-	}
-}
-
-.footer--properties {
-	background-color: #212121;
-	padding-top: 46px;
-	padding-bottom: 46px;
-	max-width: 50%;
-	@media (max-width: 1200px) {
-		max-width: 100%;
-	}
-	.about-social {
-		justify-content: center;
-		margin-bottom: 15px;
-	}
-}
-
-.search-keywords {
-	width: 100%;
-	height: 42px;
-	border: solid 1px #ececec;
-	height: 42px;
-	display: flex;
-	align-items: center;
 }

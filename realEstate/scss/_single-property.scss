@@ -1,93 +1,7 @@
 .single-property {
 	padding-bottom: 50px;
-	.agencies-item__top {
-		padding-bottom: 250px;
-	}
-	.form-contact {
-		padding: 25px;
-		background-color: #ececec;
-		margin-bottom: 30px;
-		border-bottom-left-radius: $border-radius;
-		border-bottom-right-radius: $border-radius;
-	}
-	.agencies-item {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	.btn {
-		width: 100%;
-	}
 	.form-property {
 		background-color: #ececec;
-	}
-	.card-benefits {
-		margin-bottom: 65px;
-	}
-	.google-map {
-		height: 460px;
-		margin-bottom: 70px;
-	}
-	.card-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		grid-gap: 30px;
-		justify-content: center;
-		.card {
-			border: solid 1px #ececec;
-		}
-		.card-benefits {
-			margin-bottom: 0;
-		}
-	}
-}
-
-.link-list {
-	margin-bottom: 20px;
-}
-
-.link-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&__title {
-		font-size: 12px;
-		font-weight: 600;
-		color: #171717;
-		margin-right: 20px;
-	}
-	&__link {
-		color: #6b6b6b;
-		font-size: 16px;
-	}
-}
-
-.social-list {
-	display: flex;
-	justify-content: center;
-	.social-item {
-		@include sizeElement(40px);
-		border-radius: $border-radius;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-right: 10px;
-		transition: 0.3 all;
-		&:first-child {
-			background-color: #3d5b97;
-		}
-		&:nth-child(2) {
-			background-color: #2fa1dc;
-		}
-		&:nth-child(3) {
-			background-color: #d95249;
-		}
-		&:hover {
-			opacity: 0.8;
-		}
-	}
-	.social-svg {
-		@include sizeElement(20px);
-		fill: #fff;
 	}
 }
 
@@ -110,76 +24,16 @@
 	}
 }
 
-.gallery {
-	&-top {
-		max-height: 430px;
-		position: relative;
-		.sticker-list {
-			position: absolute;
-			z-index: 10;
-			left: 10;
-			top: 10;
-		}
-		.sticker {
-			margin-right: 10px;
-		}
-	}
-	&-thumbs {
-		max-height: 100px;
-		padding: 10px;
-		background-color: #f7f7f7;
-		margin-bottom: 65px;
-		.swiper-wrapper {
-			max-height: 80px;
-		}
-		.swiper-slide {
-			object-fit: contain;
-			background-repeat: no-repeat;
-			max-width: 114px;
-			width: 100%;
-			background-size: cover;
-			border-radius: $border-radius;
-			position: relative;
-			&:after {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				border-radius: $border-radius;
-				background-image: linear-gradient(
-					to top,
-					rgba(0, 0, 0, 0.2) 0%,
-					rgba(0, 0, 0, 0.2) 100%
-				);
-			}
-			&-thumb-active {
-				opacity: 0.6;
-			}
-		}
-	}
-}
-
 .single-property-title {
 	margin-bottom: 40px;
 	font-size: 26px;
 	color: #171717;
 }
 
-.single-property-description {
-	font-family: "Nunito Sans";
-	font-size: 18px;
-	line-height: 1.44;
-	color: #4e4e4e;
-	margin-bottom: 65px;
-}
-
 .property-features__list {
 	margin-bottom: 70px;
 }
+
 .property-item {
 	display: flex;
 	font-family: "Nunito Sans";

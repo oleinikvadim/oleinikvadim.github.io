@@ -40,12 +40,12 @@
             </nav>
           </div>
         </header>
-    <div class="container">
-      <div class="breadcrumbs">
+    <div class="breadcrumbs">
+      <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Agencies</a></li>
+            <li class="breadcrumb-item"><a href="#">Card</a></li>
             <li class="breadcrumb-item active"><a href="single-property.html">Single Property</a></li>
           </ol>
         </nav>
@@ -54,28 +54,24 @@
     <section class="single-property">
       <div class="container">
         <div class="row flex-row-reverse">
-          <div class="col-4">
-            <ul class="agencies-list">
-              <li class="agencies-item">
-                <div class="agencies-item__top"><img class="agencies-item__img resp-img" src="./img/single-property-img-1.jpg" alt="single-property-1"/></div>
-                <div class="agencies-item__body">
-                  <h5 class="agencies-item__title">Real Estate NY Agency</h5>
-                  <ul class="link-list">
-                    <li class="link-item"> 
-                      <div class="link-item__title">Office:  </div>
-                      <div class="link-item__link">1-222-333-4444</div>
+          <div class="col-xl-4">
+            <div class="card-item">
+              <div class="card card--border">
+                <div class="card__img-top"><img class="card-item__img resp-img" src="./img/single-property-img-1.jpg" alt="single-property-1"/></div>
+                <div class="card__body text-center">
+                  <h5 class="card__title">Real Estate NY Agency</h5>
+                  <ul class="info-list --center --mrb-md">
+                    <li class="info-item">
+                      <div class="info-item__description"> Office:</div><a class="info-item__link" href="tel:1 222 333 4444" type="tel">1-222-333-4444</a>
                     </li>
-                    <li class="link-item"> 
-                      <div class="link-item__title">Mobile: </div>
-                      <div class="link-item__link">1-234-456-7893</div>
+                    <li class="info-item">
+                      <div class="info-item__description">Mobile:</div><a class="info-item__link" href="tel:1 234 456 7893" type="phone">1-234-456-7893</a>
                     </li>
-                    <li class="link-item"> 
-                      <div class="link-item__title">Fax:  </div>
-                      <div class="link-item__link">1-333-444-5555</div>
+                    <li class="info-item">
+                      <div class="info-item__description">Fax:</div><a class="info-item__link" href="tel:1 333 444 5555">1-333-444-5555</a>
                     </li>
-                    <li class="link-item"> 
-                      <div class="link-item__title">Email:  </div>
-                      <div class="link-item__link">hello@realestate.com</div>
+                    <li class="info-item">
+                      <div class="info-item__description">Email: </div><a class="info-item__link" href="mailto:+44 987 065 908" type="phone">hello@realestate.com</a>
                     </li>
                   </ul>
                   <ul class="social-list">
@@ -93,9 +89,9 @@
                         </svg></a></li>
                   </ul>
                 </div>
-              </li>
-            </ul>
-            <form class="form-contact" action="#">
+              </div>
+            </div>
+            <form class="form-contact form-contact-single-properties" action="#">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Name*"/>
               </div>
@@ -108,7 +104,7 @@
               <div class="form-group">
                 <textarea class="message form-control" type="textarea" rows="2" placeholder="Message*"></textarea>
               </div>
-              <div class="btn btn-primary btn-lg">Send Message</div>
+              <div class="btn btn-primary w-100">Send Message</div>
             </form>
             <form class="form form-property" action="#">
               <div class="form-group">
@@ -159,7 +155,7 @@
               <div class="btn btn-primary btn-form">Search properties</div>
             </form>
           </div>
-          <div class="col-8">
+          <div class="col-xl-8">
             <div class="title-top">
               <div class="title-top__title">
                 <p>Upper West Side, Manhattan, NY</p>
@@ -198,26 +194,34 @@
               </div>
             </div>
             <p class="single-property-title">Overview</p>
-            <div class="card-benefits">
-              <svg class="card-benefits__svg">
-                <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
-              </svg>
-              <p class="card-benefits__title">Bedroom: 2</p>
-              <svg class="card-benefits__svg">
-                <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
-              </svg>
-              <p class="card-benefits__title">Bathroom: 3</p>
-              <svg class="card-benefits__svg">
-                <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
-              </svg>
-              <p class="card-benefits__title">Garage: 1</p>
-              <svg class="card-benefits__svg">
-                <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
-              </svg>
-              <p class="card-benefits__title">756 sqft</p>
+            <div class="benefits --mrb benefits--grid-md">
+              <div class="benefits__item">
+                <svg class="benefits__svg">
+                  <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                </svg>
+                <p class="benefits__title">Bedroom: 2</p>
+              </div>
+              <div class="benefits__item">
+                <svg class="benefits__svg">
+                  <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                </svg>
+                <p class="benefits__title">Bathroom: 3</p>
+              </div>
+              <div class="benefits__item">
+                <svg class="benefits__svg">
+                  <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                </svg>
+                <p class="benefits__title">Garage: 1</p>
+              </div>
+              <div class="benefits__item">
+                <svg class="benefits__svg">
+                  <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                </svg>
+                <p class="benefits__title">756 sqft</p>
+              </div>
             </div>
             <p class="single-property-title">Description</p>
-            <p class="single-property-description">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id set accumsan in, cursus eu mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer dictum lacus nec leo tincidunt, blandit rhoncus elit aliquam. Duis maximus sed velit sed pellentesque. Phasellus nec dapibus dolor. Ut nec augue quis dolor bibendum mattis vel eu turpis. Suspendisse molestie augue massa, vitae eleifend antePraesent sed elit id ipsum tempor bibendum a ut arcu. Vivamus rutrum leo at nulla luctus finibus. Donec molestie ipsum ac orci volutpat, nec consectetur urna venenatis. Cras sagittis enim vel purus volutpat dignissim. Maecenas quis varius tortor.</p>
+            <div class="section-description --mrb-md">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id set accumsan in, cursus eu mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer dictum lacus nec leo tincidunt, blandit rhoncus elit aliquam. Duis maximus sed velit sed pellentesque. Phasellus nec dapibus dolor. Ut nec augue quis dolor bibendum mattis vel eu turpis. Suspendisse molestie augue massa, vitae eleifend antePraesent sed elit id ipsum tempor bibendum a ut arcu. Vivamus rutrum leo at nulla luctus finibus. Donec molestie ipsum ac orci volutpat, nec consectetur urna venenatis. Cras sagittis enim vel purus volutpat dignissim. Maecenas quis varius tortor.</div>
             <p class="single-property-title">Additional Features
               <div class="row">
                 <div class="col-6">
@@ -279,15 +283,27 @@
               </div>
             </p>
             <p class="single-property-title">Floor Plan</p>
-            <ul class="floor-plan__list">
-              <li class="floor-plan__item">
-                <div class="floor-plan-item__container opacity-container"><img src="./img/floor-plan-1.jpg"/></div>
+            <ul class="gallery-list gallery-list--size-s --mrb-md" id="JS-lightGallery">
+              <li class="gallery-item opacity-container" data-src="./img/floor-plan-1.jpg">
+                <div class="gallery-arrows__container">
+                  <svg class="gallery-arrows">
+                    <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-enlarge"> </use>
+                  </svg>
+                </div><img src="./img/floor-plan-1.jpg"/>
               </li>
-              <li class="floor-plan__item">
-                <div class="floor-plan-item__container opacity-container"><img src="./img/floor-plan-2.jpg"/></div>
+              <li class="gallery-item opacity-container" data-src="./img/floor-plan-2.jpg">
+                <div class="gallery-arrows__container">
+                  <svg class="gallery-arrows">
+                    <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-enlarge"></use>
+                  </svg>
+                </div><img src="./img/floor-plan-2.jpg"/>
               </li>
-              <li class="floor-plan__item">
-                <div class="floor-plan-item__container opacity-container"><img src="./img/floor-plan-3.jpg"/></div>
+              <li class="gallery-item opacity-container" data-src="./img/floor-plan-3.jpg">
+                <div class="gallery-arrows__container">
+                  <svg class="gallery-arrows">
+                    <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-enlarge"></use>
+                  </svg>
+                </div><img src="./img/floor-plan-3.jpg"/>
               </li>
             </ul>
             <p class="single-property-title">Property Location</p>
@@ -295,43 +311,56 @@
             <p class="single-property-title">Similar Properties</p>
             <ul class="card-list">
               <li class="card-item">
-                <div class="card">
-                  <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
-                  <div class="card-body">
-                    <p class="card-title">Central Park, Manhattan, NY</p>
-                    <p class="card-subtitle">$5,630,000</p>
-                    <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                    <div class="card-benefits">
-                      <svg class="card-benefits__svg">
-                        <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
-                      </svg>
-                      <p class="card-benefits__title">2bd</p>
-                      <svg class="card-benefits__svg">
-                        <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
-                      </svg>
-                      <p class="card-benefits__title">1ba</p>
-                      <p class="card-benefits__title">756 sqft</p>
+                <div class="card card--border">
+                  <div class="card__img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
+                  <div class="card__body">
+                    <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                    <p class="card__subtitle">$5,630,000</p>
+                    <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                    <div class="benefits">
+                      <div class="benefits__item">
+                        <svg class="benefits__svg">
+                          <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                        </svg>
+                        <p class="benefits__title">2bd</p>
+                      </div>
+                      <div class="benefits__item">
+                        <svg class="benefits__svg">
+                          <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                        </svg>
+                        <p class="benefits__title">1ba</p>
+                      </div>
+                      <div class="benefits__item">
+                        <p class="benefits__title">756 sqft</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="card-item">
-                <div class="card">
-                  <div class="card-img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
-                  <div class="card-body">
-                    <p class="card-title">Central Park, Manhattan, NY</p>
-                    <p class="card-subtitle">$5,630,000</p>
-                    <p class="card-text">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                    <div class="card-benefits">
-                      <svg class="card-benefits__svg">
-                        <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
-                      </svg>
-                      <p class="card-benefits__title">2bd</p>
-                      <svg class="card-benefits__svg">
-                        <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
-                      </svg>
-                      <p class="card-benefits__title">1ba</p>
-                      <p class="card-benefits__title">756 sqft</p>
+                <div class="card card--border">
+                  <div class="card__img-top"><img class="resp-img" src="./img/card-img-1.jpg" alt="card image cap"/></div>
+                  <div class="card__body">
+                    <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                    <p class="card__subtitle">$5,630,000</p>
+                    <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                    <div class="benefits">
+                      <div class="benefits__item">
+                        <svg class="benefits__svg">
+                          <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#bed"> </use>
+                        </svg>
+                        <p class="benefits__title">2bd</p>
+                      </div>
+                      <div class="benefits__item">
+                        <svg class="benefits__svg">
+                          <use class="svg" xlink:href="./img/svg/SVG-sprite.svg#shower"></use>
+                        </svg>
+                        <p class="benefits__title">1ba</p>
+                        <p class="benefits__title">2bd</p>
+                      </div>
+                      <div class="benefits__item">
+                        <p class="benefits__title">756 sqft</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -349,14 +378,14 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer section--pd-md">
       <div class="container">
         <div class="row">
           <div class="col-xl-4 col-md-6">
             <div class="footer__about"> 
-              <h5 class="footer__about-title">Real Estate</h5>
+              <h5 class="footer-title">Real Estate</h5>
               <div class="footer__about-description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus.</div>
-              <ul class="about-social">
+              <ul class="social-svg-links">
                 <li class="social-item"><a class="social-link">
                     <svg class="social-svg">
                       <use class="svg" xlink:href="./img/svg/social-svg.svg#icon-facebook"> </use>
@@ -382,7 +411,7 @@
           </div>
           <div class="col-xl-3 offset-xl-2 col-md-6">
             <div class="footer__nav">
-              <h5 class="footer__nav-title">Quick Links</h5>
+              <h5 class="footer-title">Quick Links</h5>
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -394,7 +423,7 @@
           </div>
           <div class="col-xl-3 col-md-6">
             <div class="footer__contact">
-              <h5 class="footer__contact-title">Contact Us</h5>
+              <h5 class="footer-title">Contact Us</h5>
               <ul class="contact-list">
                 <li class="contact-item"><a class="mail" href="mailto:hello@realestate.com">hello@realestate.com</a></li>
                 <li class="contact-item"><a class="phone-number" href="phone:+44 987 065 908">+44 987 065 908</a></li>

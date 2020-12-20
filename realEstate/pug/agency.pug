@@ -3,15 +3,16 @@ html(lang="en")
 	body.agency
 		include components/_header.pug
 		+header('agencies')
-		.container
-			.breadcrumbs
+		.breadcrumbs
+			.container
 				nav(aria-label="breadcrumb")
 					ol(class="breadcrumb")
 						li(class="breadcrumb-item")
 							a(href="#") Home
 						li(class="breadcrumb-item active")
 							a(href="agency.html") Agencies
-			form(action="#").form.agencies-form
+		form(action="#").form.agencies-form
+			.container
 				.row
 					.col-md-4.col-12
 						.form-group
@@ -34,71 +35,77 @@ html(lang="en")
 							label(for="keywords") Keywords
 							input(type="search" id="site-search" name="keyword").search-keywords
 				.btn.btn-lg.btn-primary search agencies
-		section.section-best-agencies
+		section.section--pd-md.section--bg-dark.text-center
 			.container
-				ul.agencies-list
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-					li.agencies-item
-						.agencies-item__top
-							img.agencies-item__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
-						.agencies-item__body
-							h5.agencies-item__title Real Estate TX Agency
-							.agencies-item__descr Morbi vel mauris feugiat, sodales mi eu, pharetra.
-							button.btn.btn-secondary view profile
-				.row
-					.col.text-center
-						.btn.btn-primary.btn-lg load more
+				ul.card-list.card-list--sm.card-list--mrb-md
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+					li.card-item
+						.card.card--border
+							.card__img-top.card__img-top--sm
+								img.card__img(src="./img/agenci-bg1.png" alt="acencies first").resp-img
+							.card__body.card__body--center
+								h5.card__title Real Estate TX Agency
+								.card__description Morbi vel mauris feugiat, sodales mi eu, pharetra.
+								button.btn.btn-secondary view profile
+				.btn.btn-primary.btn-lg load more
 		section.section-contact
 			include components/parts/_section-contact.pug
-		footer.footer
+		footer.footer.section--pd-md
 			include components/_footer.pug
 		section.section-copyright
 			include components/parts/_section-copyright.pug

@@ -1,0 +1,31 @@
+.benefits {
+	display: flex;
+	font-weight: 500;
+	&--grid-md {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		grid-gap: 25px;
+		text-align: center;
+		.benefit__item {
+			margin-right: 0;
+		}
+	}
+	&.--mrb {
+		margin-bottom: 65px;
+	}
+	&__item {
+		margin-right: 25px;
+		display: flex;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	&__svg {
+		@include sizeElement(20px);
+		margin-right: 8px;
+	}
+	&__title {
+		margin-bottom: 0px;
+		font-weight: 500;
+	}
+}

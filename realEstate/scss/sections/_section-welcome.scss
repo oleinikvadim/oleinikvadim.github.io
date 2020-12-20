@@ -1,6 +1,4 @@
 .section-welcome {
-	padding-top: 96px;
-	padding-bottom: 95px;
 	background: url("../img/welcome-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -14,58 +12,10 @@
 			rgba(#000, 0.5) 100%
 		);
 	}
-	.card-img-top {
-		padding-bottom: 220px;
-		position: relative;
-	}
-	.card {
-		width: 360px;
-	}
-}
-
-.slider {
-	height: fit-content;
-	@media (max-width: 992px) {
-		text-align: center;
-	}
-	.sticker {
-		margin-bottom: 15px;
-	}
-	&__description {
-		color: #fff;
-		@media (max-width: 992px) {
-			margin-bottom: 20px;
-		}
-		&__title {
-			margin-bottom: 25px;
-			letter-spacing: -0.5;
-		}
-		&__subtitle {
-			line-height: 1.44;
-			font-family: "Nunito Sans";
-			margin-bottom: 40px;
-		}
-	}
 	.card {
 		@media (max-width: 992px) {
+			max-width: 360px;
 			margin: 0 auto;
 		}
-		@media (max-width: 576px) {
-			max-width: 100%;
-		}
 	}
-}
-
-.slick-dots li button:before,
-.slick-dots li.slick-active button:before {
-	color: #fff;
-}
-.slick-dots li button:before {
-	font-size: 9px;
-}
-.slick-dots li.slick-active button:before {
-	font-size: 12px;
-}
-.slick-dots {
-	bottom: -60px;
 }

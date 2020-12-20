@@ -1,0 +1,54 @@
+.gallery {
+	&-top {
+		height: 430px;
+		max-height: 100%;
+		position: relative;
+		.sticker-list {
+			position: absolute;
+			z-index: 10;
+			left: 10;
+			top: 10;
+		}
+		.sticker {
+			margin-right: 10px;
+		}
+	}
+	&-thumbs {
+		height: 100px;
+		max-height: 100%;
+		padding: 10px;
+		background-color: #f7f7f7;
+		margin-bottom: 65px;
+		.swiper-wrapper {
+			height: 80px;
+		}
+		.swiper-slide {
+			object-fit: contain;
+			background-repeat: no-repeat;
+			max-width: 114px;
+			width: 100%;
+			background-size: cover;
+			border-radius: $border-radius;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: $border-radius;
+				background-image: linear-gradient(
+					to top,
+					rgba(0, 0, 0, 0.2) 0%,
+					rgba(0, 0, 0, 0.2) 100%
+				);
+			}
+			&-thumb-active {
+				opacity: 0.6;
+			}
+		}
+	}
+}

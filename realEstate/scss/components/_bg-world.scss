@@ -1,0 +1,30 @@
+.bg-world {
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url(..//img/map-bg.png);
+		background-repeat: no-repeat;
+		opacity: 0.3;
+		pointer-events: none;
+	}
+	&--opacity-light {
+		&:before {
+			z-index: -1;
+			opacity: 1;
+		}
+	}
+	&--center {
+		&:before {
+			background-position: center center;
+		}
+	}
+	&--up {
+		&:before {
+			background-position: center 20px;
+		}
+	}
+}

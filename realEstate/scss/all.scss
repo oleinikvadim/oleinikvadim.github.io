@@ -8,32 +8,43 @@
 
 // components
 @import "../scss/components/header";
+@import "../scss/components/btn";
+@import "../scss/components/card";
+@import "../scss/components/benefit";
+@import "../scss/components/breadcrumbs";
+@import "../scss/components/social-svg-link";
+@import "../scss/components/gallery";
+@import "../scss/components/progress-bar";
+@import "../scss/components/news-pills";
+@import "../scss/components/video";
+@import "../scss/components/info-list";
+@import "../scss/components/map";
+@import "../scss/components/form";
+@import "../scss/components/features";
+@import "../scss/components/bg-world";
+@import "../scss/components/sticker-level";
+@import "../scss/components/select";
+@import "../scss/components/social-link";
+@import "../scss/components/slider-welcome";
+@import "../scss/components/nav-tab";
+
+// slider
+
+@import "../scss/components/ion.rangeSlider";
+@import "../scss/components/slider-comment";
+@import "../scss/components/slick-custom";
+@import "../scss/components/slick";
+@import "../scss/components/single-property_slider";
 
 // section
 @import "../scss/sections/section-welcome";
-@import "../scss/sections/section-properties";
 @import "../scss/sections/section-new-listing";
-@import "../scss/sections/section-best-agencies";
 @import "../scss/sections/section-comment";
-@import "../scss/sections/section-news";
-@import "../scss/sections/section-about-us";
 @import "../scss/sections/section-contact";
-@import "../scss/sections/section-gallery";
-@import "../scss/sections/section-skills";
-@import "../scss/sections/section-news-main";
-@import "../scss/sections/section-contact-us-main";
-
-// parts
-@import "../scss/parts/sticker-level";
-@import "../scss/parts/card";
-@import "../scss/parts/slick-custom";
-@import "../scss/parts/ion.rangeSlider";
-@import "../scss/parts/select";
-@import "../scss/parts/footer";
+@import "../scss/sections/section-about-us";
+@import "../scss/sections/footer";
 
 // main-link
 
 @import "../scss/main-link/properties";
-@import "../scss/main-link/agency";
-@import "../scss/main-link/about-us";
 @import "../scss/single-property";

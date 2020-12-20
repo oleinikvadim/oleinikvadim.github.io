@@ -3,24 +3,25 @@ html(lang="en")
 	body.agency
 		include components/_header.pug
 		+header('contacts')
-		.container
-			.breadcrumbs
+		.breadcrumbs
+			.container
 				nav(aria-label="breadcrumb")
 					ol(class="breadcrumb")
 						li(class="breadcrumb-item")
 							a(href="index.html") Home
 						li(class="breadcrumb-item active")
 							a(href="contact-us.html") Contact Us
-		section.section-contact-us-main
+		section.contact-map
 			.container
-				.section-contact-us-main__map
-					.google-map.JS-googleMap(id="JS-map")
+				.google-map.JS-googleMap(id="JS-map")
+		section.section-contact-us-main.section--pd-md
+			.container
 				.section-contact-us-main__contact-info.contact-info
 					.contact-info__description
 						.row
 							.col-xl-4
-								h3.section-contact-us-main__title Contact Info:
-								.section-contact-us-main__subtitle To give give beginning divide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry
+								h3.section-title.section-title--mrb-sm.text-left Contact Info:
+								.section-description.--mrb-sm To give give beginning divide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry
 								ul.info-list
 									li.info-item
 										.info-item__description Address:
@@ -35,7 +36,7 @@ html(lang="en")
 										.info-item__description Fax:
 										a(href="fax:+44 987 065 908" type="phone").info-item__link +44 987 065 909
 							.col-xl-7.offset-xl-1
-								form.form-contact(action="#").text-left
+								form.form-contact-us(action="#").text-left
 									.row
 										.col
 											.form-group
@@ -48,7 +49,7 @@ html(lang="en")
 									.form-group
 												textarea.message(type="textarea" class="form-control" rows="8" placeholder="Message*")
 									.btn.btn-primary.btn-lg Send Message
-		footer.footer
+		footer.footer.section--pd-md
 			include components/_footer.pug
 		section.section-copyright
 			include components/parts/_section-copyright.pug

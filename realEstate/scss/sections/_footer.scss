@@ -1,8 +1,6 @@
 .footer {
 	background-color: #212121;
-	padding: 100px 0;
-	&__about-title,
-	&__contact-title {
+	&-title {
 		color: #fff;
 		margin-bottom: 20px;
 	}
@@ -56,18 +54,18 @@
 		}
 	}
 }
-.about-social {
-	display: grid;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20px, 0fr));
-	grid-gap: 15px;
-	.social-svg {
-		@include sizeElement(20px);
-		fill: #fff;
-		cursor: pointer;
-		transition: 0.3s all;
-		&:hover {
-			opacity: 0.6;
-		}
+
+// property footer svg
+.footer--properties {
+	background-color: #212121;
+	padding-top: 46px;
+	padding-bottom: 46px;
+	max-width: 50%;
+	@media (max-width: 1200px) {
+		max-width: 100%;
+	}
+	.social-svg-links {
+		justify-content: center;
+		margin-bottom: 15px;
 	}
 }

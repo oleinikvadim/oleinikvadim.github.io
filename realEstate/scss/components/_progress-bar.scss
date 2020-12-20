@@ -1,0 +1,18 @@
+.progress-item {
+	margin-bottom: 30px;
+	&__name {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 2.5;
+		letter-spacing: 0.6px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+	}
+}
+
+.progress {
+	height: 3px;
+}
+.progress-bar {
+	transition-duration: 3s;
+}

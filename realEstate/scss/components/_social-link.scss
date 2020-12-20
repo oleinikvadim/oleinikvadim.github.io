@@ -1,0 +1,29 @@
+.social-list {
+	display: flex;
+	justify-content: center;
+	.social-item {
+		@include sizeElement(40px);
+		border-radius: $border-radius;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		transition: 0.3 all;
+		&:first-child {
+			background-color: #3d5b97;
+		}
+		&:nth-child(2) {
+			background-color: #2fa1dc;
+		}
+		&:nth-child(3) {
+			background-color: #d95249;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	.social-svg {
+		@include sizeElement(20px);
+		fill: #fff;
+	}
+}

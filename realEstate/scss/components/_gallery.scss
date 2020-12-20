@@ -1,25 +1,25 @@
-.section-gallery {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	position: relative;
-	@media (max-width: 992px) {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-}
 .gallery-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 	grid-gap: 30px;
 	justify-content: center;
+	&--size-s {
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	}
+	&.--mrb-md {
+		margin-bottom: 65px;
+	}
 }
-
 .gallery-item {
 	position: relative;
 	object-fit: cover;
 	cursor: pointer;
+
 	&:hover {
 		&:before {
+			opacity: 1;
+		}
+		& .gallery-arrows {
 			opacity: 1;
 		}
 	}
@@ -53,5 +53,17 @@
 	.slick-initialized .slick-slide {
 		display: flex;
 		align-items: center;
+	}
+}
+
+// slider arrows hover effect
+.gallery-arrows {
+	@include sizeElement(44px);
+	@include absoluteCenter;
+	fill: #fff;
+	opacity: 0;
+	transition: 0.3s all;
+	&__container {
+		@include absoluteCover;
 	}
 }
