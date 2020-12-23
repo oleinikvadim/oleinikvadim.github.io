@@ -1,0 +1,19 @@
+.section {
+	&--bg-dark {
+		background-color: #f7f7f7;
+	}
+	&--bg-grey {
+		background-color: #212121;
+	}
+	&--pd-md {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		@media (max-width: 992px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+}
+section {
+	position: relative;
+}

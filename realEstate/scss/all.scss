@@ -27,9 +27,11 @@
 @import "../scss/components/social-link";
 @import "../scss/components/slider-welcome";
 @import "../scss/components/nav-tab";
+@import "../scss/components/about-us__img-top";
+@import "../scss/components/section-style";
+@import "../scss/components/single-post";
 
 // slider
-
 @import "../scss/components/ion.rangeSlider";
 @import "../scss/components/slider-comment";
 @import "../scss/components/slick-custom";
@@ -42,9 +44,10 @@
 @import "../scss/sections/section-comment";
 @import "../scss/sections/section-contact";
 @import "../scss/sections/section-about-us";
-@import "../scss/sections/footer";
 
 // main-link
-
-@import "../scss/main-link/properties";
-@import "../scss/single-property";
+@import "../scss/sections/properties-main-page";
+@import "../scss/sections/single-property";
+@import "../scss/sections/single-agency";
+@import "../scss/sections/footer";
+@import "../scss/sections/section-copyright";

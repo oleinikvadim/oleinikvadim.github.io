@@ -1,16 +1,17 @@
-.properties-container {
+.properties-main-page {
 	position: relative;
+	text-align: center;
 	@media (max-width: 1200px) {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.btn {
-		max-width: 300px;
-		width: 100%;
-		margin: 0 auto;
-		display: block;
-	}
+	// .btn {
+	// 	max-width: 300px;
+	// 	width: 100%;
+	// 	margin: 0 auto;
+	// 	display: block;
+	// }
 	&__cards {
 		padding-top: 40px;
 		padding-bottom: 60px;

@@ -17,12 +17,15 @@
 }
 .info-item {
 	display: flex;
-	@media (max-width: 768px) {
-		flex-direction: column;
-	}
+	// @media (max-width: 768px) {
+	// 	flex-direction: column;
+	// }
 	&__description {
-		font-weight: 600;
+		// font-weight: 600;
 		color: #171717;
 		margin-right: 10px;
+	}
+	&__link {
+		font-weight: 500;
 	}
 }

@@ -23,3 +23,11 @@
 		border-color: #8c8c8c;
 	}
 }
+.form-contact-us {
+	.btn {
+		@media (max-width: 768px) {
+			width: 100%;
+			display: block;
+		}
+	}
+}

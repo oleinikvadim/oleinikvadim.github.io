@@ -15,51 +15,7 @@ html(lang="en")
 							a(href="single-property.html") Single Property
 		section.single-property
 			.container
-				.row.flex-row-reverse
-					.col-xl-4
-						.card-item
-							.card.card--border
-								.card__img-top
-									img.card-item__img(src="./img/single-property-img-1.jpg" alt="single-property-1").resp-img
-								.card__body.text-center
-									h5.card__title Real Estate NY Agency
-									ul.info-list.--center.--mrb-md
-										li.info-item
-											.info-item__description  Office:
-											a(href="tel:1 222 333 4444" type="tel").info-item__link 1-222-333-4444
-										li.info-item
-											.info-item__description Mobile:
-											a(href="tel:1 234 456 7893" type="phone").info-item__link 1-234-456-7893
-										li.info-item
-											.info-item__description Fax:
-											a(href="tel:1 333 444 5555").info-item__link 1-333-444-5555
-										li.info-item
-											.info-item__description Email: 
-											a(href="mailto:+44 987 065 908" type="phone").info-item__link hello@realestate.com
-									ul.social-list
-										li.social-item
-											a.social-link
-												svg.social-svg
-													use(xlink:href="./img/svg/social-svg.svg#icon-facebook" class="svg")
-										li.social-item
-											a.social-link
-												svg.social-svg
-													use(xlink:href="./img/svg/social-svg.svg#icon-twitter" class="svg")
-										li.social-item
-											a.social-link
-												svg.social-svg
-													use(xlink:href="./img/svg/social-svg.svg#icon-pinterest" class="svg")
-						form.form-contact(action="#").form-contact-single-properties
-							.form-group
-								input(type="text" class="form-control" placeholder="Name*")
-							.form-group
-								input(type="email" class="form-control" placeholder="Email*")
-							.form-group
-								input(type="text" class="form-control" placeholder="Title")
-							.form-group
-								textarea.message(type="textarea" class="form-control" rows="2" placeholder="Message*")
-							.btn.btn-primary.w-100 Send Message
-						include components/parts/_form-properties-setup.pug
+				.row
 					.col-xl-8
 						.title-top
 							.title-top__title
@@ -91,7 +47,7 @@ html(lang="en")
 								.swiper-slide(style="background-image:url(./img/slider-property-min-6_.jpg)")
 								.swiper-slide(style="background-image:url(./img/slider-property-min-6_.jpg)")
 						p.single-property-title Overview
-						.benefits.--mrb.benefits--grid-md
+						.benefits.--mb.benefits--grid-md
 							.benefits__item
 								svg.benefits__svg
 									use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
@@ -181,7 +137,7 @@ html(lang="en")
 										h5.card__title Central Park, Manhattan, NY
 										p.card__subtitle $5,630,000
 										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.benefits
+										.benefits.benefits--grid-sm
 											.benefits__item
 												svg.benefits__svg
 													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
@@ -200,7 +156,7 @@ html(lang="en")
 										h5.card__title Central Park, Manhattan, NY
 										p.card__subtitle $5,630,000
 										p.card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
-										.benefits
+										.benefits.benefits--grid-sm
 											.benefits__item
 												svg.benefits__svg
 													use(xlink:href="./img/svg/SVG-sprite.svg#bed" class="svg") 
@@ -209,9 +165,52 @@ html(lang="en")
 												svg.benefits__svg
 													use(xlink:href="./img/svg/SVG-sprite.svg#shower" class="svg")
 												p.benefits__title 1ba
-												p.benefits__title 2bd
 											.benefits__item
 												p.benefits__title 756 sqft
+					.col-xl-4
+						.card-item.card-item--md
+							.card.card--border
+								.card__img-top
+									img.card-item__img(src="./img/single-property-img-1.jpg" alt="single-property-1").resp-img
+								.card__body.text-center
+									h5.card__title Real Estate NY Agency
+									ul.info-list.--center.--mrb-md
+										li.info-item
+											.info-item__description  Office:
+											a(href="tel:1 222 333 4444" type="tel").info-item__link 1-222-333-4444
+										li.info-item
+											.info-item__description Mobile:
+											a(href="tel:1 234 456 7893" type="phone").info-item__link 1-234-456-7893
+										li.info-item
+											.info-item__description Fax:
+											a(href="tel:1 333 444 5555").info-item__link 1-333-444-5555
+										li.info-item
+											.info-item__description Email: 
+											a(href="mailto:+44 987 065 908" type="phone").info-item__link hello@realestate.com
+									ul.social-list
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-facebook" class="svg")
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-twitter" class="svg")
+										li.social-item
+											a.social-link
+												svg.social-svg
+													use(xlink:href="./img/svg/social-svg.svg#icon-pinterest" class="svg")
+						form.form-contact(action="#").form-contact-single-properties
+							.form-group
+								input(type="text" class="form-control" placeholder="Name*")
+							.form-group
+								input(type="email" class="form-control" placeholder="Email*")
+							.form-group
+								input(type="text" class="form-control" placeholder="Title")
+							.form-group
+								textarea.message(type="textarea" class="form-control" rows="2" placeholder="Message*")
+							.btn.btn-primary.w-100 Send Message
+						include components/parts/_form-properties-setup.pug
 		section.section-contact
 			include components/parts/_section-contact.pug
 		footer.footer.section--pd-md

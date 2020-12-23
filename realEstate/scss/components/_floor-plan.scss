@@ -1,0 +1,18 @@
+.floor-plan {
+	&__list {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 70px;
+	}
+	&__item {
+		margin-right: 20px;
+		position: relative;
+	}
+	&-item__container {
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}

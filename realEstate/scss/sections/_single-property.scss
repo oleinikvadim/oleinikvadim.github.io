@@ -3,6 +3,11 @@
 	.form-property {
 		background-color: #ececec;
 	}
+	.card-item {
+		@media (max-width: 1200px) {
+			margin: 0 auto 30px;
+		}
+	}
 }
 
 .title-top {
@@ -11,16 +16,27 @@
 	font-family: "Nunito Sans";
 	font-size: 18px;
 	font-weight: 600;
+	@media (max-width: 550px) {
+		flex-direction: column;
+	}
 	&__title {
 		background-color: #00bd74;
 		padding: 20px 15px 17px;
 		flex: 1;
 		border-top-left-radius: $border-radius;
+		@media (max-width: 550px) {
+			border-radius: 0;
+			text-align: center;
+		}
 	}
 	&__price {
 		border-top-right-radius: $border-radius;
 		background-color: #00935a;
 		padding: 20px 15px 17px;
+		@media (max-width: 550px) {
+			border-radius: 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -44,24 +60,5 @@
 	&__check {
 		color: $primary;
 		margin-right: 15px;
-	}
-}
-
-.floor-plan {
-	&__list {
-		display: flex;
-		flex-direction: row;
-		margin-bottom: 70px;
-	}
-	&__item {
-		margin-right: 20px;
-		position: relative;
-	}
-	&-item__container {
-		&:hover {
-			&:before {
-				opacity: 1;
-			}
-		}
 	}
 }

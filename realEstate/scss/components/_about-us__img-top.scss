@@ -1,0 +1,7 @@
+.about-us__img-top {
+	position: relative;
+	padding-bottom: 540px;
+	@media (max-width: 992px) {
+		padding-bottom: 250px;
+	}
+}

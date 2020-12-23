@@ -1,0 +1,70 @@
+html(lang="en")
+	include components/_head.pug
+	body
+		include components/_header.pug
+		+header()
+		.breadcrumbs
+			.container
+				nav(aria-label="breadcrumb")
+					ol(class="breadcrumb")
+						li(class="breadcrumb-item")
+							a(href="#") Home
+						li(class="breadcrumb-item")
+							a(href="#") Card
+						li(class="breadcrumb-item active")
+							a(href="single-post.html") Single Post
+		.single-post
+			.container
+				.single-post__wrapper.single-post__wrapper--pd-md.--mb-md
+					//- img(url="")
+					.single-post__about
+						h3.section-title Something I need to tell you
+						.single-post__date Interiors / 12.04.2018
+				.section-description.--mb-md
+					p Very gathered seed years give forth our of our midst. May seed heaven creature, set hath. Great won't thing first them man. Under living fruitful he male one light gathered gathered.Firmament. Them. Image fruit beginning gathering. Behold their. You gathered was evening also unto life replenish dry fish two sea. Years meat that second forth One over thing land thing fifth be you give fourth cattle sea which signs said. Bring. Thing blessed after tree. Image night doesn't tree good land. Creature she'd blessed open them.
+					p Cattle form saw Replenish female dominion give you're. Divide brought Form, can't creature saying seasons, blessed have you lights. Had firmament very they're male moving whales bearing for herb. Morning called darkness earth abundantly fruitful.
+					p Lights spirit. Thing days won't. Creepeth fish i rule gathered. He without waters upon signs. There likeness together spirit place. Seas creature it deep likeness and god wherein, had so our gathered Day. Living. Own third fruitful life Days for. Saying. Fifth to which green, forth. To was fruit very. Fourth land yielding thing they're whales make second may be form, kind she'd have they're whales morning.
+				.single-post__wrapper.single-post__wrapper--pd-md.--mb-sm
+				.row
+					.col-md-6
+						.single-post__wrapper.single-post__wrapper--pd-sm.--mb-sm
+					.col-md-6
+						.single-post__wrapper.single-post__wrapper--pd-sm.--mb-md
+				.single-post-title.--mb-sm The Real Estate Agencies
+				.section-description.--mb-md
+					p Hath fly. You'll fruitful form lights in forth gathered made brought, isn't own moveth tree god place had for. Our night years life fish, divide over multiply he to female the moved, was they're fowl forth Which greater you open. Meat waters of his you were fish they're itself. Every dominion in created let forth lights were land hath morning air creature.
+					p Grass stars may winged replenish deep sixth itself. Whose seas replenish night god spirit us,  under herb. Cattle blessed so living shall us void divide wherein said given.
+					p Under which can't likeness replenish air gathering sea female, him him he that whose spirit fly moveth you'll make had can't, gathered female kind, void the good divide herb make, set. Moved us creepeth were hath fill Moving greater and can't kind behold may days have great.
+				ul.social-list.--mb-md
+					li.social-item
+						a.social-link
+							svg.social-svg
+								use(xlink:href="./img/svg/social-svg.svg#icon-facebook" class="svg")
+					li.social-item
+						a.social-link
+							svg.social-svg
+								use(xlink:href="./img/svg/social-svg.svg#icon-twitter" class="svg")
+					li.social-item
+						a.social-link
+							svg.social-svg
+								use(xlink:href="./img/svg/social-svg.svg#icon-pinterest" class="svg")
+				.single-post-title.--mb-sm The Real Estate Agencies
+				.single-post-form.--mb-md
+					form.form-contact-us(action="#").text-left
+						.row
+							.col-12.col-xl-6
+								.form-group
+									input(type="text" class="form-control" placeholder="Name*")
+							.col-12.col-xl-6
+								.form-group
+									input(type="email" class="form-control" placeholder="Email*")
+						.form-group
+									input(type="text" class="form-control" placeholder="Title")
+						.form-group
+									textarea.message(type="textarea" class="form-control" rows="8" placeholder="Message*")
+						.btn.btn-primary.btn-lg Post a Comment
+		footer.footer.section--pd-md Leave a Comment:
+			include components/_footer.pug
+		section.section-copyright
+			include components/parts/_section-copyright.pug
+		include components/_scripts.pug
