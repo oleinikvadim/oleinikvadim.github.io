@@ -8240,6 +8240,11 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
+@media (max-width: 992px) {
+  .works-list {
+    margin-bottom: 0px;
+  }
+}
 .works-item {
   transition: 0.3s all;
   display: flex;
