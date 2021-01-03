@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "Poppins";
-	src: url("..//fonts/Poppins/Poppins-Medium.woff2") format("woff2"),
-		url("..//fonts/Poppins/Poppins-Medium.woff") format("woff"),
-		url("..//fonts/Poppins/Poppins-Medium.ttf") format("ttf");
+	src: url("./fonts/Poppins/Poppins-Medium.woff2") format("woff2"),
+		url("./fonts/Poppins/Poppins-Medium.woff") format("woff"),
+		url("./fonts/Poppins/Poppins-Medium.ttf") format("ttf");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -10,18 +10,19 @@
 
 @font-face {
 	font-family: "Poppins";
-	src: url("..//fonts/Poppins/Poppins-Regular.woff2") format("woff2"),
-		url("..//fonts/Poppins/Poppins-Regular.woff") format("woff"),
-		url("..//fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+	src: url("./fonts/Poppins/Poppins-Regular.woff2") format("woff2"),
+		url("./fonts/Poppins/Poppins-Regular.woff") format("woff"),
+		url("./fonts/Poppins/Poppins-Regular.ttf") format("ttf");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: "Poppins";
-	src: url("..//fonts/Poppins/Poppins-Bold.woff2") format("woff2"),
-		url("..//fonts/Poppins/Poppins-Bold.woff") format("woff"),
-		url("..//fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+	src: url("./fonts/Poppins/Poppins-Bold.woff2") format("woff2"),
+		url("./fonts/Poppins/Poppins-Bold.woff") format("woff"),
+		url("./fonts/Poppins/Poppins-Bold.ttf") format("ttf");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -29,10 +30,10 @@
 
 @font-face {
 	font-family: "Nickelodeon 2001 Headline";
-	src: url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff2")
+	src: url("./fonts/Nickelodian/Nickelodeon2001Headline.woff2")
 			format("woff2"),
-		url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff") format("woff"),
-		url("..//fonts/Nickelodian/Nickelodeon2001Headline.ttf") format("ttf");
+		url("./fonts/Nickelodian/Nickelodeon2001Headline.woff") format("woff"),
+		url("./fonts/Nickelodian/Nickelodeon2001Headline.ttf") format("ttf");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
