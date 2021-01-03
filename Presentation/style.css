@@ -8022,12 +8022,12 @@ a {
 }
 
 .navbar {
-  padding: 35px 15px;
+  padding: 35px 15px 35px 0px;
   margin-right: -20px;
 }
 @media (max-width: 992px) {
   .navbar {
-    padding: 15px 15px;
+    padding: 15px 15px 15px 0px;
   }
 }
 
@@ -8310,6 +8310,8 @@ a {
   font-size: 36px;
   text-transform: uppercase;
   transform: translateY(65px);
+  z-index: 2;
+  position: relative;
 }
 @media (max-width: 1200px) {
   .cooperation-description {
