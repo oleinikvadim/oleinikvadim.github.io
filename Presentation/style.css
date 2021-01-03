@@ -8237,7 +8237,7 @@ a {
 }
 @media (max-width: 1200px) {
   .works-list {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media (max-width: 992px) {
@@ -8250,17 +8250,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .works-item__img {
   position: relative;
-  width: 520px;
-  height: 310px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 80px;
 }
 @media (max-width: 1200px) {
   .works-item__img {
-    width: 310px;
-    height: 200px;
     margin-bottom: 10px;
   }
 }

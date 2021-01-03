@@ -5,9 +5,9 @@
 	// jsSlideCost();
 	// jsVideoTeam();
 	hamburgerCollapse();
-	// scrollSpy();
-	// navActiveOnClick();
-	// scrollSmooth();
+	scrollSpy();
+	navActiveOnClick();
+	scrollSmooth();
 	headerZeroY();
 	// select2();
 	// myMap();
@@ -15,8 +15,16 @@
 	// progressAnimate();
 	// slickLightBox();
 	// swiperJS();
+	navMenuCollapse();
     }); 
    
+	function navMenuCollapse(){
+		$(".nav-link").on("click",function() {
+		  $(".JS-hamburger").removeClass("is-active");
+		  $(".navbar-collapse").removeClass("show");
+		  // $("JS-header").removeClass("header--down");
+		})
+	  }
 	function jsSlideCost(){
 		$(".js-range-slider").ionRangeSlider({
 			type: "double",
@@ -155,7 +163,7 @@
 	}
 	  
 	function scrollSmooth() {
-		$(".nav-link.JS-scroll").on('click', function(event) {
+		$(".nav-link").on('click', function(event) {
 		  if (this.hash !== "") {
 			event.preventDefault();
 			var hash = this.hash;
