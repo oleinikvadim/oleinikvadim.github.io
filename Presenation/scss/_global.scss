@@ -1,0 +1,50 @@
+body {
+	background-color: #080808;
+	color: $primary;
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.section {
+	padding-top: 170px;
+	@media (max-width: 992px) {
+		padding-top: 70px;
+	}
+	&.--light {
+		background: #101010;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+.connect {
+	text-align: right;
+	&-item {
+		font-size: 30px;
+		text-decoration: underline;
+		@media (max-width: 992px) {
+			font-size: 24px;
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: 340px) {
+			font-size: 22px;
+		}
+	}
+}
+
+.copyright {
+	// font-size: "Poppins";
+	font-size: 18px;
+	@media (max-width: 992px) {
+		text-align: right;
+		font-size: 14px;
+	}
+}

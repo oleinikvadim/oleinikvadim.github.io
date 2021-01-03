@@ -1,0 +1,31 @@
+.skill {
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-gap: 40px;
+		margin-top: 70px;
+		// margin-bottom: 120px;
+		@media (max-width: 1200px) {
+			margin-top: 0px;
+		}
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&-svg {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 40px;
+		fill: #1e1e1e;
+		transition: 0.3s all;
+		&:hover {
+			fill: $secondary;
+		}
+		@media (max-width: 768px) {
+			fill: $primary;
+		}
+	}
+}

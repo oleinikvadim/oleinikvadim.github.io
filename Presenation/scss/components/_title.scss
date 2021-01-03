@@ -1,0 +1,39 @@
+.title {
+	font-family: "Nickelodeon 2001 Headline";
+	text-transform: uppercase;
+	@media (max-width: 460px) {
+		position: relative;
+		z-index: 3;
+	}
+	&.--orange {
+		color: $secondary;
+	}
+	&.--light {
+		color: $primary;
+	}
+	&.--xl {
+		font-size: 120px;
+		line-height: 120px;
+		@media (max-width: 1200px) {
+			font-size: 80px;
+			line-height: 80px;
+		}
+		@media (max-width: 768px) {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+	&.--md {
+		font-size: 48px;
+		@media (max-width: 768px) {
+			font-size: 26px;
+		}
+	}
+	&--absolute {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+}

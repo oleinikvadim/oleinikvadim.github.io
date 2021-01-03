@@ -1,0 +1,17 @@
+.footer {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	position: relative;
+	// margin-top: -60px;
+
+	z-index: 1;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 992px) {
+			flex-direction: column-reverse;
+			align-items: flex-end;
+		}
+	}
+}

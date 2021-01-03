@@ -1,0 +1,12 @@
+.cooperation-description {
+	font-family: "Nickelodeon 2001 Headline";
+	font-size: 36px;
+	text-transform: uppercase;
+	transform: translateY(65px);
+	@media (max-width: 1200px) {
+		font-size: 24px;
+	}
+	& p.--emit {
+		color: $secondary;
+	}
+}

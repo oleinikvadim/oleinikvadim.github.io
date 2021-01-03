@@ -1,0 +1,20 @@
+.resume {
+	font-weight: 500;
+	font-size: 24px;
+	&__container {
+		width: 270px;
+		height: 270px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		border: 1px solid $secondary;
+		transition: 0.4s all;
+		@media (max-width: 1200px) {
+			margin: 0 auto;
+		}
+		&:hover {
+			background-color: $secondary;
+		}
+	}
+}
