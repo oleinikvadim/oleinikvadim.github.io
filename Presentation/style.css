@@ -7916,7 +7916,7 @@ input[type=submit] {
 }
 @font-face {
   font-family: "Nickelodeon 2001 Headline";
-  src: url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff2") format("woff2"), url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff") format("woff"), url("..//fonts/Nickelodian/Nickelodeon2001Headline.ttf") format("tff");
+  src: url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff2") format("woff2"), url("..//fonts/Nickelodian/Nickelodeon2001Headline.woff") format("woff"), url("..//fonts/Nickelodian/Nickelodeon2001Headline.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
