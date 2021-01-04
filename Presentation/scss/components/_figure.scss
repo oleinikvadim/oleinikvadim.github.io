@@ -1,15 +1,21 @@
 .figure-container {
 	position: relative;
-	width: 360px;
+	width: 400px;
 	height: 300px;
 	@media (max-width: 768px) {
 		width: 200px;
 		height: 150px;
 	}
-	&--mb {
+	&--mb-sm {
 		margin-bottom: 70px;
 		@media (max-width: 768px) {
 			// margin-bottom: 40px;
+		}
+	}
+	&--mb-md {
+		margin-bottom: 150px;
+		@media (max-width: 768px) {
+			margin-bottom: 90px;
 		}
 	}
 	img {

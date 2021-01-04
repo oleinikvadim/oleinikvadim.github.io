@@ -27,6 +27,12 @@
 }
 
 .img {
+	&-container {
+		position: absolute;
+		top: -90px;
+		right: 0;
+		z-index: 2;
+	}
 	&-wrapper {
 		position: relative;
 		padding-bottom: 650px;
@@ -36,17 +42,25 @@
 			width: 200px;
 		}
 	}
-	&-container {
-		position: absolute;
-		top: -90px;
-		right: 0;
-		z-index: 2;
-	}
 }
 
-.outline-star {
+img.outline-star {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	transform: translate(-50%, 50%);
+	animation: spin 5s linear 0s infinite;
+	width: 200px;
+	height: 200px;
+	@media (max-width: 1200px) {
+		width: 100px;
+		height: 100px;
+	}
+}
+@keyframes spin {
+	from {
+		transform: translate(-50%, 50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, 50%) rotate(360deg);
+	}
 }
