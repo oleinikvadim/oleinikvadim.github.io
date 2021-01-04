@@ -5,13 +5,7 @@
 		position: relative;
 		z-index: 3;
 	}
-	&.--orange {
-		color: $secondary;
-	}
-	&.--light {
-		color: $primary;
-	}
-	&.--xl {
+	&--xl {
 		font-size: 120px;
 		line-height: 120px;
 		@media (max-width: 1200px) {
@@ -23,7 +17,7 @@
 			line-height: 40px;
 		}
 	}
-	&.--md {
+	&--md {
 		font-size: 48px;
 		@media (max-width: 768px) {
 			font-size: 26px;

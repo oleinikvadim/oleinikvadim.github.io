@@ -168,7 +168,7 @@
 			event.preventDefault();
 			var hash = this.hash;
 			$('html, body').animate({
-			  scrollTop: $(hash).offset().top
+			  scrollTop: $(hash).offset().top - $('.JS-header').height()
 			}, 800, function(){
 			});
 		  }
