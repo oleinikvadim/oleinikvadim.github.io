@@ -8123,13 +8123,13 @@ a {
   display: block;
   content: "";
   top: 10px;
-  left: 10px;
-  right: 10px;
+  left: 50px;
+  right: 50px;
   bottom: 10px;
   position: absolute;
-  box-shadow: 0px -6px 200px 24px #ff8d00;
+  box-shadow: 0px 0px 120px 80px #ff8d00;
   transition-delay: 0.1s;
-  border-radius: 50%;
+  border-radius: 100%/100%;
   opacity: 0;
   transition: all 0.3s;
 }
