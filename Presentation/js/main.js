@@ -72,8 +72,8 @@
 
 	function aos() {
 		AOS.init({
-		  once: true,
-		  delay : 200,
+		  once: true
+		//   delay : 200,
 		});
 	  }
 
