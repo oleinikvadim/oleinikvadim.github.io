@@ -13,3 +13,26 @@ body {
 a {
 	text-decoration: none;
 }
+
+.zindex-md {
+	z-index: 5;
+	position: relative;
+}
+@media (max-width: 1200px) {
+	h1,
+	.h1 {
+		font-size: 80px;
+		line-height: 80px;
+	}
+}
+@media (max-width: 768px) {
+	h1,
+	.h1 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	h2,
+	.h2 {
+		font-size: 26px;
+	}
+}

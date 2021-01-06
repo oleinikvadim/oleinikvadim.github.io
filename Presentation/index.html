@@ -17,7 +17,7 @@
 	<header class="header JS-header">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="/">
 					<img src="./img/star.png" alt="Star" class="navbar-brand__img">
 					<div class="brand-title">Oleinik Vadim</div>
 				</a>
@@ -39,13 +39,13 @@
 			</nav>
 		</div>
 	</header>
-	<main>
+	<main class="main">
 		<section class="section-welcome" id="welcome">
 			<div class="container">
 				<div class="section-welcome__container">
-					<div class="row" data-aos="fade-right">
+					<div class="row zindex-md" data-aos="fade-right">
 						<div class="col-6">
-							<div class="title title--xl text-secondary">Oleinik Vadim</div>
+							<h1 class="title text-secondary">Oleinik Vadim</h1>
 						</div>
 						<div class="col-xl-12">
 							<div class="main-title">Web developer</div>
@@ -60,11 +60,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="section section--light section-about-me" id="about-me">
+		<section class="section section--pdtop-md section--light section-about-me" id="about-me">
 			<div class="container">
-				<div class="figure-container figure-container--mb-sm" id="scene" data-aos="fade">
-					<div class="title title--md  title--absolute">About me</div>
-					<img class="--transform-sm" src="./img/substrate-1.svg" alt="" data-depth="0.6">
+				<div class="figure-container figure-container--mb-sm" data-aos="fade">
+					<h2 class="title title--absolute">About me</h2>
+					<div data-parent-parallax>
+						<img class="--transform-sm" src="./img/substrate-1.svg" alt="" data-depth="-0.6">
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-5" data-aos="fade-right">
@@ -87,7 +89,7 @@
 					</div>
 					<div class="col-xl-3" data-aos="fade-left">
 						<a href="#">
-							<a href="./Oleinik_Vadim_CV.pdf" download>
+							<a href="./CV - Oleinik Vadim.pdf" download>
 								<div class="resume__container">
 									<div class="resume">Download Resume</div>
 								</div>
@@ -97,15 +99,18 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
 		<section class="section section--light section-skills" id="skills">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-6" data-aos="fade-right">
-						<div class="figure-container figure-container--mb-sm" id="scene2">
-							<div class="title title--md title--absolute">Skills</div>
-							<img class="--transform-sm" src="./img/substrate-2.svg" alt="" data-depth="0.6"
-								data-relative-input="true">
+						<div class="figure-container figure-container--mb-sm">
+							<h2 class=" title title--absolute">Skills</h2>
+							<div data-parent-parallax>
+								<img class="--transform-sm" src="./img/substrate-2.svg" alt="" data-depth="-0.6"
+									data-relative-input="true">
+							</div>
 						</div>
 					</div>
 					<div class="col-xl-6" data-aos="fade-left">
@@ -162,14 +167,16 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
 		</section>
 		<section class="section section--light section-works" id="works">
 			<div class="container">
-				<div class="figure-container figure-container--mb-md" id="scene3" data-aos="fade">
-					<div class="title title--md title--absolute">My works</div>
-					<img class="--transform-md" src="./img/substrate-3.svg" alt="" data-depth="0.6">
+				<div class="figure-container figure-container--mb-md" data-aos="fade">
+					<h2 class="title title--absolute">My works</h2>
+					<div data-parent-parallax>
+						<img class="--transform-md" src="./img/substrate-3.svg" alt="" data-depth=".5">
+
+					</div>
 				</div>
 				<ul class="works-list" data-aos="fade-up">
 					<li class="works-item">
@@ -216,11 +223,11 @@
 	<footer class="footer" id="contact">
 		<div class="container">
 			<div class="footer__container">
-				<div class="footer-copyright" data-aos="fade-left">
+				<div class="footer-copyright">
 					<p>Copyright © 2021. OleinikVadim WebSite</p>
 					<p>All Rights Reserved</p>
 				</div>
-				<div class="footer-connect" data-aos="fade-right">
+				<div class="footer-contacts">
 					<ul class="social">
 						<li class="social-item">
 							<a href="https://t.me/oleinikvadim" target="_blank">
@@ -245,11 +252,13 @@
 							</a>
 						</li>
 					</ul>
-					<div class="footer-contact__item">
-						<a href="mail: oleinikvadim@gmail.com">oleinikvadim@gmail.com</a>
-					</div>
-					<div class="footer-contact__item">
-						<a href="tel:+380955610653">+380955610653</a>
+					<div class="footer-contact__list">
+						<div class="footer-contact__item">
+							<a href="mail:oleinikvadim@gmail.com">oleinikvadim@gmail.com</a>
+						</div>
+						<div class="footer-contact__item">
+							<a href="tel:+380955610653">+380955610653</a>
+						</div>
 					</div>
 				</div>
 			</div>

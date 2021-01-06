@@ -1,6 +1,6 @@
 .figure-container {
 	position: relative;
-	width: 400px;
+	width: 355px;
 	height: 300px;
 	@media (max-width: 768px) {
 		width: 200px;
@@ -20,6 +20,7 @@
 	}
 	img {
 		height: 100%;
+		width: 100%;
 		&.--transform-sm {
 			transform: translateX(50px);
 		}

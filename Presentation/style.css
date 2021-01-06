@@ -360,7 +360,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3, .h3 {
@@ -7807,6 +7807,30 @@ a {
   text-decoration: none;
 }
 
+.zindex-md {
+  z-index: 5;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  h1,
+.h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+.h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  h2,
+.h2 {
+    font-size: 26px;
+  }
+}
 .resp-img {
   position: absolute;
   top: 0px;
@@ -7851,7 +7875,7 @@ a {
 
 .navbar {
   padding: 35px 15px 35px 0px;
-  margin-right: -20px;
+  margin-right: -15px;
 }
 @media (max-width: 992px) {
   .navbar {
@@ -7907,30 +7931,6 @@ a {
     z-index: 3;
   }
 }
-.title--xl {
-  font-size: 120px;
-  line-height: 120px;
-}
-@media (max-width: 1200px) {
-  .title--xl {
-    font-size: 80px;
-    line-height: 80px;
-  }
-}
-@media (max-width: 768px) {
-  .title--xl {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-.title--md {
-  font-size: 48px;
-}
-@media (max-width: 768px) {
-  .title--md {
-    font-size: 26px;
-  }
-}
 .title--absolute {
   position: absolute;
   top: 50%;
@@ -7971,7 +7971,7 @@ a {
 
 .figure-container {
   position: relative;
-  width: 400px;
+  width: 355px;
   height: 300px;
 }
 @media (max-width: 768px) {
@@ -7993,6 +7993,7 @@ a {
 }
 .figure-container img {
   height: 100%;
+  width: 100%;
 }
 .figure-container img.--transform-sm {
   transform: translateX(50px);
@@ -8154,7 +8155,7 @@ a {
   font-family: "Nickelodeon 2001 Headline";
   font-size: 36px;
   text-transform: uppercase;
-  transform: translateY(65px);
+  transform: translateY(110px);
   z-index: 2;
   position: relative;
 }
@@ -8167,8 +8168,6 @@ a {
 .footer {
   padding-top: 100px;
   padding-bottom: 50px;
-  position: relative;
-  z-index: 1;
 }
 .footer__container {
   display: flex;
@@ -8242,11 +8241,18 @@ a {
 }
 
 .section {
-  padding-top: 170px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 @media (max-width: 992px) {
   .section {
-    padding-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .section--pdtop-md {
+    padding-top: 100px;
   }
 }
 .section--light {
@@ -8257,17 +8263,10 @@ a {
   margin-top: -130px;
   z-index: 1;
   position: relative;
-  padding-top: 170px;
 }
 @media (max-width: 620px) {
   .section-about-me {
     margin-top: -70px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .section-skills {
-    padding-top: 50px;
   }
 }
 
@@ -8317,7 +8316,7 @@ a {
 @media (max-width: 1200px) {
   .img-wrapper {
     padding-bottom: 350px;
-    width: 200px;
+    width: 250px;
   }
 }
 
