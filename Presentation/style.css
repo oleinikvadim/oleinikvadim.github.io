@@ -8155,7 +8155,7 @@ a {
   font-family: "Nickelodeon 2001 Headline";
   font-size: 36px;
   text-transform: uppercase;
-  transform: translateY(110px);
+  transform: translateY(-115px);
   z-index: 2;
   position: relative;
 }
@@ -8166,7 +8166,7 @@ a {
 }
 
 .footer {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .footer__container {
@@ -8243,6 +8243,7 @@ a {
 .section {
   padding-top: 70px;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .section {
@@ -8270,9 +8271,16 @@ a {
   }
 }
 
+@media (max-width: 7680px) {
+  .section-works {
+    padding-bottom: 100px;
+  }
+}
+
 .section-welcome {
   padding-top: 100px;
   padding-bottom: 160px;
+  overflow: hidden;
 }
 .section-welcome__container {
   position: relative;
