@@ -7792,9 +7792,19 @@ input[type=submit] {
   font-style: normal;
   font-display: swap;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #080808;
   color: #fff;
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
 }
 
 @media (max-width: 992px) {
@@ -7853,6 +7863,7 @@ a {
   transition: 0.3s all;
   z-index: 100;
   background-color: #080808;
+  font-weight: 400;
 }
 .header.--down {
   box-shadow: 0px 2px 2px 0 rgba(255, 255, 255, 0.08);
@@ -8168,6 +8179,7 @@ a {
 .footer {
   padding-top: 50px;
   padding-bottom: 50px;
+  font-weight: 400;
 }
 .footer__container {
   display: flex;
@@ -8243,7 +8255,6 @@ a {
 .section {
   padding-top: 70px;
   padding-bottom: 70px;
-  overflow: hidden;
 }
 @media (max-width: 992px) {
   .section {
@@ -8280,7 +8291,6 @@ a {
 .section-welcome {
   padding-top: 100px;
   padding-bottom: 160px;
-  overflow: hidden;
 }
 .section-welcome__container {
   position: relative;

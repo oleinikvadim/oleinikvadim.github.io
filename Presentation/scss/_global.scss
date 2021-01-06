@@ -1,6 +1,14 @@
+html,
+body {
+	overflow-x: hidden;
+}
 body {
 	background-color: #080808;
 	color: $primary;
+}
+.main {
+	overflow: hidden;
+	position: relative;
 }
 
 @media (max-width: 992px) {
