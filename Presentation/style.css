@@ -3427,7 +3427,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -3447,9 +3446,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -8166,9 +8164,11 @@ a {
   font-family: "Nickelodeon 2001 Headline";
   font-size: 36px;
   text-transform: uppercase;
-  transform: translateY(-115px);
   z-index: 2;
   position: relative;
+}
+.cooperation-description__container {
+  transform: translateY(-115px);
 }
 @media (max-width: 1200px) {
   .cooperation-description {
