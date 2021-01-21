@@ -1,0 +1,16 @@
+.btn-to-top {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s all;
+	margin-left: auto;
+	margin-right: auto;
+	// margin-bottom: 50px;
+	cursor: pointer;
+	&:hover {
+		background-color: $secondary;
+	}
+}

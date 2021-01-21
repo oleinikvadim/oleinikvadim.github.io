@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('MinionPro-Regular.woff2') format('woff2'),
+        url('MinionPro-Regular.woff') format('woff'),
+        url('MinionPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('HelveticaNeue-CondensedRegular.woff2') format('woff2'),
+        url('HelveticaNeue-CondensedRegular.woff') format('woff'),
+        url('HelveticaNeue-CondensedRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('HelveticaNeue-BoldCond.woff2') format('woff2'),
+        url('HelveticaNeue-BoldCond.woff') format('woff'),
+        url('HelveticaNeue-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,25 @@
+.title {
+	font-family: "Helvetica Neue Condensed";
+	font-weight: bold;
+	letter-spacing: 2px;
+	@media (max-width: 768px) {
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	&.title_mr-left {
+		margin-left: 50px;
+		@media (max-width: 768px) {
+			margin-left: 0px;
+		}
+	}
+	&.title_mb-md {
+		margin-bottom: 50px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+	&.title_mb-sm {
+		margin-bottom: 30px;
+	}
+}

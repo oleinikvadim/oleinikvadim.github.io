@@ -1,0 +1,75 @@
+.video_wrapper {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-color: #000;
+}
+.video_wrapper_full {
+	padding-top: 550px;
+	@media (max-width: 1200px) {
+		padding-top: 300px;
+	}
+}
+
+.videoIframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.videoPoster {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("./img/video.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	text-indent: -999em;
+	overflow: hidden;
+	opacity: 1;
+}
+.videoPoster:hover {
+	cursor: pointer;
+}
+.videoPoster:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin: -40px 0 0 -40px;
+	background-color: $secondary;
+	border-radius: 100%;
+	transition: 0.3s all;
+}
+.videoPoster:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	fill: #fff;
+	background-image: url("./img/arrow-right.svg");
+	transform: translate(-50%, -50%);
+}
+.videoPoster:hover:before,
+.videoPoster:focus:before {
+	background-color: $primary;
+}
+.videoWrapperActive .videoPoster {
+	opacity: 0;
+	height: 0;
+	-webkit-transition-delay: 0s, 800ms;
+	-moz-transition-delay: 0s, 800ms;
+	transition-delay: 0s, 800ms;
+}

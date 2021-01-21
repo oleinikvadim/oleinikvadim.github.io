@@ -1,0 +1,26 @@
+.news-item {
+	transition: 0.3s all;
+	overflow: hidden;
+	&:hover {
+		& img {
+			transition: all 3s;
+			transform: scale(1.2);
+		}
+	}
+	& img {
+		transition: all 0.3s;
+		transform: scale(1);
+	}
+	&.news-item_height {
+		position: relative;
+		padding-bottom: 210px;
+	}
+	&.news-item_mb-sm {
+		@media (max-width: 1200px) {
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+}
