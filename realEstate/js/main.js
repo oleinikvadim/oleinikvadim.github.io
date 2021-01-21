@@ -56,7 +56,7 @@
 			minimumResultsForSearch: -1,
 			width: '100%'
 		});
-	  }
+	}
 
 	function slickComment() {
 		$('.JS-slider-comment').slick({

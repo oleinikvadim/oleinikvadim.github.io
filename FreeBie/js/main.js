@@ -48,6 +48,7 @@
       })
     }
    
+	
     function scrollSmooth() {
       $(".nav-link.JS-scroll").on('click', function(event) {
         if (this.hash !== "") {
