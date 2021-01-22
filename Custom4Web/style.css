@@ -8195,6 +8195,19 @@ input[type=submit] {
   margin-top: 40px;
 }
 
+.navbar-wrapper .header-top__donate {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+@media (max-width: 991px) {
+  .navbar-wrapper .header-top__donate {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+  }
+}
+
 .navbar {
   font-family: "Helvetica Neue";
   font-size: 21px;
@@ -8220,29 +8233,33 @@ input[type=submit] {
 .navbar-nav {
   align-items: center;
 }
+.navbar__bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 
 .navbar-wrapper {
   display: flex;
   justify-content: space-around;
   z-index: 100;
-  position: relative;
   position: sticky;
   top: 0;
 }
+@media (max-width: 992px) {
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .navbar-wrapper {
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  }
+}
 .navbar-wrapper_down {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
-}
-.navbar-wrapper .social {
-  opacity: 0;
-  pointer-events: none;
-  display: none;
-}
-@media (max-width: 992px) {
-  .navbar-wrapper .social {
-    opacity: 1;
-    pointer-events: all;
-    display: flex;
-  }
 }
 
 .navbar-collapse {
@@ -8276,9 +8293,6 @@ input[type=submit] {
   max-height: 0;
   margin-bottom: 0px;
 }
-.header-top__store p:last-child {
-  line-height: 0.9;
-}
 
 .navbar__block {
   display: flex;
@@ -8289,6 +8303,39 @@ input[type=submit] {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
+}
+
+.store a:first-child {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+.store a:first-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #6d6f70;
+  width: 2px;
+  height: 80%;
+  transform: rotate(20deg) translateX(6px);
+}
+.store a:last-child {
+  line-height: 0.9;
+  margin-left: 3px;
+}
+
+.navbar-wrapper .store {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+@media (max-width: 991px) {
+  .navbar-wrapper .store {
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+  }
 }
 
 .social {
@@ -8322,6 +8369,19 @@ input[type=submit] {
 .social-item__svg {
   width: 100%;
   height: 100%;
+}
+
+.navbar-wrapper .social {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+@media (max-width: 991px) {
+  .navbar-wrapper .social {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+  }
 }
 
 .slider-item {
@@ -8361,24 +8421,22 @@ input[type=submit] {
     margin-bottom: 20px;
   }
 }
-.event-item__information {
+.event-item__content {
   z-index: 1;
   position: relative;
   color: #6d6f70;
   font-family: "Helvetica Neue";
   font-weight: bold;
-}
-.event-item__information.event-item__information_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.event-item__information.event-item__information_bg-opacity {
+.event-item__content.event-item__content_bg-opacity {
   padding: 30px;
   color: #fff;
 }
-.event-item__information.event-item__information_bg-opacity::before {
+.event-item__content.event-item__content_bg-opacity::before {
   content: "";
   position: absolute;
   top: 0;
@@ -8391,28 +8449,28 @@ input[type=submit] {
   z-index: -1;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
-.event-item__information__title {
+.event-item__title {
   letter-spacing: 2px;
 }
 @media (max-width: 768px) {
-  .event-item__information__title {
+  .event-item__title {
     margin-bottom: 10px;
     text-align: center;
   }
 }
-.event-item__information__title .h3 {
+.event-item__title h3 {
   font-weight: bold;
 }
-.event-item__information__title.title_mb-md {
+.event-item__title.title_mb-md {
   margin-bottom: 35px;
 }
 @media (max-width: 768px) {
-  .event-item__information__description {
+  .event-item__description {
     margin-bottom: 20px;
     text-align: center;
   }
 }
-.event-item__information__description.description_mb-md {
+.event-item__description.description_mb-md {
   margin-bottom: 50px;
 }
 
@@ -8647,13 +8705,14 @@ section.section_pd-bottom-md {
 }
 @media (max-width: 1200px) {
   .partner-item {
-    min-width: 33%;
+    max-width: 33%;
+    width: 100%;
     padding: 15px 15px;
   }
 }
 @media (max-width: 552px) {
   .partner-item {
-    min-width: 100%;
+    max-width: 100%;
   }
 }
 

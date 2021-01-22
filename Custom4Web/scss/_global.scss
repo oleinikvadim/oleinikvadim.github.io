@@ -49,3 +49,16 @@ h4,
 .section-instagram .social-list {
 	margin-top: 40px;
 }
+
+.navbar-wrapper {
+	& .header-top__donate {
+		opacity: 0;
+		pointer-events: none;
+		display: none;
+		@media (max-width: 991px) {
+			opacity: 1;
+			pointer-events: all;
+			display: block;
+		}
+	}
+}
