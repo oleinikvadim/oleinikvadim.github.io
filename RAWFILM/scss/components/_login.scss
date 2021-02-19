@@ -1,0 +1,43 @@
+.login-content {
+	padding-left: 45px;
+	display: flex;
+	position: relative;
+	&__login {
+		display: flex;
+		align-items: center;
+		transition: 0.3s all;
+		margin-right: 35px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__svg {
+		width: 20px;
+		height: 20px;
+		fill: $white;
+		margin-right: 10px;
+	}
+}
+.vl {
+	border-left: 1px solid $primary;
+	height: 28px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@media (max-width: 576px) {
+	.login-content {
+		padding-left: 0px;
+		flex-direction: column;
+		align-items: center;
+		&__login {
+			margin-bottom: 15px;
+			margin-right: 0px;
+		}
+	}
+	.vl {
+		display: none;
+	}
+}

@@ -1,0 +1,26 @@
+.section {
+	&-item__description {
+		@media (max-width: 1380px) {
+			text-align: center;
+		}
+	}
+	&-title {
+		font-weight: 300;
+		margin-bottom: 40px;
+		span {
+			font-weight: 700;
+		}
+	}
+	&-subtitle {
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+	&-description {
+		color: rgba(149, 149, 149, 1);
+		font-weight: 400;
+		margin-bottom: 40px;
+		p:first-child {
+			margin-bottom: 40px;
+		}
+	}
+}

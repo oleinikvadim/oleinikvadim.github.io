@@ -1,0 +1,58 @@
+.review {
+	padding-top: 250px;
+	padding-bottom: 250px;
+	@media (max-width: 1380px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__slider_wrapper {
+		position: relative;
+		background: url("./img/review.svg") no-repeat;
+		background-position: top center;
+	}
+	&__container {
+		text-align: center;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	&-img {
+		margin-bottom: 50px;
+		border: 2px solid #dd392e;
+		opacity: 0.5;
+		border-radius: 50%;
+		width: 84px;
+		height: 84px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&-description {
+		margin-bottom: 60px;
+		color: #bababa;
+	}
+	&-title {
+		color: #bababa;
+	}
+	&-star {
+		opacity: 0.5;
+		color: #fbde70;
+	}
+}
+.swiper-slide-active {
+	.review {
+		&-img {
+			opacity: 1;
+		}
+		&-description {
+			color: $white;
+		}
+		&-title {
+			color: $white;
+		}
+		&-star {
+			opacity: 1;
+		}
+	}
+}

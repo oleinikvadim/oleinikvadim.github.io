@@ -1,0 +1,34 @@
+.search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 45px;
+	&-top {
+		font-size: 10px;
+		line-height: 12px;
+		color: #fff;
+		opacity: 40%;
+		margin-right: 7px;
+	}
+	&-list {
+		display: flex;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	&-item {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.search {
+		align-items: flex-start;
+		&-list {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}

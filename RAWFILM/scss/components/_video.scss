@@ -1,0 +1,56 @@
+.video {
+	background: url("./img/video/video-bg-2.png") no-repeat;
+	background-position: center center;
+	position: relative;
+	background-size: contain;
+	padding-top: 220px;
+	padding-bottom: 220px;
+	@media (max-width: 1380px) {
+		background-size: cover;
+		padding-top: 150px;
+		padding-bottom: 200px;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(
+			to bottom,
+			#0d0b0d 0%,
+			rgba(13, 11, 13, 0.52) 59.37%
+		);
+	}
+	&-vector {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		height: 100%;
+		z-index: 0;
+		background: #0d0b0d;
+		// opacity: 0.8;
+		@media (max-width: 1380px) {
+			width: 50%;
+		}
+	}
+	.video-item__sticker {
+		display: flex;
+		@media (max-width: 1380px) {
+			justify-content: center;
+		}
+	}
+	& .sticker {
+		border: 2px solid $white;
+		border-radius: 4px;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

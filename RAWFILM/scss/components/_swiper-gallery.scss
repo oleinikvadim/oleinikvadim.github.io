@@ -1,0 +1,36 @@
+//gallery 1 start =======================================
+.swiper-slide__gallery {
+	height: 408px;
+	min-width: 100%;
+	width: 100%;
+	background: no-repeat;
+	background-size: cover;
+}
+.gallery-thumbs {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+	width: 25%;
+	height: 100px;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active,
+.gallery-thumbs2 .swiper-slide-thumb-active {
+	opacity: 0.7;
+}
+//gallery 1 end ================================
+
+//gallery 2 start ===================================
+.gallery-thumbs2 {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+.gallery-thumbs2 .swiper-slide {
+	width: 25%;
+	height: 100px;
+}
+//gallery 2 end ===================================

@@ -1,0 +1,38 @@
+.pulse {
+	cursor: pointer;
+	box-shadow: 0 0 0 $primary;
+	animation: pulse 2s infinite;
+	&.pulse--md {
+		animation: pulse2 2s infinite;
+	}
+}
+.pulse:hover {
+	animation: none;
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 #dd392e;
+		box-shadow: 0 0 0 0 #dd392e;
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+	}
+	70% {
+		box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}

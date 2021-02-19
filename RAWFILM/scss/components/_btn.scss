@@ -1,0 +1,35 @@
+.btn {
+	color: $white;
+	border: 2px solid $primary;
+	&:active {
+		background-color: #d13227;
+	}
+	&-outline-primary {
+		&:hover {
+			background-color: $primary;
+		}
+	}
+	&.btn-absolute {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+	}
+	&-footer {
+		border: 1px solid rgba(255, 255, 255, 0.09);
+
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: $white;
+			background: $black;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.header .btn,
+	.welcome .btn {
+		width: 100%;
+	}
+}

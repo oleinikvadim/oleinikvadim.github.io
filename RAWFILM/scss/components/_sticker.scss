@@ -1,0 +1,13 @@
+.sticker {
+	&.sticker_absolute {
+		position: absolute;
+		z-index: 2;
+	}
+	&.sticker_video {
+		font-size: 14px;
+		bottom: 15px;
+		right: 15px;
+		border: 1px solid #fff;
+		padding: 0 5px 0 5px;
+	}
+}

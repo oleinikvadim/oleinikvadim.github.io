@@ -1,0 +1,37 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.3s all;
+	&-container {
+		max-width: 1625px;
+		padding: 15px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		transition: 0.3s all;
+	}
+}
+
+@media (max-width: 992px) {
+	.header {
+		background-color: $black;
+		border-bottom: 1px solid rgb(143, 143, 143);
+	}
+	.header-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.JS-header {
+	&.JS-header_down {
+		background-color: $black;
+		border-bottom: 1px solid rgb(143, 143, 143);
+		& .header-container {
+			padding: 10px 15px;
+		}
+	}
+}
