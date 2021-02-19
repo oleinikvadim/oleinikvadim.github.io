@@ -8539,7 +8539,18 @@ input[type=submit] {
   flex-direction: row;
 }
 .navbar-brand {
-  padding: 0px;
+  background: url("./img/brand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 60px;
+}
+@media (max-width: 992px) {
+  .navbar-brand {
+    background: url("./img/brand-0.75.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .navbar .nav-link {
   text-decoration: none;
@@ -8977,8 +8988,8 @@ input[type=submit] {
   }
 
   .header-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 .JS-header.JS-header_down {
@@ -8986,7 +8997,7 @@ input[type=submit] {
   border-bottom: 1px solid #8f8f8f;
 }
 .JS-header.JS-header_down .header-container {
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 
 .welcome {

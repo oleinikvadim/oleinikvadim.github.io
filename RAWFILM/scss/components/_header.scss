@@ -21,8 +21,8 @@
 		border-bottom: 1px solid rgb(143, 143, 143);
 	}
 	.header-container {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 }
 
@@ -31,7 +31,7 @@
 		background-color: $black;
 		border-bottom: 1px solid rgb(143, 143, 143);
 		& .header-container {
-			padding: 10px 15px;
+			padding: 5px 15px;
 		}
 	}
 }
