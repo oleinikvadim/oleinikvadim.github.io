@@ -33,4 +33,43 @@
 	width: 25%;
 	height: 100px;
 }
+
+.swiper-container .gallery-thumbs {
+	position: relative;
+	& .gallery-thumbs__contain {
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		top: 10px;
+		bottom: 0;
+		width: 25%;
+		height: 100%;
+		background-color: rgba(23, 23, 23, 0.7);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 992px) {
+			display: none;
+		}
+		&-svg {
+			fill: $white;
+		}
+		&__arrow-right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			background-color: $primary;
+			filter: drop-shadow(0px 0px 26px rgba(231, 25, 9, 0.8));
+			cursor: pointer;
+			transition: 0.3s opacity;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
 //gallery 2 end ===================================

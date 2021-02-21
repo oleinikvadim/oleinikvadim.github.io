@@ -39,4 +39,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="social-in">
     <path d="M10.387 4.452a4.451 4.451 0 014.452 4.451v5.194H11.87V8.903a1.484 1.484 0 10-2.968 0v5.194H5.936V8.903a4.452 4.452 0 014.451-4.451zm-7.419.742H0v8.903h2.968V5.194zM1.484 2.968a1.484 1.484 0 100-2.968 1.484 1.484 0 000 2.968z" fill="#fff"></path>
   </symbol>
+   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" id="arrow-right">
+    <path d="M1.708 6.613h9.806M6.61 1.71l4.903 4.903-4.903 4.903" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>
