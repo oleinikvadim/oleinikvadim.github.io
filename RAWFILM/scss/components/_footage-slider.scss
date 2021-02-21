@@ -28,7 +28,7 @@
 	&-gallery-container {
 		overflow: visible;
 		@media (max-width: 1380px) {
-			overflow: hidden;
+			// overflow: hidden;
 		}
 		&__navigation {
 			margin-top: 30px;

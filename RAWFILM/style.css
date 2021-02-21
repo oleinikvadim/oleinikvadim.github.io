@@ -8448,6 +8448,10 @@ input[type=submit] {
     font-size: 1rem;
   }
 }
+.main {
+  overflow: hidden;
+}
+
 .resp-img {
   position: absolute;
   top: 0px;
@@ -8981,9 +8985,6 @@ input[type=submit] {
   pointer-events: none;
 }
 
-.section {
-  overflow: hidden;
-}
 @media (max-width: 1380px) {
   .section-item__description {
     text-align: center;
@@ -9498,11 +9499,6 @@ input[type=submit] {
 }
 .footage-gallery-container {
   overflow: visible;
-}
-@media (max-width: 1380px) {
-  .footage-gallery-container {
-    overflow: hidden;
-  }
 }
 .footage-gallery-container__navigation {
   margin-top: 30px;
