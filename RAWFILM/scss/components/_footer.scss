@@ -1,31 +1,42 @@
 .footer {
 	padding-top: 75px;
-
-	&-item {
-		display: flex;
-		flex-direction: column;
-		@media (max-width: 992px) {
-			margin-bottom: 20px;
-		}
-		@media (max-width: 767px) {
-			text-align: center;
-		}
-		&__title {
-			font-weight: 700;
-			letter-spacing: 0.1em;
-			margin-bottom: 20px;
-		}
-		&__link {
-			font-size: 16px;
-			text-decoration: none;
-			margin-bottom: 5px;
-		}
-	}
+	background-color: $black;
 	&__svg {
 		width: 25px;
 		height: 25px;
 		margin-right: 25px;
 	}
+	&-top {
+		margin-bottom: 50px;
+		&__item {
+			display: flex;
+			flex-direction: column;
+			@media (max-width: 992px) {
+				margin-bottom: 40px;
+				&:last-child {
+					// margin-bottom: 0;
+				}
+			}
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+			&__list {
+				display: flex;
+				flex-direction: column;
+			}
+			&__title {
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				margin-bottom: 10px;
+			}
+			&__link {
+				font-size: 16px;
+				text-decoration: none;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
 	&-middle {
 		display: flex;
 		justify-content: space-between;
@@ -34,14 +45,12 @@
 		@media (max-width: 992px) {
 			flex-direction: column;
 			align-items: center;
-			& .form-group {
-				margin-bottom: 20px;
-			}
-			& .card-sistem {
-				margin-bottom: 20px;
+			&__item {
+				margin-bottom: 40px;
 			}
 		}
 	}
+
 	&-bottom {
 		border-top: 1px solid rgba(255, 255, 255, 0.08);
 		font-weight: 500;
@@ -52,23 +61,10 @@
 				margin-bottom: 10px;
 			}
 		}
-
-		&__link a {
-			margin-right: 40px;
-			text-decoration: none;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
 		&__item {
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 10px;
-			@media (max-width: 768px) {
-				flex-direction: column;
-				align-items: center;
-			}
-
 			&:first-child {
 				font-size: 16px;
 			}
@@ -77,6 +73,23 @@
 				color: #373637;
 				& span {
 					color: $white;
+				}
+			}
+			@media (max-width: 768px) {
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			&__link {
+				@media (max-width: 768px) {
+					margin-bottom: 20px;
+				}
+				& a {
+					margin-right: 40px;
+					text-decoration: none;
+					&:last-child {
+						margin-right: 0;
+					}
 				}
 			}
 		}

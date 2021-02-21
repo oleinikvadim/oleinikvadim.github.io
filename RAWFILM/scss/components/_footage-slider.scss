@@ -2,6 +2,7 @@
 	padding-top: 250px;
 	padding-bottom: 200px;
 	position: relative;
+
 	@media (max-width: 1380px) {
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -10,7 +11,7 @@
 		position: relative;
 		z-index: 5;
 		@media (max-width: 1380px) {
-			margin-bottom: 20px;
+			margin-bottom: 40px;
 		}
 		&:before {
 			content: "";
@@ -21,7 +22,7 @@
 			right: 0px;
 			left: -9999px;
 			z-index: -1;
-			background-color: $black;
+			background-color: #0d0b0d;
 		}
 	}
 	&-gallery-container {

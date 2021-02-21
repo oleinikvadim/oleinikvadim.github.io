@@ -1,0 +1,32 @@
+.circule {
+	position: relative;
+	&.circule--position {
+		&:after {
+			content: "";
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			left: -270px;
+			top: 150px;
+			background: #dd392e;
+			opacity: 0.1;
+			filter: blur(240px);
+			pointer-events: none;
+			// top: 50%;
+			// left: 0;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			width: 460px;
+			height: 460px;
+			right: -300px;
+			top: 100px;
+			/* Primary CTA */
+			background: #dd392e;
+			opacity: 0.4;
+			filter: blur(240px);
+			pointer-events: none;
+		}
+	}
+}

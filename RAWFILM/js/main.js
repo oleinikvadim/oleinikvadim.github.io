@@ -82,6 +82,11 @@
 			slidesPerView: 1,
       		centeredSlides: true,
 			loop: true,
+			pagination: true,
+			pagination: {
+				el: '.swiper-pagination3',
+				clickable: true,
+			},
 			navigation: {
 				nextEl: '.slider-nav_next__review',
 				prevEl: '.slider-nav_prev__review',
@@ -90,10 +95,10 @@
 				1380: {
 				  slidesPerView: 3,
 				  spaceBetween: 20,
-				}
+				},
 			
-			  }
-		  });
+			}
+		});
 		  
 	}
 
@@ -123,9 +128,10 @@
 		$('#my-nav').on("show.bs.collapse", function(){
 		  $(".JS-hamburger").addClass("is-active");
 		})
-		$("#my-nav").on("hidden.bs.collapse", function(){
+		$("#my-nav").on("hide.bs.collapse", function(){
 		  $(".JS-hamburger").removeClass("is-active");
 		})
 	} 
+
 
 })(jQuery);

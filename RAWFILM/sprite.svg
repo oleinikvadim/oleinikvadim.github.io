@@ -5,16 +5,6 @@
    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 26" id="search">
     <path d="M11 20.304c4.418 0 8-3.737 8-8.347 0-4.61-3.582-8.348-8-8.348s-8 3.737-8 8.348c0 4.61 3.582 8.347 8 8.347zm10 2.087l-4.35-4.539" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="social-inst">
-    <path d="M12.29 1.71H4.87a3.71 3.71 0 00-3.71 3.71v7.419a3.71 3.71 0 003.71 3.71h7.42a3.71 3.71 0 003.709-3.71v-7.42a3.71 3.71 0 00-3.71-3.71z" stroke="#fff" stroke-width="1.484" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M11.547 8.662a2.967 2.967 0 11-5.87.87 2.967 2.967 0 015.87-.87zm1.113-3.614h.008" stroke="#fff" stroke-width="1.484" stroke-linecap="round" stroke-linejoin="round"></path>
-  </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 16" id="social-f">
-    <path d="M8.161.452H5.935a3.71 3.71 0 00-3.71 3.71v2.225H0v2.968h2.226v5.935h2.968V9.355h2.225l.742-2.968H5.194V4.161a.742.742 0 01.741-.742h2.226V.452z" fill="#fff"></path>
-  </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" id="social-in">
-    <path d="M11.13 4.903a4.452 4.452 0 014.451 4.452v5.194h-2.968V9.355a1.484 1.484 0 10-2.968 0v5.194H6.678V9.355a4.452 4.452 0 014.451-4.452zm-7.42.742H.743v8.904H3.71V5.645zM2.226 3.42a1.484 1.484 0 100-2.968 1.484 1.484 0 000 2.967z" fill="#fff"></path>
-  </symbol>
    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="film">
     <path d="M14.365 1H2.635C1.732 1 1 1.732 1 2.635v11.73C1 15.268 1.732 16 2.635 16h11.73c.903 0 1.635-.732 1.635-1.635V2.635C16 1.732 15.268 1 14.365 1zM4.75 1v15m7.5-15v15M1 8.5h15M1 4.75h3.75M1 12.25h3.75m7.5 0H16m-3.75-7.5H16" stroke="#4B4B4B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
@@ -32,18 +22,21 @@
     <path d="M26 20a2 2 0 01-2 2H12l-4 4V10a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="#DD392E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path fill="#080708" d="M5 12h2v5H5zm4 1h2v5H9v-5zm13-4v2h-5V9h5zm0-4v2h-5V5h5z"></path>
   </symbol>
-    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="youtube">
+   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="social-inst">
+    <path d="M12.129 1h-7.42A3.71 3.71 0 001 4.71v7.419a3.71 3.71 0 003.71 3.71h7.419a3.71 3.71 0 003.71-3.71v-7.42A3.71 3.71 0 0012.129 1z" stroke="#fff" stroke-width="1.484" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M11.387 7.952a2.968 2.968 0 11-5.872.87 2.968 2.968 0 015.872-.87zM12.5 4.339h.008" stroke="#fff" stroke-width="1.484" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" id="social-twitter">
+    <path d="M17.938 1.27a8.467 8.467 0 01-2.44 1.189 3.48 3.48 0 00-6.106 2.33v.777A8.282 8.282 0 012.4 2.047s-3.107 6.992 3.885 10.1A9.043 9.043 0 01.847 13.7c6.992 3.885 15.537 0 15.537-8.934 0-.216-.021-.432-.062-.645a5.997 5.997 0 001.616-2.85v0z" stroke="#fff" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="social-youtube">
     <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2c.312-1.732.466-3.49.46-5.25a29.005 29.005 0 00-.46-5.33v0z" stroke="#fff" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" stroke="#fff" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="twitter">
-    <g clip-path="url(#clip0)">
-      <path d="M17.938 3.27a8.467 8.467 0 01-2.44 1.189 3.48 3.48 0 00-6.106 2.33v.777A8.282 8.282 0 012.4 4.047s-3.107 6.992 3.885 10.1A9.043 9.043 0 01.847 15.7c6.992 3.885 15.537 0 15.537-8.934 0-.216-.021-.432-.062-.645a5.997 5.997 0 001.616-2.85v0z" stroke="#fff" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round"></path>
-    </g>
-    <defs>
-      <clipPath id="clip0">
-        <path fill="#fff" d="M0 0h24v24H0z"></path>
-      </clipPath>
-    </defs>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 15" id="social-f">
+    <path d="M8.161 0H5.935a3.71 3.71 0 00-3.71 3.71v2.225H0v2.968h2.226v5.936h2.968V8.903h2.225l.742-2.968H5.194V3.71a.742.742 0 01.741-.742h2.226V0z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="social-in">
+    <path d="M10.387 4.452a4.451 4.451 0 014.452 4.451v5.194H11.87V8.903a1.484 1.484 0 10-2.968 0v5.194H5.936V8.903a4.452 4.452 0 014.451-4.451zm-7.419.742H0v8.903h2.968V5.194zM1.484 2.968a1.484 1.484 0 100-2.968 1.484 1.484 0 000 2.968z" fill="#fff"></path>
   </symbol>
 </svg>

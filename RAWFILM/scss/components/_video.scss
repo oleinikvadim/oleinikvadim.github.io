@@ -5,9 +5,10 @@
 	background-size: contain;
 	padding-top: 220px;
 	padding-bottom: 220px;
+	z-index: 2;
 	@media (max-width: 1380px) {
 		background-size: cover;
-		padding-top: 150px;
+		padding-top: 100px;
 		padding-bottom: 200px;
 	}
 	&:before {
@@ -26,6 +27,20 @@
 			rgba(13, 11, 13, 0.52) 59.37%
 		);
 	}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 532px;
+		height: 532px;
+		right: 0;
+		top: 60%;
+		z-index: 1;
+		/* Primary CTA */
+		background: #dd392e;
+		opacity: 0.1;
+		filter: blur(240px);
+		pointer-events: none;
+	}
 	&-vector {
 		position: absolute;
 		top: 0;
@@ -34,9 +49,9 @@
 		height: 100%;
 		z-index: 0;
 		background: #0d0b0d;
-		// opacity: 0.8;
 		@media (max-width: 1380px) {
 			width: 50%;
+			// opacity: 1;
 		}
 	}
 	.video-item__sticker {

@@ -1,6 +1,9 @@
 .btn {
 	color: $white;
 	border: 2px solid $primary;
+	&.btn--sm {
+		padding: 10px 30px;
+	}
 	&:active {
 		background-color: #d13227;
 	}

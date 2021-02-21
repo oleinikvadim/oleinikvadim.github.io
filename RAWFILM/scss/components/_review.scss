@@ -1,6 +1,20 @@
 .review {
 	padding-top: 250px;
 	padding-bottom: 250px;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 180px;
+		height: 250px;
+		bottom: 0;
+		right: 0;
+		top: 80%;
+		/* Primary CTA */
+		background: #dd392e;
+		opacity: 0.4;
+		filter: blur(240px);
+	}
 	@media (max-width: 1380px) {
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -12,11 +26,12 @@
 	}
 	&__container {
 		text-align: center;
+		padding-top: 40px;
 		padding-right: 40px;
 		padding-left: 40px;
 	}
 	&-img {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 		border: 2px solid #dd392e;
 		opacity: 0.5;
 		border-radius: 50%;
@@ -43,6 +58,9 @@
 .swiper-slide-active {
 	.review {
 		&-img {
+			opacity: 1;
+		}
+		&.pulse {
 			opacity: 1;
 		}
 		&-description {

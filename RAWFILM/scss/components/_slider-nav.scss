@@ -33,6 +33,9 @@
 .video-collection {
 	& .slider-nav_item {
 		border-color: $white;
+		&:hover {
+			opacity: 0.6;
+		}
 	}
 	& .slider-nav_prev {
 		position: absolute;
@@ -51,7 +54,7 @@
 	& .swiper-pagination {
 		@media (max-width: 1380px) {
 			position: relative;
-			text-align: center;
+			// text-align: center;
 		}
 	}
 	& .swiper-pagination-bullet {
@@ -79,12 +82,22 @@
 	}
 	@media (max-width: 1380px) {
 		& .slider-nav_prev {
-			top: 100%;
-			left: 0;
+			// top: 100%;
+			// left: 0;
+			display: none;
 		}
 		& .slider-nav_next {
-			top: 100%;
-			right: 0;
+			// top: 100%;
+			// right: 0;
+			display: none;
+		}
+	}
+	& .swiper-pagination3 {
+		display: none;
+		@media (max-width: 1380px) {
+			display: block;
+			text-align: center;
+			margin-top: 30px;
 		}
 	}
 }
