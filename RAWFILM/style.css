@@ -9193,6 +9193,11 @@ input[type=submit] {
   opacity: 0.4;
   filter: blur(240px);
 }
+@media (max-width: 768px) {
+  .review:before {
+    display: none;
+  }
+}
 @media (max-width: 1380px) {
   .review {
     padding-top: 50px;
