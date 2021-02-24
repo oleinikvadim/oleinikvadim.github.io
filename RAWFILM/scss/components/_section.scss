@@ -19,8 +19,11 @@
 		color: rgba(149, 149, 149, 1);
 		font-weight: 400;
 		margin-bottom: 40px;
-		p:first-child {
+		p {
 			margin-bottom: 40px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
