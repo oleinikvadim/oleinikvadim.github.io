@@ -1,0 +1,61 @@
+@use "sass:math";
+
+$hamburger-width: 30px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 6px;
+$hamburger-step: $hamburger-layer-height + $hamburger-layer-spacing;
+$hamburger-transition: 0.15s ease;
+
+.hamburger {
+	display: inline-block;
+	cursor: pointer;
+	transition: opacity 0.15s linear;
+	&:hover {
+		opacity: 0.7;
+	}
+	&-box {
+		position: relative;
+		display: inline-block;
+		width: $hamburger-width;
+		height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+	}
+	// Three layers: the element itself and its ::before / ::after
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		position: absolute;
+		width: $hamburger-width;
+		height: $hamburger-layer-height;
+		background-color: $primary;
+		border-radius: $hamburger-layer-height;
+		transition: transform $hamburger-transition;
+	}
+	&-inner {
+		display: block;
+		top: 0;
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+		}
+		&::before {
+			top: $hamburger-step;
+			transition: transform $hamburger-transition, opacity $hamburger-transition;
+		}
+		&::after {
+			top: $hamburger-step * 2;
+		}
+	}
+	// Open state: top and bottom layers form a cross, the middle one fades out
+	&.is-active &-inner {
+		transform: translate3d(0, $hamburger-step, 0) rotate(45deg);
+		&::before {
+			transform: rotate(-45deg)
+				translate3d(math.div(-$hamburger-width, 7), -$hamburger-layer-spacing, 0);
+			opacity: 0;
+		}
+		&::after {
+			transform: translate3d(0, -$hamburger-step * 2, 0) rotate(-90deg);
+		}
+	}
+}
