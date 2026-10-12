@@ -1,362 +1,548 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <title>Oleinik Vadim</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"
-		href="style.css">
-	<link rel="apple-touch-icon"
-		sizes="180x180"
-		href="./img/apple-touch-icon.png">
-	<link rel="icon"
-		type="image/png"
-		sizes="32x32"
-		href="./img/favicon-32x32.png">
-	<link rel="icon"
-		type="image/png"
-		sizes="16x16"
-		href="./img/favicon-16x16.png">
-	<link rel="manifest"
-		href="./img/site.webmanifest">
-	<title>Oleinik Vadim</title>
-</head>
-
-<b ody>
-	<div class="header-plug"></div>
-	<header class="header JS-header">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand"
-					href="./">
-					<img src="./img/star.png"
-						alt="Star"
-						class="navbar-brand__img">
-					<div class="brand-title">Oleinik Vadim</div>
-				</a>
-				<button class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#header-navbar"
-					aria-controls="header-navbar"
-					aria-expanded="false"
-					aria-label="Toggle navigation"><span class="hamburger hamburger--slider JS-hamburger"><span
-							class="hamburger-box"><span class="hamburger-inner"></span></span></span>
-					<div class="nav-bar nav"></div>
-				</button>
-				<div class="collapse navbar-collapse"
-					id="header-navbar">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link active"
-								href="#welcome">Home</a></li>
-						<li class="nav-item"><a class="nav-link"
-								href="#about-me"> About Me</a></li>
-						<li class="nav-item"><a class="nav-link"
-								href="#skills">Skills</a></li>
-						<li class="nav-item"><a class="nav-link"
-								href="#works">Works</a></li>
-						<li class="nav-item"><a class="nav-link"
-								href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<main class="main">
-		<section class="section-welcome"
-			id="welcome">
-			<div class="container">
-				<div class="section-welcome__container">
-					<div class="row zindex-md"
-						data-aos="fade-right">
-						<div class="col-6">
-							<h1 class="title text-secondary">Oleinik Vadim</h1>
-						</div>
-						<div class="col-xl-12">
-							<div class="main-title"> Angular Web developer</div>
-						</div>
-					</div>
-					<div class="img-container"
-						data-aos="fade-left">
-						<div class="img-wrapper">
-							<img class="resp-img"
-								src="./img/portfolio-1.jpg"
-								alt="portfolio">
-						</div>
-						<img class="outline-star"
-							src="./img/star-outline.svg"
-							alt="outline-star">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section section--pdtop-md section--light section-about-me"
-			id="about-me">
-			<div class="container">
-				<div class="figure-container figure-container--mb-sm"
-					data-aos="fade">
-					<h2 class="title title--absolute">About me</h2>
-					<div data-parent-parallax>
-						<img class="--transform-sm"
-							src="./img/substrate-1.svg"
-							alt=""
-							data-depth="-0.6">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-5"
-						data-aos="fade-right">
-						<div class="description description--xl">Greetings, My name is Vadim.<br>
-							<span>I'm a Angular Front-End developer.</span></br>
-							My experience in web development is 2 years, directly with angular 1.5 years.
-						</div>
-					</div>
-					<div class="col-xl-4"
-						data-aos="fade-right">
-						<div class="description description--md">
-							<p>I really like web technologies because they have changed the way we live, work and play and continue to
-								offer new opportunities for growth and innovation.</p>
-						</div>
-					</div>
-					<div class="col-xl-3"
-						data-aos="fade-left">
-						<a href="#">
-							<a href="./Oleinik Vadim CV.docx"
-								download>
-								<div class="resume__container">
-									<div class="resume">Download Resume</div>
-								</div>
-							</a>
-						</a>
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</section>
-		<section class="section section--light section-skills"
-			id="skills">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6">
-						<div class="figure-container figure-container--mb-sm"
-							data-aos="fade">
-							<h2 class=" title title--absolute">Skills</h2>
-							<div data-parent-parallax>
-								<img class="--transform-sm"
-									src="./img/substrate-2.svg"
-									alt=""
-									data-depth="-0.6"
-									data-relative-input="true">
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6"
-						data-aos="fade-left">
-						<ul class="skill-list">
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#angular"></use>
-								</svg>
-								<div class="skill-item__title">Angular</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-bootstrap"></use>
-								</svg>
-								<div class="skill-item__title">Bootstrap</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-jquery"></use>
-								</svg>
-								<div class="skill-item__title">JQwery</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-css3"></use>
-								</svg>
-								<div class="skill-item__title">CSS3</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-html5"></use>
-								</svg>
-								<div class="skill-item__title">HTML5</div>
-							</li>
-
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-sass"></use>
-								</svg>
-								<div class="skill-item__title">Scss</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-skill-7"></use>
-								</svg>
-								<div class="skill-item__title">Prepros</div>
-							</li>
-							<li class="skill-item">
-								<svg class="skill-item__svg">
-									<use class="svg"
-										xlink:href="skills.svg#icon-skill-1"></use>
-								</svg>
-								<div class="skill-item__title">Avocode</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section section--light section-works"
-			id="works">
-			<div class="container">
-				<div class="figure-container figure-container--mb-md"
-					data-aos="fade">
-					<h2 class="title title--absolute">My works</h2>
-					<div data-parent-parallax>
-						<img class="--transform-md"
-							src="./img/substrate-3.svg"
-							alt=""
-							data-depth=".5">
-
-					</div>
-				</div>
-				<ul class="works-list"
-					data-aos="fade-up">
-					<li class="works-item">
-						<a href="https://good-gym.netlify.app"
-							target="_blank">
-							<div class="works-item__img">
-								<img src="./img/good-gym.png"
-									alt="Good Gym">
-							</div>
-							<div class="works-item__title">Good Gym</div>
-						</a>
-					</li>
-					<li class="works-item">
-						<a href="https://oleinikvadim.github.io/realEstate"
-							target="_blank">
-							<div class="works-item__img">
-								<img src="./img/work-3.png"
-									alt="RealEstate">
-							</div>
-							<div class="works-item__title">RealEstate</div>
-						</a>
-					</li>
-					<li class="works-item">
-						<a href="https://oleinikvadim.github.io/Bino"
-							target="_blank">
-							<div class="works-item__img">
-								<img src="./img/work-4.png"
-									alt="Bino">
-							</div>
-							<div class="works-item__title">Bino</div>
-						</a>
-					</li>
-					<li class="works-item">
-						<a href="https://oleinikvadim.github.io/create"
-							target="_blank">
-							<div class="works-item__img">
-								<img src="./img/work-2.png"
-									alt="Creatives">
-							</div>
-							<div class="works-item__title">Creatives</div>
-						</a>
-					</li>
-					<li class="works-item">
-						<a href="https://oleinikvadim.github.io/FreeBie"
-							target="_blank">
-							<div class="works-item__img">
-								<img src="./img/work-1.png"
-									alt="AppLab">
-							</div>
-							<div class="works-item__title">AppLab</div>
-						</a>
-					</li>
-				</ul>
-
-			</div>
-		</section>
-	</main>
-	<footer class="footer"
-		id="contact">
-		<div class="container">
-			<div class="cooperation-description"
-				data-aos="fade-up">
-				<div class="cooperation-description__container">
-					<p> I'm always happy to cooperate.</p>
-					<p> I will be glad to answer your
-						questions</p>
-					<p class="text-secondary">on social
-						networks or messengers.</p>
-				</div>
-
-			</div>
-			<div class="footer__container">
-				<div class="footer-copyright">
-					<p>Copyright ©
-						<script>new Date().getFullYear() > document.write(new Date().getFullYear());</script> Oleinik Vadim WebSite
-					</p>
-					<p>All Rights Reserved</p>
-				</div>
-				<div class="footer-contacts">
-					<ul class="social">
-						<li class="social-item">
-							<a href="https://t.me/oleinikvadim"
-								target="_blank">
-								<svg>
-									<use class="svg"
-										xlink:href="skills.svg#icon-telegram1"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://www.facebook.com/profile.php?id=1004700691"
-								target="_blank">
-								<svg>
-									<use class="svg"
-										xlink:href="skills.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-item">
-							<a href="https://www.linkedin.com/in/%D0%B2%D0%B0%D0%B4%D0%B8%D0%BC-%D0%BE%D0%BB%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA-588679b0/"
-								target="_blank">
-								<svg>
-									<use class="svg"
-										xlink:href="skills.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<div class="footer-contact__list">
-						<div class="footer-contact__item">
-							<a href="mailto:oleinikvadim@gmail.com">oleinikvadim@gmail.com</a>
-						</div>
-						<div class="footer-contact__item">
-							<a href="tel:+380955610653">+380955610653</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	<script src="./libs/jquery/jquery-3.5.0.min.js"></script>
-	<script src="./libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="./libs/parallax/parallax.min.js"></script>
-	<script src="./libs/aos-master/dist/aos.js"></script>
-	<script src="./js/main.js"></script>
-	</body>
-
+  <body>
+    <div class="header-plug"></div>
+    <header class="header JS-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="./">
+            <img src="./img/star.png" alt="Star" class="navbar-brand__img" />
+            <div class="brand-title">Oleinik Vadim</div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#header-navbar"
+            aria-controls="header-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="hamburger hamburger--slider JS-hamburger"
+              ><span class="hamburger-box"
+                ><span class="hamburger-inner"></span></span
+            ></span>
+            <div class="nav-bar nav"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="header-navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#welcome">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me"> About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-welcome" id="welcome">
+        <div class="container">
+          <div class="section-welcome__container">
+            <div class="row zindex-md" data-aos="fade-right">
+              <div class="col-6">
+                <h1 class="title text-secondary">Oleinik Vadim</h1>
+              </div>
+              <div class="col-xl-12">
+                <div class="main-title">Angular Web developer</div>
+              </div>
+            </div>
+            <div class="img-container" data-aos="fade-left">
+              <div class="img-wrapper">
+                <img
+                  class="resp-img"
+                  src="./img/portfolio-1.jpg"
+                  alt="portfolio"
+                />
+              </div>
+              <img
+                class="outline-star"
+                src="./img/star-outline.svg"
+                alt="outline-star"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--pdtop-md section--light section-about-me"
+        id="about-me"
+      >
+        <div class="container">
+          <div class="figure-container figure-container--mb-sm" data-aos="fade">
+            <h2 class="title title--absolute">About me</h2>
+            <div data-parent-parallax>
+              <img
+                class="--transform-sm"
+                src="./img/substrate-1.svg"
+                alt=""
+                data-depth="-0.6"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-5" data-aos="fade-right">
+              <div class="description description--xl">
+                Hi, my name is Vadim.<br />
+                <span
+                  >Frontend Developer with 5+ years of professional IT
+                  experience</span
+                ><br />
+                specializing in the Angular ecosystem, TypeScript and state
+                management.
+              </div>
+            </div>
+            <div class="col-xl-4" data-aos="fade-right">
+              <div class="description description--md">
+                <p>
+                  Proactive team player focused on building scalable web
+                  applications, optimizing workflows and modernizing legacy
+                  codebases.
+                </p>
+                <p>
+                  Quick to adapt to new technologies and business requirements
+                  to deliver reliable, high-performance solutions.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-3" data-aos="fade-left">
+              <a href="./Oliinyk_Vadym_resume.pdf" download target="_blank">
+                <div class="resume__container">
+                  <div class="resume">Download Resume</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="facts" data-aos="fade-up">
+            <div class="facts__item">
+              <div class="facts__value">5+</div>
+              <div class="facts__label">
+                years of professional IT experience
+              </div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__value">3</div>
+              <div class="facts__label">companies &amp; projects</div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__value">v10+</div>
+              <div class="facts__label">Angular in commercial projects</div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__value">UA</div>
+              <div class="facts__label">Kharkiv, Ukraine · open to remote</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--light section-skills" id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div
+                class="figure-container figure-container--mb-sm"
+                data-aos="fade"
+              >
+                <h2 class="title title--absolute">Skills</h2>
+                <div data-parent-parallax>
+                  <img
+                    class="--transform-sm"
+                    src="./img/substrate-2.svg"
+                    alt=""
+                    data-depth="-0.6"
+                    data-relative-input="true"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 d-flex align-items-center" data-aos="fade-left">
+              <div class="competencies competencies--side">
+                <div class="competencies__group">
+                  <div class="competencies__title">Frontend</div>
+                  <ul class="tag-list">
+                    <li class="tag">Angular (10+)</li>
+                    <li class="tag">TypeScript</li>
+                    <li class="tag">JavaScript (ES6+)</li>
+                    <li class="tag">RxJS</li>
+                    <li class="tag">NgRx Store / Effects / Signals</li>
+                    <li class="tag">Angular Material</li>
+                    <li class="tag">Angular CDK</li>
+                    <li class="tag">Nx Monorepo</li>
+                    <li class="tag">Capacitor</li>
+                    <li class="tag">ECharts / ngx-echarts</li>
+                    <li class="tag">HTML5 / CSS3 / SCSS</li>
+                  </ul>
+                </div>
+                <div class="competencies__group">
+                  <div class="competencies__title">Backend</div>
+                  <ul class="tag-list">
+                    <li class="tag">C# — code reading</li>
+                    <li class="tag">Business logic comprehension</li>
+                  </ul>
+                </div>
+                <div class="competencies__group">
+                  <div class="competencies__title">Tools &amp; Practices</div>
+                  <ul class="tag-list">
+                    <li class="tag">Git</li>
+                    <li class="tag">Git Flow</li>
+                    <li class="tag">PR reviews</li>
+                    <li class="tag">OAuth 2.0 (Google, Microsoft)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--light section-experience"
+        id="experience"
+      >
+        <div class="container">
+          <div class="figure-container figure-container--mb-sm" data-aos="fade">
+            <h2 class="title title--absolute">Experience</h2>
+            <div data-parent-parallax>
+              <img
+                class="--transform-sm"
+                src="./img/substrate-1.svg"
+                alt=""
+                data-depth="-0.6"
+              />
+            </div>
+          </div>
+          <ul class="timeline">
+            <li class="timeline__item" data-aos="fade-up">
+              <div class="timeline__role">
+                Middle Web Developer <span>| DevPace</span>
+              </div>
+              <div class="timeline__meta">
+                May 2023 – Present · Kharkiv, Ukraine (Remote)
+              </div>
+              <ul class="timeline__list">
+                <li>
+                  Participated in legacy code modernization, improving overall
+                  application performance and maintainability.
+                </li>
+                <li>
+                  Integrated state management using NgRx (Store, Effects,
+                  Signals) and RxJS for complex workflows including allocation,
+                  discounts, and quick-view/quick-save panels.
+                </li>
+                <li>
+                  Implemented secure authentication flows using Google and
+                  Microsoft OAuth 2.0.
+                </li>
+                <li>
+                  Read and navigated C# backend codebases to analyze business
+                  logic, trace data flows, and align API integrations.
+                </li>
+                <li>
+                  Contributed to code quality through structured Git Flow
+                  practices and detailed pull request reviews.
+                </li>
+              </ul>
+            </li>
+            <li class="timeline__item" data-aos="fade-up">
+              <div class="timeline__role">
+                Frontend Developer <span>| Kharkivoblenergo Mobile</span>
+              </div>
+              <div class="timeline__meta">
+                May 2025 – Present · Kharkiv, Ukraine (Remote, Volunteer)
+              </div>
+              <p class="timeline__lead">
+                A civic mobile application (Angular + Capacitor, Android/iOS)
+                for the regional power utility's consumers and employees.
+              </p>
+              <ul class="timeline__list">
+                <li>
+                  Took part in building the application from the ground up and
+                  keep extending its functionality with new features, including
+                  push notifications, address lookup, and employee access
+                  history.
+                </li>
+                <li>
+                  Providing ongoing support and maintenance — bug fixes,
+                  backend-driven API updates, and cross-platform (Android/iOS)
+                  reliability.
+                </li>
+                <li>
+                  Built and maintained the Angular data-access layer (Nx
+                  monorepo) — typed DTOs, enums, and REST API client services.
+                </li>
+              </ul>
+              <div class="timeline__subtitle">Selected works</div>
+              <ul class="mini-works">
+                <li class="mini-work">
+                  <a href="https://koe-live.devpace.net" target="_blank">
+                    <div class="mini-work__img">
+                      <img
+                        src="./img/koe-screen-1.png"
+                        alt="Kharkivoblenergo Mobile Web"
+                      />
+                    </div>
+                    <div class="mini-work__title">
+                      Kharkivoblenergo Mobile Web
+                    </div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.kharkivoblenergo.mobile.live"
+                    target="_blank"
+                  >
+                    <div class="mini-work__img">
+                      <img
+                        src="./img/koe-screen-2.png"
+                        alt="Kharkivoblenergo Mobile Android"
+                      />
+                    </div>
+                    <div class="mini-work__title">
+                      Kharkivoblenergo Mobile Android
+                    </div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a
+                    href="https://apps.apple.com/ua/app/kharkivoblenergo-mobile/id6758220252"
+                    target="_blank"
+                  >
+                    <div class="mini-work__img">
+                      <img
+                        src="./img/koe-screen-3.png"
+                        alt="Kharkivoblenergo Mobile iOS"
+                      />
+                    </div>
+                    <div class="mini-work__title">
+                      Kharkivoblenergo Mobile iOS
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline__item" data-aos="fade-up">
+              <div class="timeline__role">
+                Junior Angular Developer <span>| Ristars</span>
+              </div>
+              <div class="timeline__meta">
+                Mar 2021 – Mar 2023 · Kharkiv, Ukraine (On-site)
+              </div>
+              <ul class="timeline__list">
+                <li>
+                  Developed responsive, cross-browser-compatible web
+                  applications using Angular, TypeScript, CSS3, and legacy
+                  JavaScript/jQuery.
+                </li>
+                <li>
+                  Built reusable UI component libraries and optimized layout
+                  rendering across multiple devices.
+                </li>
+                <li>
+                  Collaborated with designers to deliver functional user
+                  interfaces.
+                </li>
+              </ul>
+              <div class="timeline__subtitle">Selected works</div>
+              <ul class="mini-works">
+                <li class="mini-work">
+                  <a href="https://good-gym.netlify.app" target="_blank">
+                    <div class="mini-work__img">
+                      <img src="./img/good-gym.png" alt="Good Gym" />
+                    </div>
+                    <div class="mini-work__title">Good Gym</div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a
+                    href="https://oleinikvadim.github.io/realEstate"
+                    target="_blank"
+                  >
+                    <div class="mini-work__img">
+                      <img src="./img/work-3.png" alt="RealEstate" />
+                    </div>
+                    <div class="mini-work__title">RealEstate</div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a href="https://oleinikvadim.github.io/Bino" target="_blank">
+                    <div class="mini-work__img">
+                      <img src="./img/work-4.png" alt="Bino" />
+                    </div>
+                    <div class="mini-work__title">Bino</div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a
+                    href="https://oleinikvadim.github.io/create"
+                    target="_blank"
+                  >
+                    <div class="mini-work__img">
+                      <img src="./img/work-2.png" alt="Creatives" />
+                    </div>
+                    <div class="mini-work__title">Creatives</div>
+                  </a>
+                </li>
+                <li class="mini-work">
+                  <a
+                    href="https://oleinikvadim.github.io/FreeBie"
+                    target="_blank"
+                  >
+                    <div class="mini-work__img">
+                      <img src="./img/work-1.png" alt="AppLab" />
+                    </div>
+                    <div class="mini-work__title">AppLab</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="row section-experience__info">
+            <div class="col-xl-6" data-aos="fade-right">
+              <div class="info-card">
+                <div class="info-card__title">Education</div>
+                <div class="info-card__row">
+                  <span>V. N. Karazin Kharkiv National University</span>
+                  <span>2009–2015</span>
+                </div>
+                <div class="info-card__row">
+                  <span>Tourism and Travel Services Management</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6" data-aos="fade-left">
+              <div class="info-card">
+                <div class="info-card__title">Languages</div>
+                <div class="info-card__row">
+                  <span>English</span>
+                  <span>A2 — technical reading &amp; documentation</span>
+                </div>
+                <div class="info-card__row">
+                  <span>Ukrainian</span>
+                  <span>Native</span>
+                </div>
+                <div class="info-card__row">
+                  <span>Russian</span>
+                  <span>Fluent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="cooperation-description" data-aos="fade-up">
+          <div class="cooperation-description__container">
+            <p>I'm always happy to cooperate.</p>
+            <p>I will be glad to answer your questions</p>
+            <p class="text-secondary">on social networks or messengers.</p>
+          </div>
+        </div>
+        <div class="footer__container">
+          <div class="footer-copyright">
+            <p>
+              Copyright ©
+              <script>
+                new Date().getFullYear() >
+                  document.write(new Date().getFullYear());
+              </script>
+              Oleinik Vadim WebSite
+            </p>
+            <p>All Rights Reserved</p>
+          </div>
+          <div class="footer-contacts">
+            <ul class="social">
+              <li class="social-item">
+                <a href="https://t.me/oleinikvadim" target="_blank">
+                  <svg>
+                    <use
+                      class="svg"
+                      xlink:href="skills.svg#icon-telegram1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=1004700691"
+                  target="_blank"
+                >
+                  <svg>
+                    <use
+                      class="svg"
+                      xlink:href="skills.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.linkedin.com/in/%D0%B2%D0%B0%D0%B4%D0%B8%D0%BC-%D0%BE%D0%BB%D0%B5%D0%B9%D0%BD%D0%B8%D0%BA-588679b0/"
+                  target="_blank"
+                >
+                  <svg>
+                    <use
+                      class="svg"
+                      xlink:href="skills.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="footer-contact__list">
+              <div class="footer-contact__item">
+                <a href="mailto:oleinikvadim@gmail.com"
+                  >oleinikvadim@gmail.com</a
+                >
+              </div>
+              <div class="footer-contact__item">
+                <a href="tel:+380955610653">+380955610653</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/parallax/parallax.min.js"></script>
+    <script src="./libs/aos-master/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
