@@ -1,5 +1,6 @@
 // global
 @import "variables";
+@import "theme";
 @import "libs";
 @import "reset";
 @import "base";
@@ -13,6 +14,7 @@
 // components
 @import "./components/header";
 @import "./components/hamburger";
+@import "./components/theme-toggle";
 @import "./components/title";
 @import "./components/description";
 @import "./components/figure";

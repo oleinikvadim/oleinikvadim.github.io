@@ -11,7 +11,8 @@
 		}
 	}
 	&--light {
-		background: #101010;
+		background: $body-bg-alt;
+		transition: $theme-transition;
 	}
 }
 .section-about-me {

@@ -1,0 +1,25 @@
+// Theme colors. Dark is the default; the light theme is enabled by data-theme="light" on <html>
+:root {
+	color-scheme: dark;
+	--color-bg: #080808;
+	--color-bg-alt: #101010;
+	--color-text: #fff;
+	--color-text-muted: #9a9a9a;
+	--color-link-hover: #d9d9d9;
+	--color-border: #1e1e1e;
+	--color-border-strong: #2a2a2a;
+	--color-header-shadow: rgba(255, 255, 255, 0.08);
+	--color-accent: #{$secondary};
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+	--color-bg: #fff;
+	--color-bg-alt: #f4f4f4;
+	--color-text: #111;
+	--color-text-muted: #666;
+	--color-link-hover: #555;
+	--color-border: #e2e2e2;
+	--color-border-strong: #d2d2d2;
+	--color-header-shadow: rgba(0, 0, 0, 0.08);
+}

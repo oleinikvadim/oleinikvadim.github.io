@@ -1,18 +1,21 @@
 const SCROLL_DURATION = 800;
 const HEADER_DOWN_OFFSET = 70;
-// Extra space below the header so a section counts as active once it reaches the header
 const SPY_OFFSET = 10;
+const THEME_STORAGE_KEY = "theme";
 
 const header = document.querySelector(".JS-header");
 const hamburger = document.querySelector(".JS-hamburger");
 const navToggler = document.querySelector(".navbar-toggler");
 const navCollapse = document.querySelector("#header-navbar");
 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+const themeToggle = document.querySelector(".JS-theme-toggle");
+const systemLightTheme = matchMedia("(prefers-color-scheme: light)");
 
 let clickedLink = null;
 let scrollAnimationId = null;
 
 document.addEventListener("DOMContentLoaded", function () {
+  themeSwitch();
   navMenuToggle();
   navLinksClick();
   scrollSpy();
@@ -21,7 +24,46 @@ document.addEventListener("DOMContentLoaded", function () {
   aos();
 });
 
-// Functions
+function getSavedTheme() {
+  try {
+    return localStorage.getItem(THEME_STORAGE_KEY);
+  } catch (e) {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch (e) {}
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  themeToggle.setAttribute(
+    "aria-label",
+    theme === "light" ? "Switch to dark theme" : "Switch to light theme",
+  );
+}
+
+function themeSwitch() {
+  setTheme(document.documentElement.getAttribute("data-theme") || "dark");
+
+  themeToggle.addEventListener("click", function () {
+    const theme =
+      document.documentElement.getAttribute("data-theme") === "light"
+        ? "dark"
+        : "light";
+    setTheme(theme);
+    saveTheme(theme);
+  });
+
+  systemLightTheme.addEventListener("change", function (event) {
+    if (!getSavedTheme()) {
+      setTheme(event.matches ? "light" : "dark");
+    }
+  });
+}
 
 function getHeaderHeight() {
   return header.offsetHeight;
@@ -98,7 +140,6 @@ function scrollToY(targetY, onDone) {
 function scrollSpy() {
   const items = Array.from(navLinks)
     .map(function (link) {
-      console.log(link.hash);
       return {
         link: link,
         section: link.hash && document.querySelector(link.hash),

@@ -1,53 +1,58 @@
 html,
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 body {
-	background-color: $body-bg;
-	color: $primary;
+  background-color: $body-bg;
+  transition: $theme-transition;
+  color: $primary;
 }
+
 .main {
-	overflow: hidden;
-	position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: $container-padding;
-	padding-left: $container-padding;
-	@media (min-width: 993px) {
-		max-width: 960px;
-	}
-	@media (min-width: 1200px) {
-		max-width: 1200px;
-	}
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+  @media (min-width: 993px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .zindex-md {
-	z-index: 5;
-	position: relative;
+  z-index: 5;
+  position: relative;
 }
+
 @media (max-width: 1200px) {
-	h1,
-	.h1 {
-		font-size: 80px;
-		line-height: 80px;
-	}
+  h1,
+  .h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
+
 @media (max-width: 768px) {
-	h1,
-	.h1 {
-		font-size: 40px;
-		line-height: 40px;
-	}
-	h2,
-	.h2 {
-		font-size: 26px;
-	}
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2,
+  .h2 {
+    font-size: 26px;
+  }
 }
