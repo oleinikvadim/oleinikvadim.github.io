@@ -98,6 +98,7 @@ function scrollToY(targetY, onDone) {
 function scrollSpy() {
   const items = Array.from(navLinks)
     .map(function (link) {
+      console.log(link.hash);
       return {
         link: link,
         section: link.hash && document.querySelector(link.hash),

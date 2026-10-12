@@ -27,3 +27,30 @@
 		padding-bottom: 100px;
 	}
 }
+
+// Column widths match a 12-column grid: (100% + gap) * n / 12 - gap
+@function grid-col($n) {
+	@return calc((100% + #{$grid-gap}) * #{$n} / 12 - #{$grid-gap});
+}
+
+.about-me {
+	display: grid;
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: grid-col(5) grid-col(4) 1fr;
+		column-gap: $grid-gap;
+	}
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr 1fr;
+		column-gap: $grid-gap;
+	}
+	&__competencies {
+		display: flex;
+		align-items: center;
+	}
+}
