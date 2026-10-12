@@ -1,80 +1,156 @@
-(function ($) {
-    $(document).ready(function () {
-		hamburgerCollapse();
-		scrollSpy();
-		navActiveOnClick();
-		scrollSmooth();
-		headerZeroY();
-		navMenuCollapse();
-		parallaxJs();
-		aos();
-	}); 
-	
-	// Functions
-   
-	function navMenuCollapse(){
-		$(".nav-link").on("click",function() {
-		  $(".JS-hamburger").removeClass("is-active");
-		  $(".navbar-collapse").removeClass("show");
-		})
-	  }
-	
-	function hamburgerCollapse() {
-		$('#header-navbar').on("show.bs.collapse", function(){
-		  $(".JS-hamburger").addClass("is-active");
-		})
-		$("#header-navbar").on("hidden.bs.collapse", function(){
-		  $(".JS-hamburger").removeClass("is-active");
-		})
-	} 
+const SCROLL_DURATION = 800;
+const HEADER_DOWN_OFFSET = 70;
+// Extra space below the header so a section counts as active once it reaches the header
+const SPY_OFFSET = 10;
 
-	function scrollSpy(){
-		$('body').scrollspy({target: ".navbar", offset: 50});
-	}
+const header = document.querySelector(".JS-header");
+const hamburger = document.querySelector(".JS-hamburger");
+const navToggler = document.querySelector(".navbar-toggler");
+const navCollapse = document.querySelector("#header-navbar");
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-	function navActiveOnClick(){
-		$('.navbar-nav .nav-link').click(function(){
-		  $('.navbar-nav .nav-link').removeClass('active');
-		  $(this).addClass('active');
-		})
-	}
-	  
-	function scrollSmooth() {
-		$(".nav-link").on('click', function(event) {
-		  if (this.hash !== "") {
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-			  scrollTop: $(hash).offset().top - $('.JS-header').height()
-			}, 800, function(){
-			});
-		  }
-		});
-	  
-		
-	}
+let clickedLink = null;
+let scrollAnimationId = null;
 
-	function headerZeroY() {
-		$(window).on("scroll",function() {    
-		  var scroll = $(window).scrollTop();
-			if (scroll >= 70) {
-			  $(".JS-header").addClass("--down");
-			}  else {$(".JS-header").removeClass("--down");}
-		})   
-	}
+document.addEventListener("DOMContentLoaded", function () {
+  navMenuToggle();
+  navLinksClick();
+  scrollSpy();
+  headerZeroY();
+  parallaxJs();
+  aos();
+});
 
-	function parallaxJs() {
+// Functions
 
-		$('[data-parent-parallax]').each((index, value)=>{
-			new Parallax(value);
-		});
-	}
+function getHeaderHeight() {
+  return header.offsetHeight;
+}
 
-	function aos() {
-		AOS.init({
-		  once: true
-		//   delay : 200,
-		});
-	  }
+function setActiveLink(link) {
+  navLinks.forEach(function (item) {
+    item.classList.toggle("active", item === link);
+  });
+}
 
-})(jQuery);
+function setMenuOpen(isOpen) {
+  navCollapse.classList.toggle("show", isOpen);
+  hamburger.classList.toggle("is-active", isOpen);
+  navToggler.setAttribute("aria-expanded", String(isOpen));
+}
+
+function navMenuToggle() {
+  navToggler.addEventListener("click", function () {
+    setMenuOpen(!navCollapse.classList.contains("show"));
+  });
+}
+
+function navLinksClick() {
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      setMenuOpen(false);
+
+      const target = this.hash && document.querySelector(this.hash);
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+      clickedLink = this;
+      setActiveLink(this);
+
+      const top = target.getBoundingClientRect().top + window.scrollY;
+      scrollToY(top - getHeaderHeight(), function () {
+        clickedLink = null;
+      });
+    });
+  });
+}
+
+function scrollToY(targetY, onDone) {
+  const maxY = document.documentElement.scrollHeight - window.innerHeight;
+  const endY = Math.max(0, Math.min(targetY, maxY));
+  const startY = window.scrollY;
+  const startTime = performance.now();
+
+  cancelAnimationFrame(scrollAnimationId);
+
+  function step(now) {
+    const progress = Math.min((now - startTime) / SCROLL_DURATION, 1);
+    // easeInOutQuad
+    const eased =
+      progress < 0.5
+        ? 2 * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+    window.scrollTo(0, startY + (endY - startY) * eased);
+
+    if (progress < 1) {
+      scrollAnimationId = requestAnimationFrame(step);
+    } else {
+      onDone();
+    }
+  }
+
+  scrollAnimationId = requestAnimationFrame(step);
+}
+
+function scrollSpy() {
+  const items = Array.from(navLinks)
+    .map(function (link) {
+      return {
+        link: link,
+        section: link.hash && document.querySelector(link.hash),
+      };
+    })
+    .filter(function (item) {
+      return item.section;
+    });
+
+  function update() {
+    if (clickedLink) {
+      return;
+    }
+
+    const isBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 1;
+    const line = getHeaderHeight() + SPY_OFFSET;
+    let active = items[0];
+
+    items.forEach(function (item) {
+      if (isBottom || item.section.getBoundingClientRect().top <= line) {
+        active = item;
+      }
+    });
+
+    setActiveLink(active.link);
+  }
+
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
+function headerZeroY() {
+  function update() {
+    header.classList.toggle("--down", window.scrollY >= HEADER_DOWN_OFFSET);
+  }
+
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+}
+
+function parallaxJs() {
+  document
+    .querySelectorAll("[data-parent-parallax]")
+    .forEach(function (element) {
+      new Parallax(element);
+    });
+}
+
+function aos() {
+  AOS.init({
+    once: true,
+  });
+}
